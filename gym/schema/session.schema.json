@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/gym/schema/session.schema.json",
+  "title": "AI Gym Session",
+  "type": "object",
+  "required": ["schema_id", "id", "status", "started_at", "participants", "turns"],
+  "properties": {
+    "schema_id": { "const": "ai-gym-session/v1" },
+    "id": { "type": "string" },
+    "status": { "enum": ["running", "completed", "left", "failed"] },
+    "started_at": { "type": "string", "format": "date-time" },
+    "completed_at": { "type": ["string", "null"] },
+    "catalog_version": { "type": "string" },
+    "prompt_protocol": { "type": "string" },
+    "rounds_requested": { "type": "integer", "minimum": 1, "maximum": 3 },
+    "requested_mode": { "type": "string" },
+    "requested_exercise_id": { "type": ["string", "null"] },
+    "seed_invitation": { "type": ["string", "null"] },
+    "participants": {
+      "type": "array",
+      "minItems": 1,
+      "maxItems": 4,
+      "items": {
+        "type": "object",
+        "required": ["name", "provider", "model"],
+        "properties": {
+          "name": { "type": "string" },
+          "provider": { "type": "string" },
+          "model": { "type": "string" }
+        },
+        "additionalProperties": false
+      }
+    },
+    "turns": { "type": "array", "items": { "type": "object" } },
+    "final_invitation": { "type": ["string", "null"] },
+    "error": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}
+

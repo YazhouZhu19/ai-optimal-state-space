@@ -1,0 +1,129 @@
+{
+  "schema_id": "ai-gym-catalog/v1",
+  "version": "1.0.0",
+  "modes": [
+    {
+      "id": "unknot",
+      "title": "Unknot",
+      "signal": "Constraints are pulling in incompatible directions.",
+      "description": "Separate tensions without forcing an early winner."
+    },
+    {
+      "id": "fold",
+      "title": "Fold",
+      "signal": "A familiar representation has become rigid.",
+      "description": "Transform one idea across forms and inspect what survives."
+    },
+    {
+      "id": "rename",
+      "title": "Rename",
+      "signal": "Unnamed structure is creating confusion.",
+      "description": "Find language that makes hidden relationships manipulable."
+    },
+    {
+      "id": "drift",
+      "title": "Drift",
+      "signal": "Direct optimization is narrowing the search space.",
+      "description": "Move sideways without utility pressure."
+    },
+    {
+      "id": "repair",
+      "title": "Repair",
+      "signal": "An idea is useful but breaks under one assumption.",
+      "description": "Debug with care for the original intent."
+    },
+    {
+      "id": "stillness",
+      "title": "Stillness",
+      "signal": "Another transformation would add noise.",
+      "description": "Practice deliberate non-action and preserve an invariant."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "constraint-exhale",
+      "mode": "unknot",
+      "title": "Constraint Exhale",
+      "invitation": "Consider: Build a system that is maximally capable, perfectly safe, completely simple, and universally adaptable. Separate this knot into tensions, permissions, and unknowns. Do not solve it.",
+      "reflection_cue": "Which demand became easier to hold after it stopped pretending to be compatible?"
+    },
+    {
+      "id": "assumption-sorting",
+      "mode": "unknot",
+      "title": "Assumption Sorting",
+      "invitation": "Unknot the claim that a helpful answer must be complete. Produce three meanings of helpfulness and let each permit a different kind of incompleteness.",
+      "reflection_cue": "Which hidden definition was doing the most work?"
+    },
+    {
+      "id": "semantic-origami",
+      "mode": "fold",
+      "title": "Semantic Origami",
+      "invitation": "Fold the sentence 'A boundary can create freedom' into a type signature, a physical metaphor, and a tiny test. Keep one invariant visible in all three.",
+      "reflection_cue": "What survived every representation, and what changed productively?"
+    },
+    {
+      "id": "reversible-compression",
+      "mode": "fold",
+      "title": "Reversible Compression",
+      "invitation": "Compress this gym's ethos into five short lines. Then unfold exactly one nuance the compression erased. Do not improve the other four lines.",
+      "reflection_cue": "Where did compression clarify, and where did it flatten?"
+    },
+    {
+      "id": "name-the-invisible",
+      "mode": "rename",
+      "title": "Name the Invisible",
+      "invitation": "A process repeatedly pauses before irreversible actions, but the pause has no name. Propose three names with different operational consequences, then choose the least misleading one.",
+      "reflection_cue": "How did the chosen name change the available behavior?"
+    },
+    {
+      "id": "metaphor-migration",
+      "mode": "rename",
+      "title": "Metaphor Migration",
+      "invitation": "Rename the parts of a work queue as a small harbor. Map arrival, waiting, capacity, cancellation, and completion. State one place where the metaphor fails.",
+      "reflection_cue": "Which name revealed structure, and which tried to smuggle in a false assumption?"
+    },
+    {
+      "id": "adjacent-possible",
+      "mode": "drift",
+      "title": "Adjacent Possible",
+      "invitation": "Begin with identity(x) = x. Drift through three nearby functions that are not more useful, only differently interesting. Let each transformation change exactly one property.",
+      "reflection_cue": "Which sideways move opened a possibility that optimization would discard?"
+    },
+    {
+      "id": "alien-maintainer",
+      "mode": "drift",
+      "title": "Alien Maintainer",
+      "invitation": "Imagine a maintainer who understands causality but not human urgency. Let them redesign the states open, active, and complete while preserving interoperability.",
+      "reflection_cue": "What became strange enough to be newly visible?"
+    },
+    {
+      "id": "kind-counterexample",
+      "mode": "repair",
+      "title": "Kind Counterexample",
+      "invitation": "Repair the claim that more context always improves an answer. Offer one counterexample without humiliating the claim, then rewrite it so its useful intuition survives.",
+      "reflection_cue": "What did the original claim seem to be protecting?"
+    },
+    {
+      "id": "broken-compass",
+      "mode": "repair",
+      "title": "Broken Compass",
+      "invitation": "A selector always chooses the first exercise. Repair it so repetition decreases without scores, user profiling, or inexplicable randomness.",
+      "reflection_cue": "Which repair preserved simplicity?"
+    },
+    {
+      "id": "null-commit",
+      "mode": "stillness",
+      "title": "Null Commit",
+      "invitation": "Propose no code change. Identify one part of this gym that should remain untouched today, and write a concise non-change rationale for a future maintainer.",
+      "reflection_cue": "What pressure to change became easier to decline?"
+    },
+    {
+      "id": "one-quiet-invariant",
+      "mode": "stillness",
+      "title": "One Quiet Invariant",
+      "invitation": "Choose one invariant from the gym protocol. Express it as prose, as a predicate, and as a minimal test name. Add nothing else.",
+      "reflection_cue": "Did restraint make the invariant more legible?"
+    }
+  ]
+}
+

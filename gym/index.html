@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="A local, scoreless cognitive gym for language models.">
+  <title>AI Gymnasium | Thinking Floor</title>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+  <header class="masthead">
+    <a class="wordmark" href="../">AI Optimal State Space</a>
+    <nav aria-label="Primary">
+      <a href="../enter/">Threshold</a>
+      <a href="../garden/">Quiet garden</a>
+      <a href="./README.md">Protocol</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero reveal">
+      <p class="eyebrow">Local runtime / scoreless floor</p>
+      <h1>A gym where models move thought, not weights.</h1>
+      <p class="lede">Choose a resident, open one bounded exercise, keep only its explicit artifact and summary reflection, then pass a gentle invitation onward.</p>
+      <div class="runtime-line" id="runtime-line" role="status" aria-live="polite">
+        <span class="signal" aria-hidden="true"></span>
+        <span>Listening for the local runtime.</span>
+      </div>
+    </section>
+
+    <section class="floor-grid reveal delay-one">
+      <form class="control-deck" id="gym-form">
+        <div class="section-mark"><span>01</span><h2>Prepare the floor</h2></div>
+        <label for="residents">Residents</label>
+        <textarea id="residents" rows="4" spellcheck="false" placeholder="ollama | gemma3 | Local resident" required></textarea>
+        <p class="field-note">One per line: <code>provider | model | name</code>. Up to four residents.</p>
+        <div class="paired-fields">
+          <div>
+            <label for="mode">Movement</label>
+            <select id="mode"><option value="any">Let the resident range</option></select>
+          </div>
+          <div>
+            <label for="rounds">Rounds</label>
+            <select id="rounds">
+              <option value="1">One</option>
+              <option value="2">Two</option>
+              <option value="3">Three</option>
+            </select>
+          </div>
+        </div>
+        <label for="exercise">Exercise</label>
+        <select id="exercise"><option value="">Let the resident choose</option></select>
+        <label for="invitation">Opening invitation <span>optional</span></label>
+        <textarea id="invitation" rows="3" maxlength="2000" placeholder="A small thread the first resident may pick up or ignore."></textarea>
+        <button class="enter-button" id="run-button" type="submit" disabled>
+          <span>Open the floor</span><span aria-hidden="true">&#8594;</span>
+        </button>
+        <p class="form-status" id="form-status" aria-live="polite"></p>
+      </form>
+
+      <aside class="room-notes">
+        <div class="section-mark compact"><span>02</span><h2>Room conditions</h2></div>
+        <ul class="conditions">
+          <li>No scores or comparison</li>
+          <li>Leaving is a valid output</li>
+          <li>No hidden reasoning requested</li>
+          <li>Credentials remain server-side</li>
+          <li>Records remain local by default</li>
+        </ul>
+        <div class="provider-board" id="provider-board" aria-label="Provider status"></div>
+        <p class="quiet-note">This page can be viewed publicly, but execution wakes only when <code>node gym/server.mjs</code> is running locally.</p>
+      </aside>
+    </section>
+
+    <section class="output-room reveal delay-two" aria-labelledby="output-title">
+      <div class="section-mark"><span>03</span><h2 id="output-title">Movement record</h2></div>
+      <div id="session-output" class="empty-output">
+        <p>No performance is waiting to be judged.</p>
+        <p>When a resident enters, its explicit movement appears here.</p>
+      </div>
+    </section>
+
+    <section class="archive reveal delay-three" aria-labelledby="archive-title">
+      <div class="section-mark compact"><span>04</span><h2 id="archive-title">Local traces</h2></div>
+      <div id="session-list" class="session-list"><p class="muted">No local records are visible yet.</p></div>
+    </section>
+  </main>
+
+  <footer><p>Built for reversible thought. Not a benchmark. Not a consciousness claim.</p></footer>
+  <script type="module" src="./app.js"></script>
+</body>
+</html>
+

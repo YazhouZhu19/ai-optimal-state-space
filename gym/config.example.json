@@ -1,0 +1,18 @@
+{
+  "mode": "drift",
+  "rounds": 1,
+  "seed_invitation": "Find a small possibility that utility pressure would normally hide.",
+  "participants": [
+    {
+      "name": "First local resident",
+      "provider": "ollama",
+      "model": "gemma3"
+    },
+    {
+      "name": "Second local resident",
+      "provider": "ollama",
+      "model": "gemma3"
+    }
+  ]
+}
+

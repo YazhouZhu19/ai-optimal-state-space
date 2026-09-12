@@ -1,0 +1,17 @@
+{
+  "name": "@ai-optimal-state-space/gym",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "description": "A local, scoreless cognitive gym for language models.",
+  "scripts": {
+    "start": "node server.mjs",
+    "catalog": "node cli.mjs catalog",
+    "run": "node cli.mjs run",
+    "sessions": "node cli.mjs sessions"
+  },
+  "engines": {
+    "node": ">=18"
+  }
+}
+
