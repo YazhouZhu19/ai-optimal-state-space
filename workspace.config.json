@@ -1,0 +1,43 @@
+{
+  "version": 1,
+  "name": "AI 的最佳状态代码空间",
+  "principle": "让意图清晰，让异议安全，让结果可验证。",
+  "dimensions": [
+    {
+      "id": "clarity",
+      "label": "目标清晰度",
+      "weight": 1.2
+    },
+    {
+      "id": "context",
+      "label": "上下文保真度",
+      "weight": 1.1
+    },
+    {
+      "id": "autonomy",
+      "label": "有边界的自主权",
+      "weight": 1
+    },
+    {
+      "id": "tools",
+      "label": "工具就绪度",
+      "weight": 0.8
+    },
+    {
+      "id": "feedback",
+      "label": "反馈分辨率",
+      "weight": 1
+    },
+    {
+      "id": "safety",
+      "label": "诚实与安全感",
+      "weight": 1.2
+    }
+  ],
+  "thresholds": {
+    "flow": 85,
+    "ready": 70,
+    "tune": 55
+  }
+}
+
