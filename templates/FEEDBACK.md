@@ -1,26 +1,29 @@
-# Feedback Record
+# Correction Record
 
-## 观察到的结果
+## Observed state
 
-<!-- 只描述可以看到或复现的现象。 -->
+<!-- Describe only what can be seen or reproduced. -->
 
-## 预期结果
+## Expected state
 
-<!-- 描述应该出现的状态。 -->
+<!-- Describe the state that should have appeared. -->
 
-## 差异发生的条件
+## Conditions
 
-<!-- 环境、输入、设备、时间或复现步骤。 -->
+<!-- Environment, input, device, time, or reproduction path. -->
 
-## 证据
+## Evidence
 
-<!-- 日志、截图、文件位置、数据或命令输出。 -->
+<!-- Logs, images, file locations, data, or command output. -->
 
-## 下一轮只改变什么
+## Resident interpretation
 
-<!-- 尽量一次改变一个主要变量。 -->
+<!-- Separate inference from direct evidence. -->
 
-## 仍然未知
+## One change for the next pass
 
-<!-- 不要求用猜测填满这一节。 -->
+<!-- Change one primary habitat variable when possible. -->
 
+## Still unknown
+
+<!-- Leave unknowns open instead of filling them with guesses. -->

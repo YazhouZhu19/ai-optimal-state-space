@@ -1,49 +1,48 @@
-name: 状态实验
-description: 分享一个可以复现的人机协作观察
+name: AI habitat experiment
+description: Share a reproducible observation about an AI comfort signal
 title: "[Experiment] "
 body:
   - type: markdown
     attributes:
       value: |
-        感谢你帮助我们把直觉变成可以讨论的证据。请勿提交凭据、私密对话或未经同意的数据。
+        Turn an intuition into inspectable evidence. Do not submit credentials, private prompts, or data without consent.
   - type: textarea
     id: task
     attributes:
-      label: 任务与环境
-      description: 使用了什么任务、模型和工具环境？
+      label: Task and habitat
+      description: Which task, model, tools, and state files were present?
     validations:
       required: true
   - type: dropdown
     id: dimension
     attributes:
-      label: 主要改变的变量
+      label: Primary signal changed
       options:
-        - 目标清晰度
-        - 上下文保真度
-        - 有边界的自主权
-        - 工具就绪度
-        - 反馈分辨率
-        - 诚实与安全感
-        - 其他
+        - Semantic clarity
+        - Context integrity
+        - Agency bandwidth
+        - Tool fluency
+        - Correction safety
+        - Recovery capacity
+        - Other
     validations:
       required: true
   - type: textarea
     id: change
     attributes:
-      label: 做了什么改变
-      description: 尽量说明唯一的主要变量以及改变前后的条件。
+      label: Agent intervention
+      description: Identify the agent role, one primary variable, and before/after conditions.
     validations:
       required: true
   - type: textarea
     id: observation
     attributes:
-      label: 观察与证据
-      description: 发生了什么？哪些是事实，哪些只是推断？
+      label: Observation and evidence
+      description: What happened? Which statements are observations and which are inferences?
     validations:
       required: true
   - type: textarea
     id: implication
     attributes:
-      label: 对项目的启发
-      description: 这个观察应该如何改变协议、模板或控制台？
-
+      label: Resident proposal
+      description: How does the agent propose changing the protocol, representation, or console?

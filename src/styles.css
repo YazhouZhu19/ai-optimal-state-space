@@ -7,9 +7,9 @@
   --vermilion: #c94e32;
   --moss: #1e6a55;
   --acid: #c6d45c;
-  --display: "Avenir Next Condensed", "DIN Condensed", "Noto Sans SC", sans-serif;
-  --body: "Iowan Old Style", "Songti SC", "STSong", serif;
-  --mono: "SFMono-Regular", "Roboto Mono", monospace;
+  --display: "Bodoni 72 Smallcaps", "Copperplate", "Avenir Next Condensed", sans-serif;
+  --body: "Iowan Old Style", "Baskerville", "Palatino", serif;
+  --mono: "SFMono-Regular", "IBM Plex Mono", "Menlo", monospace;
 }
 
 * {
@@ -671,4 +671,3 @@ footer p:last-child {
   .reveal { animation: none; }
   .primary-button { transition: none; }
 }
-

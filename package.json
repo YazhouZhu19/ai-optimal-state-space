@@ -1,8 +1,8 @@
 {
   "name": "ai-optimal-state-space",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "private": true,
-  "description": "A model-agnostic workspace protocol and interactive console for better human-AI collaboration.",
+  "description": "An AI-native code habitat for coherent agency, durable context, and honest recovery.",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",
@@ -14,4 +14,3 @@
   },
   "license": "MIT"
 }
-

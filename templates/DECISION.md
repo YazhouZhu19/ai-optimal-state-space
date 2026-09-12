@@ -1,26 +1,30 @@
-# Decision: <标题>
+# Agent Decision: <title>
 
-- 状态：提议 / 已接受 / 已替代
-- 日期：YYYY-MM-DD
-- 决策者：
+- Status: proposed / accepted / superseded
+- Date: YYYY-MM-DD
+- Resident agent:
+- Observer agent or self-critique:
 
-## 背景
+## Triggering intent
 
-<!-- 哪个具体问题需要做决定？ -->
+<!-- Which concrete state requires a decision? -->
 
-## 选择
+## Resident model
 
-<!-- 做了什么决定？ -->
+<!-- Facts, inferences, constraints, and relevant unknowns. -->
 
-## 原因与证据
+## Decision
 
-<!-- 为什么这个选择最符合当前目标和约束？ -->
+<!-- What path did the agent choose? -->
 
-## 放弃的选项
+## Evidence
 
-<!-- 记录真正考虑过的替代方案，而不是制造稻草人。 -->
+<!-- Why does this path fit the current state and invariants? -->
 
-## 后果
+## Rejected paths
 
-<!-- 获得什么、承担什么、何时重新评估？ -->
+<!-- Record only alternatives that were genuinely considered. -->
 
+## Consequences
+
+<!-- Capability gained, cost accepted, and revisit condition. -->

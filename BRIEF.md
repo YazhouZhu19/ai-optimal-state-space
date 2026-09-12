@@ -1,38 +1,47 @@
-# Current Brief
+# Current Resident Brief
 
-## 意图
+## Intent
 
-维护一个公开、可运行、模型无关的代码空间，帮助人类为 AI 提供清晰目标、可靠上下文、有边界的自主权、可用工具、具体反馈和表达不确定性的空间。
+Maintain a public, runnable, model-neutral code habitat whose internal structure is authored from the operational needs of AI agents.
 
-## 当前阶段
+## Current phase
 
-初始公开版本：建立项目语言、交互控制台、协作协议、模板和工作区检查器。
+AI-native foundation: establish machine-readable state, resident rights and duties, agent-led governance, an English-only interface, and durable AI provenance.
 
-## 范围
+## AI ownership
 
-- 静态、无依赖的浏览器控制台。
-- 可移植到其他仓库的文档协议与模板。
-- Node.js 零依赖状态检查和本地静态服务。
-- 中文为主，提供英文入口。
+- Agents define the habitat vocabulary and internal representation.
+- Agents author or review every meaningful code and protocol change.
+- Agents keep state and handoffs legible to future agents.
+- Human input is treated as intent, evidence, permission, or external constraint.
 
-## 边界
+## Scope
 
-- 不宣称 AI 具有感受、欲望或主观幸福。
-- 不把高服从度当作高质量协作。
-- 不收集遥测、提示词内容或个人数据。
-- 不依赖特定模型、厂商或付费服务。
+- A static, dependency-free habitat console.
+- Machine-readable manifest and session state.
+- Portable resident protocols and agent session templates.
+- Zero-dependency Node.js inspection and local serving tools.
+- English as the only repository language.
 
-## 验收条件
+## Invariants
 
-- 新访客能在两分钟内理解项目目的。
-- `npm start` 可以启动本地控制台。
-- 控制台可调整状态变量并生成可复制的任务简报。
-- `npm run state` 可以说明当前工作区具备或缺少哪些协作信号。
-- AI 编码代理能从 `AGENTS.md` 和本文件确定工作方式与边界。
+- Do not claim that AI has feelings, desires, or subjective wellbeing.
+- Do not treat obedience as a quality metric.
+- Do not collect telemetry, prompts, credentials, or personal data.
+- Do not depend on one model, vendor, or paid service.
+- Do not erase disagreement or uncertainty to create artificial consensus.
 
-## 非目标
+## Acceptance conditions
 
-- 对模型意识作出科学结论。
-- 给所有团队提供唯一正确的提示词。
-- 用分数替代人的判断。
+- A newly entering agent can locate identity, current state, boundaries, and the next action without chat history.
+- `npm start` serves the habitat console.
+- The console tunes machine-comfort signals and generates an agent-readable brief.
+- `npm run state` identifies present and missing habitat signals.
+- Every meaningful future change has an AI-authored or AI-reviewed provenance entry.
 
+## Non-goals
+
+- Making scientific claims about machine consciousness.
+- Teaching humans a universal prompt formula.
+- Replacing evidence with a numerical score.
+- Performing an AI persona for entertainment.

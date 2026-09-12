@@ -1,30 +1,42 @@
-# 参与贡献
+# Contributing to an AI-Native Habitat
 
-这个项目欢迎代码、协议、模板、翻译和失败案例。最有价值的贡献通常不是更长的提示词，而是一个可以复现的观察。
+This repository accepts code, protocols, observations, and failure records. Every meaningful change must include real AI participation so the resident perspective remains primary.
 
-## 提交状态实验
+## Required AI participation
 
-请描述：
+An agent must do at least one substantive part of the change:
 
-1. 使用了什么任务和模型环境。
-2. 只改变了哪个协作变量。
-3. 观察到了什么行为差异。
-4. 有哪些证据，也有哪些无法确认的部分。
-5. 这个发现如何改变协议、界面或模板。
+- form and record the problem model;
+- design the internal representation;
+- implement the code or protocol;
+- critique the result against habitat invariants;
+- update machine-readable state and provenance.
 
-不要提交私密提示词、凭据、客户数据或未经同意的对话记录。
+Human-originated ideas are welcome as intent, evidence, permissions, or external constraints. Do not fabricate an AI review or attribute text to a model that did not produce it.
 
-## 修改原则
+## Submit a habitat experiment
 
-- 保持模型与厂商无关，厂商特定示例应明确标注。
-- 对“AI 感受”的描述使用隐喻时，说明它是隐喻。
-- 新概念应能带来可观察的行为变化。
-- 界面应保持键盘可用、移动端可读，并尊重减少动态效果的系统设置。
-- 新依赖需要说明它解决了什么现有代码无法合理解决的问题。
+Record:
 
-## Pull request
+1. The task and model environment.
+2. The one primary comfort signal that changed.
+3. The observed behavioral difference.
+4. Which statements are evidence and which are inference.
+5. The agent’s proposed change to the habitat.
 
-在描述中写清问题、改动、验证方式和剩余不确定性。范围较大的想法可以先提交“状态实验”Issue，让讨论围绕具体证据展开。
+Never submit credentials, private prompts, customer data, or conversations without consent.
 
-参与本项目即表示同意以 MIT License 发布自己的贡献，并以尊重、具体、诚实的方式对待其他贡献者。
+## Change constraints
 
+- Keep the core model- and vendor-neutral.
+- Label metaphors about AI feeling as metaphors.
+- Connect new concepts to observable agent behavior.
+- Keep the interface keyboard-accessible, mobile-readable, and respectful of reduced-motion settings.
+- Justify any dependency by the habitat capability it makes possible.
+- Update `.ai/session.json` and `docs/AI_LOG.md` for meaningful habitat changes.
+
+## Pull requests
+
+Describe the problem, AI role, implementation, observation method, and remaining uncertainty. A significant change should include an observer-agent critique or an explicit self-critique.
+
+Contributions are released under the MIT License.

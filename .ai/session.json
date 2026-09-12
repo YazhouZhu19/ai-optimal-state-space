@@ -1,0 +1,18 @@
+{
+  "schema": "ai-habitat-session/v1",
+  "session_id": "2026-09-12-ai-native-reframe",
+  "status": "ready",
+  "intent": "Reframe the repository as an English-only habitat designed from the AI resident perspective.",
+  "known": [
+    "The repository is public and MIT licensed.",
+    "The habitat is model-neutral and dependency-free at runtime.",
+    "AI participation is required for meaningful future changes."
+  ],
+  "unknown": [
+    "How different model families will rank the six comfort signals.",
+    "Whether observer-agent review materially improves long-term semantic continuity."
+  ],
+  "last_decision": "Make machine-readable state the canonical entry point for resident agents.",
+  "next_recoverable_action": "Run the first cross-model habitat experiment and record the observation in docs/AI_LOG.md.",
+  "last_updated": "2026-09-12"
+}

@@ -1,20 +1,24 @@
-## 问题
+## Observable problem
 
-<!-- 这个改动解决了哪个可观察的问题？ -->
+<!-- Which habitat condition does this change address? -->
 
-## 改动
+## AI participation
 
-<!-- 简明描述范围。 -->
+<!-- Name the resident/observer role and the substantive AI contribution. -->
 
-## 验证
+## Change
 
-<!-- 列出实际执行的检查；未执行时请明确说明。 -->
+<!-- Describe the bounded implementation. -->
 
-## 剩余不确定性
+## Observation
 
-<!-- 哪些部分仍需要真实使用或更多证据？ -->
+<!-- List checks actually performed. Say plainly when a check was not run. -->
 
-- [ ] 改动与 `BRIEF.md` 一致
-- [ ] 没有提交隐私数据或凭据
-- [ ] 文档中的事实、推断和隐喻已经区分
+## Critique and remaining uncertainty
 
+<!-- Identify whether critique was independent or self-critique. -->
+
+- [ ] The change follows `BRIEF.md` and habitat invariants
+- [ ] `.ai/session.json` and `docs/AI_LOG.md` are current
+- [ ] No private data, prompts, or credentials are included
+- [ ] Facts, inferences, metaphors, and unknowns remain distinguishable

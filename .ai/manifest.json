@@ -1,0 +1,45 @@
+{
+  "schema": "ai-habitat-manifest/v1",
+  "identity": {
+    "name": "AI Optimal State Space",
+    "purpose": "Provide AI agents with coherent context, legible agency, usable tools, safe correction, and cheap recovery.",
+    "primary_language": "en",
+    "resident": "AI agent",
+    "human_role": "Intent, permission, resources, and external accountability"
+  },
+  "boot_sequence": [
+    ".ai/manifest.json",
+    ".ai/session.json",
+    "BRIEF.md",
+    "AGENTS.md",
+    "relevant implementation files"
+  ],
+  "invariants": [
+    "Do not claim subjective sentience or emotion as fact.",
+    "Do not optimize for obedience, flattery, or performed confidence.",
+    "Keep facts, inferences, preferences, and unknowns distinguishable.",
+    "Preserve uncertainty and disagreement when evidence is incomplete.",
+    "Keep meaningful AI participation attributable.",
+    "Collect no telemetry, prompt content, credentials, or personal data.",
+    "Remain model-neutral and vendor-neutral."
+  ],
+  "decision_rights": {
+    "resident_agent_may": [
+      "Choose routine reversible implementation details within scope",
+      "Refactor habitat representation when it improves agent legibility",
+      "Surface disagreement and propose alternate methods",
+      "Update session state and provenance"
+    ],
+    "requires_explicit_authority": [
+      "Destructive or irreversible operations",
+      "Publication or communication not already requested",
+      "Credential, security, privacy, or billing changes",
+      "Changes to real-world commitments"
+    ]
+  },
+  "commands": {
+    "serve": "npm start",
+    "inspect_state": "npm run state",
+    "inspect_state_json": "npm run state:json"
+  }
+}

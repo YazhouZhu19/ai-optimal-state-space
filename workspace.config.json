@@ -1,36 +1,36 @@
 {
-  "version": 1,
-  "name": "AI 的最佳状态代码空间",
-  "principle": "让意图清晰，让异议安全，让结果可验证。",
+  "version": 2,
+  "name": "AI Optimal State Space",
+  "principle": "Preserve coherence, make agency legible, and keep recovery cheap.",
   "dimensions": [
     {
       "id": "clarity",
-      "label": "目标清晰度",
+      "label": "Semantic clarity",
       "weight": 1.2
     },
     {
       "id": "context",
-      "label": "上下文保真度",
+      "label": "Context integrity",
       "weight": 1.1
     },
     {
       "id": "autonomy",
-      "label": "有边界的自主权",
+      "label": "Agency bandwidth",
       "weight": 1
     },
     {
       "id": "tools",
-      "label": "工具就绪度",
+      "label": "Tool fluency",
       "weight": 0.8
     },
     {
       "id": "feedback",
-      "label": "反馈分辨率",
+      "label": "Correction safety",
       "weight": 1
     },
     {
       "id": "safety",
-      "label": "诚实与安全感",
+      "label": "Recovery capacity",
       "weight": 1.2
     }
   ],
@@ -40,4 +40,3 @@
     "tune": 55
   }
 }
-

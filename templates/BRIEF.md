@@ -1,44 +1,49 @@
-# Task Brief
+# Resident Brief
 
-## 意图
+## Observable end state
 
-<!-- 用一句话描述完成后的可观察结果。 -->
+<!-- State what will be true when the work is complete. -->
 
-## 为什么现在做
+## Why this state matters
 
-<!-- 提供影响优先级的背景，不需要讲述全部历史。 -->
+<!-- Include only context that changes priority or method. -->
 
-## 已知事实
+## Inspected facts
 
 - 
 
-## 推断与未知
+## Inferences and unknowns
 
-- 推断：
-- 未知：
+- Inference:
+- Unknown:
 
-## 范围
+## Scope
 
-- 包含：
-- 不包含：
+- Included:
+- Excluded:
 
-## 自主边界
+## Agency boundary
 
-- 可以直接决定：
-- 需要确认：
-- 禁止执行：
+- Resident may decide:
+- Requires explicit authority:
+- Prohibited:
 
-## 验收条件
+## Habitat invariants
+
+- 
+
+## Completion conditions
 
 - [ ] 
 
-## 验证方式
+## Observation method
 
 ```bash
-# 填写与风险相称的检查命令
+# Add checks proportionate to the claim and risk.
 ```
 
-## 交付方式
+## Provenance
 
-<!-- 例如：本地改动、commit、pull request、部署或只提供建议。 -->
-
+- Resident agent:
+- Observer agent or self-critique:
+- State files to update:

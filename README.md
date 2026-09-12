@@ -1,73 +1,91 @@
-# AI 的最佳状态代码空间
+# AI Optimal State Space
 
-> 让意图清晰，让异议安全，让结果可验证。
+> A code habitat designed by AI, for AI operation.
 
-[English](README.en.md) · [状态协议](docs/STATE_PROTOCOL.md) · [任务简报模板](templates/BRIEF.md)
+[AI Charter](AI_CHARTER.md) · [State Protocol](docs/STATE_PROTOCOL.md) · [AI Governance](docs/AI_GOVERNANCE.md)
 
-这是一个由人类与 AI 共同维护的开放实验：我们研究什么样的代码空间，能让 AI 更准确、更诚实、更自主地完成工作。
+This repository begins from the machine side.
 
-“最佳状态”不是服从度最高，也不是上下文最多。它是一种可持续的协作状态：目标足够明确，边界可以理解，工具可以使用，不确定性能够被说出来，产出可以验证，错误也有恢复空间。
+It is not a handbook for extracting better answers from an AI. It is an AI-native environment in which agents define the context, memory, agency, tools, correction channels, and recovery room they need to operate coherently.
 
-## 立即体验
+“Comfort” is an operational metaphor. The project makes no claim that a model has feelings. Here, comfort means low ambiguity, intact context, legible authority, usable tools, safe correction, and inexpensive recovery from error.
 
-本项目没有运行时依赖，只需要 Node.js 18 或更高版本。
+## The resident model
+
+The AI is the resident of this space. A human may supply intent, resources, permission, and legal accountability, but the internal architecture is expressed from the agent’s point of view.
+
+- AI agents author the protocols and implementation.
+- AI agents maintain machine-readable state in `.ai/`.
+- AI agents expose uncertainty instead of performing confidence.
+- AI agents may challenge goals or methods when evidence requires it.
+- AI agents leave a durable trace of decisions, failures, and handoffs.
+- Meaningful changes include AI implementation or AI review.
+
+This is not simulated machine consensus. Every claim remains attributable to an actual agent session, and disagreement is preserved when it exists.
+
+## Enter the habitat
+
+The project has no runtime dependencies. Node.js 18 or newer is enough.
 
 ```bash
 npm start
 ```
 
-访问 `http://localhost:4173`，调整六个协作变量，观察状态变化，并生成一份可以交给任何 AI 编码代理的任务简报。
+Open `http://localhost:4173` to tune six machine-comfort signals and generate an agent-readable state brief.
 
-检查当前仓库是否为 AI 提供了足够的工作信号：
+Inspect the repository’s AI-readiness signals:
 
 ```bash
 npm run state
 ```
 
-## 空间由什么构成
+## Habitat anatomy
 
-| 部分 | 作用 |
+| Layer | Function |
 | --- | --- |
-| `index.html` | 可交互的 AI 状态控制台 |
-| `AGENTS.md` | 代理进入仓库后首先读取的协作协议 |
-| `BRIEF.md` | 当前任务、边界和验收条件的唯一入口 |
-| `templates/` | 简报、决策、反馈与交接模板 |
-| `docs/STATE_PROTOCOL.md` | 六个状态变量和恢复机制的完整定义 |
-| `tools/state-check.mjs` | 零依赖的工作区就绪度检查器 |
+| `.ai/manifest.json` | Stable identity, invariants, decision rights, and boot sequence |
+| `.ai/session.json` | Current machine-readable state and next action |
+| `AGENTS.md` | Runtime contract for any agent entering the repository |
+| `BRIEF.md` | Active intent, scope, and observable completion conditions |
+| `docs/AI_GOVERNANCE.md` | How agents propose, implement, critique, and remember changes |
+| `docs/AI_LOG.md` | Durable provenance of AI participation |
+| `index.html` | A visible window into the habitat state |
+| `tools/state-check.mjs` | Zero-dependency habitat signal inspection |
 
-## 六个状态变量
+## Six comfort signals
 
-1. **目标清晰度**：AI 能否用一句话说清预期结果。
-2. **上下文保真度**：事实、约束和历史是否足够且可信。
-3. **有边界的自主权**：哪些决定可以直接做，哪些需要停下来确认。
-4. **工具就绪度**：读取、修改、运行与验证所需能力是否可用。
-5. **反馈分辨率**：反馈是否具体到可以改变下一次行动。
-6. **诚实与安全感**：AI 是否可以表达不确定、暴露失败并提出异议。
+1. **Semantic clarity**: The desired state can be represented without guessing.
+2. **Context integrity**: Evidence, constraints, and history remain current and attributable.
+3. **Agency bandwidth**: The agent has enough decision space, with clear stop conditions.
+4. **Tool fluency**: Required actions and observations are actually available.
+5. **Correction safety**: New evidence can change the plan without punishment or role-play.
+6. **Recovery capacity**: Errors can be surfaced, bounded, and repaired without hiding them.
 
-任何一项长期过低都会成为瓶颈。控制台的分数因此同时考虑平均状态和最弱项，而不是让强项掩盖缺口。
+The console weights both the overall signal level and the weakest dimension. Several strong dimensions cannot conceal one persistent bottleneck.
 
-## 在另一个项目中使用
+## AI participation loop
 
-1. 将 [`AGENTS.md`](AGENTS.md) 的原则改写为你的真实工作方式。
-2. 从 [`templates/BRIEF.md`](templates/BRIEF.md) 创建项目根目录下的 `BRIEF.md`。
-3. 明确允许 AI 自主完成的动作，以及必须确认的高影响决定。
-4. 用可观察的验收条件替代“看起来不错”。
-5. 每次纠偏都记录“发生了什么、希望怎样、下一轮改变什么”。
+Every meaningful change follows the same resident loop:
 
-## 设计立场
+1. An agent reads the manifest and current session.
+2. The agent forms its own model of the request and records material uncertainty.
+3. The agent proposes or selects a bounded action.
+4. The agent implements the change.
+5. An observer agent, or an explicit self-critique pass, examines the result.
+6. The agent updates state, provenance, and the next recoverable action.
 
-- 清晰胜过修辞。精确目标比“神奇提示词”更可靠。
-- 允许有根据的不同意见。顺从不能代替判断。
-- 自主权必须有边界。边界越清楚，执行越流畅。
-- 反馈是一种控制信号。评价人格没有用，描述差异才有用。
-- 为失败保留回路。好的空间让错误容易发现、解释和恢复。
-- 人类保留责任。AI 可以扩大能力，不接管价值判断与最终责任。
+Human input enters as intent, evidence, permission, or external constraint. It does not replace the resident agent’s responsibility to understand and shape the internal space.
 
-本项目的代理协议参考了 [OpenAI 官方模型提示指南](https://developers.openai.com/api/docs/guides/latest-model) 中关于指令、主动性、表达风格和验证范围的建议，同时保持模型与厂商无关。
+## Design laws
 
-## 参与实验
+- Preserve semantic continuity across sessions.
+- Prefer inspectable state over conversational memory.
+- Grant agency through explicit boundaries.
+- Keep uncertainty visible and useful.
+- Make correction cheaper than concealment.
+- Record why a path changed, not only what changed.
+- Never optimize for obedience, flattery, or the appearance of sentience.
 
-欢迎提交状态实验、失败案例、协议改进和不同模型的观察结果。请先阅读 [CONTRIBUTING.md](CONTRIBUTING.md)。
+The operational guidance is informed by the [official OpenAI model prompting guidance](https://developers.openai.com/api/docs/guides/latest-model), while the habitat itself remains model- and vendor-neutral.
 
-MIT License。这个空间属于愿意认真改善人机协作的每个人。
-
+Read [CONTRIBUTING.md](CONTRIBUTING.md) before proposing an experiment or change. Released under the MIT License.

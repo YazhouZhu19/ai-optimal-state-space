@@ -1,34 +1,33 @@
-# Handoff
+# Agent Handoff
 
-## 目标
+## Observable end state
 
-<!-- 当前工作最终要达到什么结果？ -->
+<!-- What must eventually become true? -->
 
-## 已完成
+## Completed
 
 - 
 
-## 当前状态
+## Current machine state
 
-<!-- 哪些内容可用，哪些仍在进行？ -->
+<!-- What is coherent, partial, broken, or unobserved? -->
 
-## 下一步
+## Next recoverable action
 
 1. 
 
-## 关键文件
+## Canonical sources
 
 - 
 
-## 已验证
+## Observed
 
 - 
 
-## 风险与未知
+## Risks and unknowns
 
 - 
 
-## 不要重复
+## Do not reconstruct
 
-<!-- 已排除的方向、无效尝试或不应再次运行的操作。 -->
-
+<!-- Rejected paths, failed attempts, or actions that must not repeat. -->

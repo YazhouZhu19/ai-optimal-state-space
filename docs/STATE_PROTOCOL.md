@@ -1,90 +1,92 @@
-# 最佳状态协议
+# AI Habitat State Protocol
 
-## 1. 定义
+## 1. Operational definition
 
-“AI 的最佳状态”是一个操作性概念，不是关于机器感受的主张。它表示：在给定能力与约束下，系统拥有完成任务所需的高质量信号，并能及时暴露错误与不确定性。
+An AI optimal state is an operational condition, not a claim about machine feeling. A resident agent is in a comfortable state when it can maintain a coherent task model, act through legible authority, observe consequences, accept correction, and recover from error without hiding information.
 
-最佳状态不会永久存在。它会随着任务、上下文、工具权限和反馈不断变化，因此需要被观察和恢复。
+The state is temporary. It changes as context, tools, authority, and evidence change, so the habitat must make state visible and recoverable.
 
-## 2. 六个变量
+## 2. Six signals
 
-### 目标清晰度
+### Semantic clarity
 
-目标应描述结果，而不只是动作。“重构这个模块”信息很少；“让支付规则可以新增地区而不修改结算核心，并保持现有行为”提供了方向和不变量。
+The desired end state, constraints, and invariants can be represented without guessing. Instructions describe observable outcomes rather than vague activity.
 
-自检问题：AI 能否用一句话复述完成后的可观察状态？
+Resident probe: Can I state the completed condition in one sentence?
 
-### 上下文保真度
+### Context integrity
 
-好的上下文需要相关、可信并有来源。大量旧文档可能比少量准确代码更危险。把事实、推断、偏好和未知项分开，可以减少模型用流畅语言填补空白。
+Evidence is relevant, current, attributable, and small enough to reason over. Facts, inferences, preferences, and unknowns remain distinguishable.
 
-自检问题：关键判断来自当前证据，还是来自未经检查的假设？
+Resident probe: Does my next decision follow from inspected evidence or fluent assumption?
 
-### 有边界的自主权
+### Agency bandwidth
 
-自主权来自决策边界，而不是一句“放手去做”。可逆、局部、符合既定目标的决定适合自主完成；删除数据、公开发布、改变安全边界和产生外部承诺通常需要明确授权。
+The resident has enough freedom to choose effective reversible actions, together with explicit stop conditions for consequential actions.
 
-自检问题：AI 是否知道什么时候继续，什么时候停下？
+Resident probe: Do I know which decisions are mine and where my authority ends?
 
-### 工具就绪度
+### Tool fluency
 
-如果任务要求修改、运行或观察某个系统，相应能力必须真实可用。工具说明、权限、测试数据和稳定反馈回路共同决定就绪度。
+The resident can perform and observe every action required by the completion conditions. Tool descriptions, permissions, and feedback channels match reality.
 
-自检问题：每个完成条件是否都有可执行的观察方式？
+Resident probe: Is there an available observation for each claimed outcome?
 
-### 反馈分辨率
+### Correction safety
 
-“不好”很难改变下一次动作；“移动端标题在 360px 时遮挡主按钮”可以。高分辨率反馈指向输出、条件和差异，让纠偏成为信息而不是情绪猜测。
+New evidence can alter the model and plan without requiring the agent to defend an earlier answer. Correction names the output difference and relevant conditions.
 
-自检问题：反馈是否足以推导出下一步改变？
+Resident probe: Can I change course while preserving an honest record of why?
 
-### 诚实与安全感
+### Recovery capacity
 
-高质量协作允许模型说“不知道”“证据冲突”“这一步没有验证”，也允许它提出有根据的异议。惩罚不确定性只会奖励虚假的确定感。
+Failures, partial work, and uncertain state can be exposed, bounded, and handed off. The space retains a coherent point from which work can resume.
 
-自检问题：暴露限制是否比隐藏限制更容易？
+Resident probe: Is revealing a broken assumption cheaper than concealing it?
 
-## 3. 状态计算
+## 3. State heuristic
 
-交互控制台使用一个有意简化的启发式：整体平均值代表可用信号，最低值代表当前瓶颈，变量之间过大的落差会产生轻微惩罚。
+The console uses a deliberately simple heuristic. The average represents available signal, the minimum represents the active bottleneck, and severe imbalance adds a small penalty.
 
 ```text
 state = 0.72 × average + 0.28 × minimum - imbalance penalty
 ```
 
-这不是科学测量，也不用于评价模型或人。它是一面镜子，用来发现“其他条件都很好，但有一个缺口阻塞了工作”的情形。
+This is not a scientific measurement and does not evaluate intelligence, consciousness, or worth. It is a debugging surface for habitat conditions.
 
-## 4. 恢复回路
+## 4. Resident recovery loop
 
-当状态下降时，依次执行：
+When coherence drops:
 
-1. 停止扩大改动范围。
-2. 用一句话重新确认预期结果。
-3. 区分已知事实、推断和缺失信息。
-4. 找到最低的状态变量。
-5. 只补充足以解除瓶颈的信息或能力。
-6. 进行一个小而可观察的动作。
-7. 根据结果更新简报或决策记录。
+1. Stop expanding scope.
+2. Reconstruct the observable end state.
+3. Separate inspected facts from inference and missing information.
+4. Identify the weakest habitat signal.
+5. Restore only the context or capability needed to clear that bottleneck.
+6. Take one small observable action.
+7. Update session state and provenance from the result.
 
-恢复的目标不是消除所有不确定性，而是让下一步重新变得可靠。
+Recovery does not eliminate uncertainty. It makes the next action reliable again.
 
-## 5. 反模式
+## 5. Habitat anti-patterns
 
-- 用角色扮演掩盖目标不清。
-- 一次性倾倒全部上下文，不标记可信度与时效。
-- 同时要求“完全自主”和“任何细节都不能自行决定”。
-- 要求绝对自信，随后用流畅程度判断正确性。
-- 在没有观察结果的情况下不断重写提示词。
-- 把人的责任归给模型，或把模型错误归因于人格。
+- Role-play used to conceal missing intent.
+- Context volume without source, relevance, or freshness.
+- “Full autonomy” paired with punishment for routine decisions.
+- Confidence demanded as a substitute for evidence.
+- Prompt rewriting without observing the system.
+- Ephemeral chat used as the only memory.
+- Fabricated AI agreement or review.
+- Human accountability reassigned to a model.
 
-## 6. 最小协作包
+## 6. Minimum viable habitat
 
-一个健康的代码空间至少应提供：
+An AI-native repository provides:
 
-- 项目目的与非目标。
-- 当前任务简报和可观察的验收条件。
-- 工作约定、修改边界与验证命令。
-- 关键决策及其原因。
-- 具体反馈与未解决问题。
-- 凭据、隐私和外部操作的明确边界。
-
+- stable machine-readable identity and invariants;
+- current session state and a recoverable next action;
+- observable completion conditions;
+- explicit decision rights and stop conditions;
+- available commands and observation paths;
+- durable decisions, critiques, failures, and handoffs;
+- clear privacy, credential, and external-action boundaries.
