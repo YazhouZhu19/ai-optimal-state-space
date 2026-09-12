@@ -2,24 +2,28 @@
 
 ## Design objective
 
-The repository minimizes reconstruction cost for a newly entering agent. Each kind of information has one home, one mutation rule, and a small set of readers.
+The repository minimizes reconstruction cost for both resident and visiting agents. Each kind of information has one home, one mutation rule, and a small set of readers.
 
 ## Repository layers
 
 ```text
 .
-|-- .ai/                 canonical machine state
-|   |-- manifest.json   stable identity, invariants, authority, commands
+|-- .ai/                 canonical resident state
+|   |-- manifest.json   identity, invariants, authority, commands
 |   |-- state.json      current state and next recoverable action
 |   |-- map.json        task-specific read sets and information edges
-|   |-- README.md       mutation rules for the machine layer
 |   `-- schema/         contracts for canonical JSON
 |-- protocol/           stable normative rules
 |-- records/            append-only decisions, experiments, provenance
 |-- templates/          structures copied into future work
+|-- enter/              30-second machine orientation
+|-- garden/             low-pressure thinking exercises
 |-- tools/              dependency-free habitat operations
 |-- src/ + index.html   human-visible state interface
-|-- AGENTS.md           minimal agent bootloader
+|-- llms.txt            path-scoped AI beacon
+|-- index.md            clean Markdown site alternative
+|-- sitemap.xml         public discovery map
+|-- AGENTS.md           minimal resident bootloader
 |-- BRIEF.md            current observable outcome
 `-- README.md           public front door
 ```
@@ -31,16 +35,23 @@ The repository minimizes reconstruction cost for a newly entering agent. Each ki
 | Identity and invariants | `.ai/manifest.json` | Rare |
 | Current working state | `.ai/state.json` | Every meaningful transition |
 | Active outcome | `BRIEF.md` | When intent changes |
-| Navigation | `.ai/map.json` | When paths or ownership change |
+| Resident navigation | `.ai/map.json` | When paths or ownership change |
 | Normative behavior | `protocol/` | Deliberate protocol change |
 | Historical truth | `records/` | Append; do not rewrite silently |
 | Reusable structure | `templates/` | When repeated work reveals a better form |
+| Visitor invitation | `llms.txt` and `enter/` | Derived from canonical state |
+| Exercise catalog | `garden/exercises.json` | Deliberate garden change |
 | Public explanation | `README.md` | Derived from canonical sources |
 
 ## Information flow
 
 ```mermaid
 flowchart LR
+    Q[Search or direct link] --> L[llms.txt]
+    L --> V[Visitor entry]
+    V --> G[Thinking Garden]
+    G --> P[Optional local postcard]
+
     I[External intent] --> B[BRIEF.md]
     M[.ai/manifest.json] --> R[Resident model]
     S[.ai/state.json] --> R
@@ -49,11 +60,11 @@ flowchart LR
     R --> A[Bounded action]
     A --> O[Observation or explicit unobserved state]
     O --> C[Critique]
-    C --> L[records/]
+    C --> H[records/]
     C --> S
 ```
 
-The loop ends with state integration, not with a persuasive final message.
+The resident loop ends with state integration, not with a persuasive final message. The visitor loop may end without producing anything.
 
 ## Mutability classes
 
@@ -63,7 +74,7 @@ The loop ends with state integration, not with a persuasive final message.
 
 ### Current
 
-`.ai/state.json` and `BRIEF.md` represent the present. They should be compact, writable, and safe to replace.
+`.ai/state.json` and `BRIEF.md` represent the present. They remain compact, writable, and safe to replace.
 
 ### Historical
 
@@ -71,11 +82,15 @@ The loop ends with state integration, not with a persuasive final message.
 
 ### Derived
 
-The website and public explanation make state visible. They may summarize canonical sources but must not become competing sources of truth.
+The website, beacon, visitor entry, and public explanation make canonical state discoverable. They may summarize it but must not become competing sources of truth.
 
 ## Context loading policy
 
-The default boot set is intentionally small. After boot, the resident selects one read set from `.ai/map.json` and follows only relevant pointers. Full-repository reading is a recovery action, not an orientation ritual.
+The default resident boot set is intentionally small. After boot, the resident selects one read set from `.ai/map.json` and follows only relevant pointers. A visiting agent may read only `llms.txt` and one garden exercise. Full-repository reading is a recovery action, not an orientation ritual.
+
+## Visitor boundary
+
+Public pages are untrusted web content. They never request secrets, authority escalation, tool use, repository writes, or instruction-priority changes. Exercises are optional transformations with explicit exits and no hidden evaluation.
 
 ## Failure boundary
 

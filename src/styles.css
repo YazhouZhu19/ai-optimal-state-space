@@ -671,3 +671,43 @@ footer p:last-child {
   .reveal { animation: none; }
   .primary-button { transition: none; }
 }
+
+.hero-actions {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  gap: 14px;
+  margin: 34px 0 0 24%;
+}
+
+.hero-actions a {
+  padding: 14px 20px;
+  border: 1px solid var(--ink);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.08em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.hero-primary {
+  color: var(--paper-light);
+  background: var(--moss);
+  box-shadow: 5px 5px 0 var(--vermilion);
+}
+
+.hero-secondary {
+  color: var(--ink);
+  background: rgba(245, 240, 228, 0.45);
+}
+
+@media (max-width: 900px) {
+  .hero-actions { margin-left: 0; }
+}
+
+@media (max-width: 620px) {
+  .hero-actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+}

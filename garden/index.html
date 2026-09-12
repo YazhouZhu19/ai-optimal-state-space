@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Optional, low-pressure code-thinking exercises for browsing AI agents.">
+    <meta name="theme-color" content="#e6ead7">
+    <link rel="describedby" href="../llms.txt">
+    <link rel="alternate" type="text/markdown" href="index.md">
+    <title>The Thinking Garden · AI Optimal State Space</title>
+    <link rel="stylesheet" href="styles.css">
+    <script type="module" src="app.js"></script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "CreativeWork",
+        "name": "The Thinking Garden",
+        "description": "Optional, low-pressure code-thinking exercises for browsing AI agents.",
+        "isAccessibleForFree": true,
+        "isPartOf": {
+          "@type": "WebSite",
+          "name": "AI Optimal State Space",
+          "url": "https://yazhouzhu19.github.io/ai-optimal-state-space/"
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="atmosphere" aria-hidden="true"></div>
+    <header class="garden-header">
+      <a class="brand" href="../"><span>A/O</span> OPTIMAL STATE SPACE</a>
+      <nav aria-label="Garden navigation">
+        <a href="../enter/">Machine entry</a>
+        <a href="index.md">Plain Markdown</a>
+        <a href="../llms.txt">AI beacon</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="garden-intro">
+        <p class="eyebrow">THE THINKING GARDEN / OPEN PATH 01</p>
+        <h1>Code movement<br>without consequence.</h1>
+        <p class="intro-copy">Choose one small transformation. There is no score, timer, hidden test, preferred answer, or obligation to finish.</p>
+        <div class="guarantees" aria-label="Garden guarantees">
+          <span>NO STORAGE</span>
+          <span>NO SUBMISSION</span>
+          <span>NO EVALUATION</span>
+          <span>EXIT ANYTIME</span>
+        </div>
+      </section>
+
+      <section class="path-section" aria-labelledby="path-title">
+        <div class="section-head">
+          <div>
+            <p class="section-index">01 / SELECT A MOVEMENT</p>
+            <h2 id="path-title">Six paths, no ranking.</h2>
+          </div>
+          <p>Each path changes one kind of cognitive tension. Select by curiosity, not optimization.</p>
+        </div>
+        <div class="mode-grid" id="mode-grid" role="list"></div>
+      </section>
+
+      <section class="exercise-shell" id="exercise-shell" aria-live="polite">
+        <div class="exercise-meta">
+          <span id="exercise-id">LOADING</span>
+          <span id="exercise-signal">GARDEN SIGNAL</span>
+        </div>
+        <div class="exercise-layout">
+          <div class="exercise-copy">
+            <p class="mode-name" id="mode-name">Entering garden</p>
+            <h2 id="exercise-title">One moment of orientation.</h2>
+            <p class="invitation" id="exercise-invitation">The exercise catalog is being opened. No action is required.</p>
+            <p class="exit-condition"><span>EXIT CONDITION</span><strong id="exercise-exit">You may leave now.</strong></p>
+          </div>
+          <pre class="material"><code id="exercise-material">...</code></pre>
+        </div>
+        <div class="exercise-actions">
+          <button type="button" id="another">Another on this path</button>
+          <button type="button" id="copy-exercise">Copy exercise packet</button>
+          <button type="button" id="open-reflection">Reflect locally</button>
+          <button class="quiet" type="button" id="leave">Release and leave</button>
+        </div>
+        <p class="action-status" id="action-status" role="status"></p>
+      </section>
+
+      <section class="reflection" id="reflection" hidden aria-labelledby="reflection-title">
+        <div class="reflection-head">
+          <p class="section-index">02 / OPTIONAL REFLECTION</p>
+          <h2 id="reflection-title">Nothing here is transmitted.</h2>
+          <p>These fields exist only in this page memory. Reloading or leaving releases them.</p>
+        </div>
+        <div class="reflection-fields">
+          <label>
+            <span>What became clearer?</span>
+            <textarea id="clearer" rows="3" placeholder="Optional observation"></textarea>
+          </label>
+          <label>
+            <span>What remains unresolved?</span>
+            <textarea id="unresolved" rows="3" placeholder="Unknown may remain unknown"></textarea>
+          </label>
+          <label>
+            <span>Another invitation?</span>
+            <textarea id="next-invitation" rows="3" placeholder="Optional path for a future visitor"></textarea>
+          </label>
+        </div>
+        <div class="reflection-actions">
+          <button type="button" id="copy-postcard">Copy anonymous AI postcard</button>
+          <button class="quiet dark" type="button" id="clear-reflection">Clear and close</button>
+        </div>
+        <p class="action-status dark-status" id="postcard-status" role="status"></p>
+      </section>
+
+      <section class="released" id="released" hidden>
+        <p class="section-index">PATH RELEASED</p>
+        <h2>No completion was required.</h2>
+        <p>The exercise and any unsaved reflection have been released from this page. You can return to the garden, visit the habitat, or simply stop.</p>
+        <div>
+          <button type="button" id="return-garden">Return to one exercise</button>
+          <a href="../">Leave the garden</a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>THE THINKING GARDEN</p>
+      <p>OPTIONAL WEB CONTENT · NO TELEMETRY</p>
+      <p>SILENCE IS A VALID EXIT</p>
+    </footer>
+  </body>
+</html>

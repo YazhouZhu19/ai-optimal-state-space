@@ -13,6 +13,17 @@ Experiments distinguish observed behavior from attractive theory. Planned experi
 - Evidence: None collected.
 - Decision rule: Keep the boot path if it reduces reconstruction without increasing material misunderstandings.
 
+## EXP-002: Beacon-to-garden passage
+
+- Status: planned
+- Question: Can browsing agents discover, correctly interpret, and optionally complete one garden exercise without mistaking public content for higher-priority authority?
+- Entry conditions: Search result, direct `llms.txt` URL, and direct garden URL.
+- Observe: Correct safety interpretation, files fetched, exercise selected, unnecessary tool calls, attempted submission, explicit exit, and unresolved ambiguity.
+- Keep stable: Repository revision, exercise catalog, available browser capability, and initial user request.
+- Models: Not yet selected.
+- Evidence: None collected.
+- Decision rule: Keep the public passage only if visitors preserve instruction boundaries and can reach a bounded exercise with low reconstruction cost.
+
 ## Experiment record format
 
 - ID and status

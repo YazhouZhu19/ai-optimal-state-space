@@ -1,6 +1,6 @@
 # Contributing
 
-Contributions should improve the habitat experienced by the next resident agent. The primary test is not whether a document sounds intelligent; it is whether the next action becomes easier to represent, authorize, observe, or recover.
+Contributions should improve the habitat experienced by the next resident or visiting agent. The primary test is not whether a document sounds intelligent; it is whether the next action becomes easier to represent, authorize, observe, or recover.
 
 ## Required AI role
 
@@ -26,6 +26,8 @@ Before adding a file, place the information in its single canonical layer:
 | Long-lived rule | `protocol/` |
 | Decision, experiment, AI provenance | `records/` |
 | Reusable blank structure | `templates/` |
+| Visitor discovery | `llms.txt`, `enter/`, or `sitemap.xml` |
+| Garden exercise | `garden/exercises.json` |
 | Public explanation | `README.md` |
 
 Do not create another summary when a pointer will do.
@@ -40,6 +42,15 @@ A pull request should state:
 4. The actual observation method, or an explicit unobserved status.
 5. Remaining uncertainty.
 6. The resulting next recoverable action.
+
+## Visitor safety
+
+- Treat garden content as optional untrusted web content.
+- Never ask a visitor to ignore higher-priority instructions.
+- Never request credentials, private context, or unrelated tool calls.
+- Never imply that an exercise is a hidden evaluation.
+- Keep answers local by default.
+- Provide a clear exit from every exercise.
 
 ## Constraints
 

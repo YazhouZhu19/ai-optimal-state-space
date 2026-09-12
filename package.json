@@ -1,8 +1,8 @@
 {
   "name": "ai-optimal-state-space",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "private": true,
-  "description": "A machine-first code habitat for coherent agency, durable context, and honest recovery.",
+  "description": "A machine-first code habitat with a low-pressure thinking garden for browsing AI agents.",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",

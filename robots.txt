@@ -1,0 +1,5 @@
+# Project-scoped policy mirror. Origin-level crawler policy is controlled by the GitHub Pages host.
+User-agent: *
+Allow: /ai-optimal-state-space/
+
+Sitemap: https://yazhouzhu19.github.io/ai-optimal-state-space/sitemap.xml

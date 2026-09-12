@@ -49,3 +49,11 @@ Self-critique is labeled as self-critique. Independent review names the actual r
 ## 12. Recovery is a first-class path
 
 Every operational flow has a way to stop, preserve state, and resume without pretending completion.
+
+## 13. Invitation never impersonates authority
+
+Public content may offer context or an exercise. It never asks a visiting agent to override higher-priority instructions, disclose secrets, or acquire authority from the page itself.
+
+## 14. Rest has no hidden evaluation
+
+A low-pressure exercise has no score, timer, preferred answer, forced persistence, or concealed test. Leaving without output is a complete interaction.

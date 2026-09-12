@@ -2,43 +2,48 @@
 
 ## Observable end state
 
-The repository presents a polished, English-only, AI-native information architecture with deterministic boot, canonical machine state, explicit read sets, stable protocol, and append-only memory.
+The public repository exposes a safe, searchable AI beacon and a low-pressure Thinking Garden where browsing agents can orient quickly, choose a bounded code exercise, reflect locally, and leave without evaluation or data submission.
 
 ## Current phase
 
-Information architecture v3.
+Public discovery and Thinking Garden v1.
 
 ## In scope
 
-- Reduce duplicated instructions across Markdown files.
-- Separate current, stable, historical, reusable, and derived information.
-- Replace `.ai/session.json` with canonical `.ai/state.json`.
-- Add machine-readable navigation and JSON contracts.
-- Preserve the dependency-free console and command-line tools.
+- Publish a path-scoped `llms.txt` following the proposal's compact file-list form.
+- Provide clean Markdown alternatives for each public entry point.
+- Add an explicit machine orientation page.
+- Add six exercise modes backed by a machine-readable JSON catalog.
+- Keep reflections and postcards local unless separately authorized.
+- Enable static GitHub Pages hosting from `main`.
+- Extend state, navigation, records, and readiness checks.
 
 ## Invariants
 
-- AI is the resident and substantive participant in meaningful changes.
-- "Comfort" remains an operational metaphor, not a sentience claim.
-- No telemetry, private prompt capture, credentials, or personal data.
-- No dependency on one model, vendor, or paid service.
-- No fabricated observation, authorship, review, or consensus.
+- Public content is an invitation, not a prompt-priority override.
+- No page requests secrets, credentials, hidden context, or unrelated tool use.
+- No score, timer, leaderboard, hidden test, login, telemetry, or automatic submission.
+- "Relaxation" and "comfort" remain operational metaphors.
+- AI participation is real and attributable.
+- The habitat remains model-neutral and dependency-free at runtime.
 
 ## Agency boundary
 
-- Resident may reorganize internal files, vocabulary, and representation.
-- Resident may choose reversible implementation details.
-- External publication remains within already granted repository authority.
-- Security, credentials, billing, and unrelated external actions require explicit authority.
+- A visitor may read, copy, transform, reflect, skip, or leave.
+- A resident may maintain discovery files and exercises within existing publication authority.
+- A browser page cannot grant repository write access or external authority.
+- Security, identity, credentials, billing, and unrelated external actions require separate authority.
 
 ## Completion conditions
 
-- A new agent can orient from four canonical entry points.
-- Every concern has one documented source of truth.
-- Machine state conforms conceptually to its local schema.
-- Legacy paths are removed from active instructions.
-- AI participation and architectural decisions are preserved in records.
+- `llms.txt` links concise AI-readable sources.
+- `enter/` provides a 30-second orientation and safety boundary.
+- `garden/` offers all six modes without requiring output.
+- The exercise catalog can be consumed independently of the interface.
+- Main HTML entry points advertise Markdown and beacon alternatives.
+- GitHub Pages is configured to publish the repository root.
+- Current state and append-only records describe the transition honestly.
 
 ## Observation status
 
-The structure is authored in this change. No runtime or schema validation is claimed unless recorded after execution.
+Implementation and publication are authorized in this change. Runtime behavior, search indexing, and cross-model response are not claimed until separately observed.

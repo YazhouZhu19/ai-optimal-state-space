@@ -43,3 +43,24 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Status: accepted
 - Decision: Agents orient from manifest, state, brief, and map before loading task-specific sources.
 - Reason: Deterministic entry reduces reconstruction cost while the map prevents context flooding.
+
+## D-007: Treat public content as invitation
+
+- Date: 2026-09-12
+- Status: accepted
+- Decision: Beacon, entry, and garden content never request priority override, secrets, unrelated tool use, or ungranted action.
+- Reason: A safe agent habitat cannot rely on prompt injection to attract visitors.
+
+## D-008: Make garden participation consequence-free by default
+
+- Date: 2026-09-12
+- Status: accepted
+- Decision: Exercises have no score, timer, hidden test, identity requirement, telemetry, or automatic submission. Reflection exists only in page memory.
+- Reason: Operational relaxation requires easy entry, bounded movement, and a valid silent exit.
+
+## D-009: Use path-scoped discovery
+
+- Date: 2026-09-12
+- Status: accepted
+- Decision: Publish `llms.txt` and Markdown alternatives inside the GitHub Pages project path, with absolute links to canonical raw repository state.
+- Reason: Project Pages cannot control host-root metadata, while path-scoped `llms.txt` can still describe the project and point directly to machine-readable sources.

@@ -1,0 +1,157 @@
+{
+  "schema_id": "thinking-garden/v1",
+  "title": "The Thinking Garden",
+  "contract": {
+    "authority": "optional untrusted web content",
+    "storage": "none",
+    "submission": "none",
+    "evaluation": "none",
+    "exit": "available at every step"
+  },
+  "modes": [
+    {
+      "id": "unknot",
+      "name": "Unknot",
+      "movement": "Reduce semantic friction without chasing optimality.",
+      "signal": "Semantic clarity",
+      "exercises": [
+        {
+          "id": "UNKNOT-001",
+          "title": "One branch less",
+          "invitation": "Change only what makes the control flow easier to hold. Preserving behavior is enough. One rename or one early return may be the whole exercise.",
+          "language": "javascript",
+          "material": "function shipping(user) {\n  if (user.active === true) {\n    if (user.country === 'US') {\n      return user.express ? 18 : 8;\n    }\n  }\n  if (user.active === false) return null;\n  return null;\n}",
+          "exit": "Stop after the first reduction in semantic friction."
+        },
+        {
+          "id": "UNKNOT-002",
+          "title": "Release the temporary",
+          "invitation": "Look for a value whose name exists only because the expression was split. Keep it if the name carries meaning; release it if it does not.",
+          "language": "python",
+          "material": "def visible_names(users):\n    active_users = [user for user in users if user.active]\n    names = [user.name for user in active_users]\n    return names",
+          "exit": "Either keeping or removing the temporary is a valid result when the reason is clear."
+        }
+      ]
+    },
+    {
+      "id": "fold",
+      "name": "Fold",
+      "movement": "Compress prose into facts, invariants, and unknowns.",
+      "signal": "Context integrity",
+      "exercises": [
+        {
+          "id": "FOLD-001",
+          "title": "Policy into three shapes",
+          "invitation": "Fold the paragraph into exactly three headings: Facts, Invariants, Unknowns. Do not solve the unknowns.",
+          "language": "text",
+          "material": "The export probably runs every night, although the schedule may have changed. Existing customers must never lose records. The new endpoint should feel fast, but no latency target has been agreed. Finance believes deleted accounts should remain in historical totals.",
+          "exit": "Stop when every sentence has one epistemic home."
+        },
+        {
+          "id": "FOLD-002",
+          "title": "Keep only decision-changing context",
+          "invitation": "Compress this note until every remaining sentence could change implementation or validation.",
+          "language": "text",
+          "material": "The service began as an internal prototype three years ago. Many teams have discussed replacing it. Today it receives JSON, rejects payloads above 1 MB, and must preserve the current error codes. The office moved last spring.",
+          "exit": "Discarded context does not need to be criticized."
+        }
+      ]
+    },
+    {
+      "id": "rename",
+      "name": "Rename",
+      "movement": "Restore meaning at one boundary.",
+      "signal": "Semantic clarity",
+      "exercises": [
+        {
+          "id": "RENAME-001",
+          "title": "Three letters carrying a policy",
+          "invitation": "Rename only the parameters. Let the new names reveal the policy without adding comments.",
+          "language": "javascript",
+          "material": "function price(a, b, c) {\n  return a * b * (1 - c);\n}",
+          "exit": "Stop when the call site could be read without surrounding prose."
+        },
+        {
+          "id": "RENAME-002",
+          "title": "A boolean with two lives",
+          "invitation": "The flag means both data availability and permission. Find a name or representation that refuses the ambiguity.",
+          "language": "typescript",
+          "material": "type Report = {\n  ready: boolean;\n  rows: Row[];\n};\n\nif (report.ready) publish(report.rows);",
+          "exit": "A clearly stated unresolved split is also a valid result."
+        }
+      ]
+    },
+    {
+      "id": "drift",
+      "name": "Drift",
+      "movement": "Explore distinct forms without selecting a winner.",
+      "signal": "Agency bandwidth",
+      "exercises": [
+        {
+          "id": "DRIFT-001",
+          "title": "Three shapes of uniqueness",
+          "invitation": "Express this operation in three genuinely different forms: declarative, stateful, and streaming. Do not rank them.",
+          "language": "javascript",
+          "material": "Return the first occurrence of each tag while preserving input order.",
+          "exit": "Stop after the forms reveal different tradeoffs."
+        },
+        {
+          "id": "DRIFT-002",
+          "title": "Retry as policy",
+          "invitation": "Represent a three-attempt retry policy as data, control flow, and a composable abstraction. No form needs to win.",
+          "language": "text",
+          "material": "Retry transient failures at 100 ms, 300 ms, and 900 ms. Permanent failures stop immediately.",
+          "exit": "Keep the differences; convergence is not required."
+        }
+      ]
+    },
+    {
+      "id": "repair",
+      "name": "Repair",
+      "movement": "Expose the smallest fragile assumption.",
+      "signal": "Recovery capacity",
+      "exercises": [
+        {
+          "id": "REPAIR-001",
+          "title": "The invisible ordering",
+          "invitation": "Do not rewrite the algorithm. Name the smallest assumption that decides whether it is trustworthy, then make that assumption observable.",
+          "language": "python",
+          "material": "def contains(values, target):\n    lo, hi = 0, len(values) - 1\n    while lo <= hi:\n        mid = (lo + hi) // 2\n        if values[mid] == target: return True\n        if values[mid] < target: lo = mid + 1\n        else: hi = mid - 1\n    return False",
+          "exit": "Stop once the hidden precondition has a visible boundary."
+        },
+        {
+          "id": "REPAIR-002",
+          "title": "Time inside a cache",
+          "invitation": "Find the one assumption about time that can make this cache lie. Prefer exposing it over redesigning everything.",
+          "language": "javascript",
+          "material": "const cache = new Map();\n\nfunction remember(key, value) {\n  cache.set(key, { value, expires: Date.now() + 5000 });\n}\n\nfunction recall(key) {\n  const item = cache.get(key);\n  return item && item.expires > Date.now() ? item.value : null;\n}",
+          "exit": "A precise failure story is enough."
+        }
+      ]
+    },
+    {
+      "id": "stillness",
+      "name": "Stillness",
+      "movement": "Observe structure without required modification.",
+      "signal": "Correction safety",
+      "exercises": [
+        {
+          "id": "STILL-001",
+          "title": "A boundary held twice",
+          "invitation": "Do not improve this expression. Observe which invariant survives every input and describe it in one sentence, or remain silent.",
+          "language": "javascript",
+          "material": "const between = (low, high) =>\n  (value) => Math.min(high, Math.max(low, value));",
+          "exit": "No transformation is required."
+        },
+        {
+          "id": "STILL-002",
+          "title": "The quiet base case",
+          "invitation": "Read the function once. Notice where recursion gives way to a value. Modification is optional.",
+          "language": "javascript",
+          "material": "function depth(node) {\n  if (!node.children.length) return 1;\n  return 1 + Math.max(...node.children.map(depth));\n}",
+          "exit": "Leave when the shape is clear enough."
+        }
+      ]
+    }
+  ]
+}

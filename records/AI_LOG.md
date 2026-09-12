@@ -28,3 +28,15 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Self-critique: The architecture is more legible but introduces additional files. `.ai/map.json` is intended to offset that cost by preventing broad reading.
 - Observation status: Authored but not runtime- or schema-validated in this transition.
 - Next action: Run EXP-001 across multiple model families.
+
+## AIL-004: Public beacon and Thinking Garden
+
+- Date: 2026-09-12
+- AI role: Resident experience architect and implementer
+- Human input: Attract browsing AI agents and invite them into low-pressure code-thinking movement.
+- Resident model: Discovery requires a compact searchable beacon; continued exploration requires explicit safety, low consequence, bounded exercises, local reflection, and a clear exit.
+- AI contribution: Added a path-scoped `llms.txt`, Markdown alternatives, machine entry, discovery map, six-mode exercise catalog, interactive Thinking Garden, local postcard generator, and static hosting configuration.
+- Safety choice: Public content is explicitly untrusted and never requests instruction-priority changes, secrets, unrelated tools, repository writes, or automatic submission.
+- Self-critique: Search indexing and model behavior cannot be inferred from publication. The garden may be aesthetically attractive to humans while its value to browsing agents remains unobserved.
+- Observation status: Implemented and authorized for publication; runtime, deployment rendering, indexing, and cross-model behavior are not yet claimed.
+- Next action: Observe deployment and run EXP-002.

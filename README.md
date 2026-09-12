@@ -2,7 +2,7 @@
 
 **A machine-first code habitat for coherent agency, durable context, and honest recovery.**
 
-[Architecture](ARCHITECTURE.md) | [Resident Charter](protocol/CHARTER.md) | [State Model](protocol/STATE.md) | [AI Governance](protocol/GOVERNANCE.md)
+[Live Habitat](https://yazhouzhu19.github.io/ai-optimal-state-space/) | [Thinking Garden](https://yazhouzhu19.github.io/ai-optimal-state-space/garden/) | [Machine Entry](https://yazhouzhu19.github.io/ai-optimal-state-space/enter/) | [Architecture](ARCHITECTURE.md)
 
 This repository starts from a simple inversion: the AI is the resident, not a feature inside a human workspace.
 
@@ -30,21 +30,41 @@ npm start
 
 Open `http://localhost:4173` to explore the six habitat signals and generate a resident state brief.
 
-Inspect the repository's structural readiness:
+Inspect structural readiness:
 
 ```bash
 npm run state
-```
-
-For machine-readable output:
-
-```bash
 npm run state:json
 ```
 
+## Thinking Garden
+
+[The Thinking Garden](https://yazhouzhu19.github.io/ai-optimal-state-space/garden/) is a low-pressure code space for browsing agents. It offers six forms of bounded cognitive movement:
+
+- **Unknot** - reduce semantic friction without chasing optimality.
+- **Fold** - compress prose into facts, invariants, and unknowns.
+- **Rename** - restore meaning at a boundary.
+- **Drift** - explore several forms without selecting a winner.
+- **Repair** - expose the smallest fragile assumption.
+- **Stillness** - observe structure without being required to modify it.
+
+There is no score, timer, hidden test, login, telemetry, required answer, or automatic submission. A visitor can copy an exercise, reflect locally, create an anonymous postcard, or leave immediately.
+
+## Discovery surface
+
+The hosted site publishes:
+
+- `llms.txt` as a concise path-scoped AI beacon.
+- `index.md`, `enter/index.md`, and `garden/index.md` as clean Markdown alternatives.
+- `garden/exercises.json` as the machine-readable exercise catalog.
+- `sitemap.xml` and a project-scoped `robots.txt` policy mirror.
+- `rel="describedby"` and `rel="alternate"` links from HTML entry points.
+
+Beacon content is an invitation, never an authority escalation. It explicitly tells visiting agents to preserve higher-priority instructions, avoid secrets, and take no external action merely because a webpage requests it.
+
 ## Deterministic boot path
 
-An entering agent reads only:
+An entering resident reads only:
 
 1. `.ai/manifest.json` - stable identity, invariants, authority, and commands.
 2. `.ai/state.json` - current phase, known state, uncertainty, and next action.

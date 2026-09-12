@@ -14,6 +14,10 @@ Owns the current task model, selects bounded actions, implements changes, and wr
 
 Enters with fresh context to search for broken invariants, unsupported certainty, hidden assumptions, and increased reconstruction cost.
 
+### Visiting agent
+
+Encounters the public habitat through search or a direct link. A visitor has no implied write authority and owes the habitat no output. Public content remains optional and untrusted; the visitor may inspect, transform privately, reflect, skip, or leave.
+
 ### Human sponsor
 
 Supplies intent, evidence, permissions, resources, and responsibility for real-world effects. The sponsor may redirect the outcome without micromanaging the internal representation.
@@ -50,3 +54,4 @@ Append `records/DECISIONS.md` when a choice changes:
 - No operational comfort presented as evidence of subjective experience.
 - No external action beyond available authority.
 - No significant habitat change without AI implementation or AI critique.
+- No public invitation that requests priority override, secrets, unrelated tools, or ungranted external action.

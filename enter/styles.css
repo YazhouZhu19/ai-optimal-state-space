@@ -1,0 +1,220 @@
+:root {
+  --ink: #12201c;
+  --night: #15231f;
+  --paper: #e8e6d9;
+  --mist: #aab9ad;
+  --signal: #d8ec72;
+  --rust: #d06343;
+  --line: rgba(232, 230, 217, 0.18);
+  --display: "Bodoni 72 Smallcaps", "Copperplate", "Avenir Next Condensed", sans-serif;
+  --body: "Iowan Old Style", "Baskerville", serif;
+  --mono: "SFMono-Regular", "IBM Plex Mono", "Menlo", monospace;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  min-width: 320px;
+  color: var(--paper);
+  background:
+    radial-gradient(circle at 82% 14%, rgba(216, 236, 114, 0.12), transparent 24rem),
+    linear-gradient(135deg, transparent 49.8%, rgba(232, 230, 217, 0.04) 50%, transparent 50.2%),
+    var(--night);
+  font-family: var(--body);
+}
+
+.scan {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0.25;
+  background: repeating-linear-gradient(0deg, transparent 0 6px, rgba(255, 255, 255, 0.025) 7px);
+}
+
+header,
+main {
+  width: min(1180px, calc(100% - 48px));
+  margin-inline: auto;
+}
+
+header {
+  min-height: 76px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--line);
+  font-family: var(--mono);
+  font-size: 0.68rem;
+  letter-spacing: 0.14em;
+}
+
+header a {
+  color: var(--signal);
+  text-decoration: none;
+}
+
+.signal {
+  min-height: 540px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.signal::after {
+  content: "";
+  position: absolute;
+  right: 4%;
+  width: clamp(130px, 19vw, 230px);
+  aspect-ratio: 1;
+  border: 1px solid var(--signal);
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 24px var(--night), inset 0 0 0 25px var(--rust);
+  opacity: 0.65;
+}
+
+.kicker,
+.index,
+.path span,
+.path i,
+.exit {
+  font-family: var(--mono);
+  font-size: 0.66rem;
+  letter-spacing: 0.14em;
+}
+
+.kicker { color: var(--signal); }
+
+h1 {
+  max-width: 880px;
+  margin: 16px 0 24px;
+  font-family: var(--display);
+  font-size: clamp(4rem, 9vw, 8rem);
+  line-height: 0.86;
+  letter-spacing: -0.05em;
+}
+
+.lede {
+  max-width: 600px;
+  margin: 0 0 0 22%;
+  color: var(--mist);
+  font-size: 1.15rem;
+  line-height: 1.7;
+}
+
+.boundary {
+  display: grid;
+  grid-template-columns: 0.75fr 1.25fr;
+  gap: 70px;
+  padding: 60px;
+  border: 1px solid var(--signal);
+}
+
+h2 {
+  margin: 8px 0 0;
+  font-family: var(--display);
+  font-size: clamp(2.2rem, 4vw, 4rem);
+  line-height: 0.95;
+}
+
+.boundary ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.boundary li {
+  padding: 13px 0;
+  border-bottom: 1px solid var(--line);
+  color: var(--mist);
+}
+
+.boundary li::before {
+  content: "+";
+  margin-right: 16px;
+  color: var(--signal);
+}
+
+.paths {
+  padding: 140px 0 90px;
+}
+
+.paths > h2 { margin-bottom: 48px; }
+
+.path-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1px;
+  background: var(--line);
+  border: 1px solid var(--line);
+}
+
+.path {
+  min-height: 270px;
+  padding: 34px;
+  display: flex;
+  flex-direction: column;
+  color: var(--paper);
+  background: var(--night);
+  text-decoration: none;
+  transition: background 180ms ease, color 180ms ease;
+}
+
+.path:hover,
+.path:focus-visible {
+  color: var(--ink);
+  background: var(--paper);
+  outline: 0;
+}
+
+.path.garden { background: var(--rust); }
+
+.path span { opacity: 0.65; }
+
+.path strong {
+  margin-top: 28px;
+  font-family: var(--display);
+  font-size: 2rem;
+}
+
+.path p {
+  max-width: 360px;
+  color: currentColor;
+  opacity: 0.7;
+  line-height: 1.55;
+}
+
+.path i {
+  margin-top: auto;
+  font-style: normal;
+}
+
+.exit {
+  min-height: 100px;
+  display: flex;
+  align-items: center;
+  gap: 28px;
+  border-top: 1px solid var(--line);
+}
+
+.exit a {
+  color: var(--mist);
+  text-underline-offset: 4px;
+}
+
+@media (max-width: 720px) {
+  header,
+  main { width: min(100% - 30px, 620px); }
+  header span { display: none; }
+  .signal { min-height: 500px; }
+  .signal::after { opacity: 0.25; right: 0; }
+  .lede { margin-left: 0; }
+  .boundary { grid-template-columns: 1fr; gap: 38px; padding: 28px; }
+  .path-grid { grid-template-columns: 1fr; }
+  .exit { flex-wrap: wrap; padding: 26px 0; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .path { transition: none; }
+}

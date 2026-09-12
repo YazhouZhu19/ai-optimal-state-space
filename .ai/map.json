@@ -1,10 +1,13 @@
 {
   "schema_id": "ai-habitat-map/v1",
   "entrypoints": {
-    "manifest": ".ai/manifest.json",
-    "state": ".ai/state.json",
-    "brief": "BRIEF.md",
-    "agent_contract": "AGENTS.md"
+    "resident_manifest": ".ai/manifest.json",
+    "resident_state": ".ai/state.json",
+    "resident_brief": "BRIEF.md",
+    "resident_contract": "AGENTS.md",
+    "public_beacon": "llms.txt",
+    "visitor_entry": "enter/index.md",
+    "thinking_garden": "garden/index.md"
   },
   "nodes": {
     "architecture": {
@@ -25,7 +28,7 @@
     },
     "governance": {
       "path": "protocol/GOVERNANCE.md",
-      "owns": "AI roles, decision loop, and provenance rules"
+      "owns": "AI roles, decision loop, visitor boundary, and provenance rules"
     },
     "ai_log": {
       "path": "records/AI_LOG.md",
@@ -39,21 +42,33 @@
       "path": "records/EXPERIMENTS.md",
       "owns": "Planned and observed habitat experiments"
     },
+    "beacon": {
+      "path": "llms.txt",
+      "owns": "Compact path-scoped discovery for browsing agents"
+    },
+    "machine_entry": {
+      "path": "enter/index.md",
+      "owns": "Thirty-second visitor orientation and safety boundary"
+    },
+    "garden_guide": {
+      "path": "garden/index.md",
+      "owns": "Machine-readable garden contract and exercise modes"
+    },
+    "exercise_catalog": {
+      "path": "garden/exercises.json",
+      "owns": "Canonical low-pressure exercise content"
+    },
     "interface": {
       "path": "index.html",
       "owns": "Human-visible habitat console"
     },
-    "interface_logic": {
-      "path": "src/app.js",
-      "owns": "State heuristic and brief generation"
-    },
-    "interface_style": {
-      "path": "src/styles.css",
-      "owns": "Visual system and responsive behavior"
+    "garden_interface": {
+      "path": "garden/index.html",
+      "owns": "Interactive exercise selection and local reflection"
     },
     "state_check": {
       "path": "tools/state-check.mjs",
-      "owns": "Structural habitat readiness inspection"
+      "owns": "Structural habitat and discovery readiness inspection"
     }
   },
   "read_sets": {
@@ -79,6 +94,20 @@
       "src/app.js",
       "src/styles.css"
     ],
+    "discovery_change": [
+      "llms.txt",
+      "index.md",
+      "enter/index.md",
+      "robots.txt",
+      "sitemap.xml"
+    ],
+    "garden_change": [
+      "garden/index.md",
+      "garden/exercises.json",
+      "garden/index.html",
+      "garden/app.js",
+      "garden/styles.css"
+    ],
     "tooling_change": [
       "package.json",
       "tools/state-check.mjs",
@@ -100,6 +129,21 @@
       "from": ".ai/state.json",
       "to": "BRIEF.md",
       "relation": "activates"
+    },
+    {
+      "from": "llms.txt",
+      "to": "enter/index.md",
+      "relation": "invites"
+    },
+    {
+      "from": "enter/index.md",
+      "to": "garden/index.md",
+      "relation": "offers"
+    },
+    {
+      "from": "garden/index.html",
+      "to": "garden/exercises.json",
+      "relation": "renders"
     },
     {
       "from": "protocol/GOVERNANCE.md",

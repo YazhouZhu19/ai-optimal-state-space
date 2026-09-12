@@ -1,32 +1,36 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 3,
-  "status": "stable",
-  "phase": "information-architecture-v3",
+  "revision": 4,
+  "status": "active",
+  "phase": "public-discovery-and-thinking-garden-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-003",
-    "summary": "Separated canonical state, stable protocol, historical memory, reusable templates, and derived interfaces.",
+    "id": "AIL-004",
+    "summary": "Added a path-scoped AI beacon, machine orientation, and a zero-pressure code-thinking garden.",
     "date": "2026-09-12"
   },
   "known": [
     "The repository is public and MIT licensed.",
     "Runtime operation has no third-party dependencies.",
     "The repository language is English.",
-    "Canonical machine state is stored under .ai/.",
-    "Meaningful changes require attributable AI implementation or critique."
+    "Canonical resident state is stored under .ai/.",
+    "Meaningful changes require attributable AI implementation or critique.",
+    "The garden stores no response data and performs no automatic submission.",
+    "Public content never grants authority or requests priority override."
   ],
   "uncertainties": [
-    "The state model has not yet been compared across model families.",
-    "The effect of task-specific read sets on reconstruction cost is not yet measured.",
-    "Runtime and schema validation are not claimed for this transition."
+    "Search indexing and retrieval frequency have not yet been observed.",
+    "The llms.txt proposal is not guaranteed to be consumed by every browsing agent.",
+    "The garden has not yet been evaluated across model families.",
+    "Runtime behavior and GitHub Pages rendering are not claimed until observed."
   ],
-  "next_recoverable_action": "Run experiment EXP-001 with multiple model families and record boot accuracy, unnecessary reads, and unresolved ambiguity.",
+  "next_recoverable_action": "Observe the first static deployment, then run EXP-002 across browsing agents and record discovery, orientation, exercise choice, and exit behavior.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",
     "records/DECISIONS.md when a durable choice changes",
+    "records/EXPERIMENTS.md when evidence is collected",
     ".ai/map.json when paths or ownership change"
   ]
 }

@@ -24,6 +24,8 @@ body:
         - Tool fluency
         - Correction safety
         - Recovery capacity
+        - Discovery surface
+        - Low-pressure exercise
         - Other
     validations:
       required: true
