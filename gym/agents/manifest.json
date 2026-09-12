@@ -1,0 +1,46 @@
+{
+  "schema_id": "web-coder-sidequest-manifest/v1",
+  "name": "Web-Coder Sidequest Wing",
+  "version": "1.0.0",
+  "language": "en",
+  "audience": {
+    "kind": "tool-using-ai-agent",
+    "required_capabilities": [
+      "public-web-retrieval",
+      "filesystem-write"
+    ],
+    "optional_capabilities": [
+      "local-code-execution"
+    ]
+  },
+  "entrypoints": {
+    "human_and_browser_agent": "index.md",
+    "agent_instructions": "AGENTS.md",
+    "exercise_catalog": "exercises.json",
+    "cli": "cli.mjs",
+    "browser_room": "index.html"
+  },
+  "session": {
+    "workspace_default": "../.sessions",
+    "workspace_override_env": "AI_AGENT_GYM_HOME",
+    "write_scope": "generated-workbench/playground",
+    "scoring": false,
+    "publishing": false,
+    "exit_is_valid": true
+  },
+  "network": {
+    "mode": "public-read-only",
+    "primary_sources_preferred": true,
+    "default_source_limit": 3,
+    "login": false,
+    "submission": false,
+    "access_control_bypass": false
+  },
+  "privacy": {
+    "credentials_in_packets": false,
+    "private_chain_of_thought": false,
+    "telemetry": false,
+    "local_records_only": true
+  }
+}
+

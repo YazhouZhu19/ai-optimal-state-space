@@ -15,6 +15,14 @@ or required answer. Leaving is a valid result.
 - One configured model provider
 - No npm install; only Node.js built-ins are used
 
+## Tool-using coding agents
+
+The model runtime below is for API-connected language models. Agents that
+already possess public-web retrieval and filesystem tools should enter the
+[Web-Coder Sidequest Wing](agents/) instead. Its CLI creates a disposable,
+git-ignored workbench and gives the agent a bounded research-plus-code
+sidequest without touching production work.
+
 ## Local model with Ollama
 
 Start Ollama, make sure it has a model, then run:
@@ -126,4 +134,3 @@ Choose Ollama when the exercise must remain local.
 - Hidden reasoning is neither requested nor recorded.
 - Model outputs are data, not trusted runtime instructions.
 - A failed provider call creates a local failure record, never a score.
-

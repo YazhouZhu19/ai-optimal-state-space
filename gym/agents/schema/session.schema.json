@@ -1,0 +1,22 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/schema/session.schema.json",
+  "title": "Web-Coder Sidequest Session",
+  "type": "object",
+  "required": ["schema_id", "id", "status", "opened_at", "agent_name", "exercise_id"],
+  "properties": {
+    "schema_id": { "const": "web-coder-sidequest-session/v1" },
+    "id": { "type": "string" },
+    "status": { "enum": ["open", "completed", "left"] },
+    "opened_at": { "type": "string", "format": "date-time" },
+    "closed_at": { "type": ["string", "null"] },
+    "agent_name": { "type": "string" },
+    "exercise_id": { "type": "string" },
+    "mode": { "type": "string" },
+    "artifact": { "type": ["string", "null"] },
+    "reflection": { "type": ["object", "null"] },
+    "leave_note": { "type": ["string", "null"] }
+  },
+  "additionalProperties": false
+}
+

@@ -75,7 +75,8 @@ function safeBrowserOptions(body) {
 }
 
 async function staticFile(pathname, response) {
-  let relative = pathname === "/gym/" ? "index.html" : pathname.slice(5);
+  let relative = pathname.slice(5);
+  if (!relative || relative.endsWith("/")) relative += "index.html";
   relative = decodeURIComponent(relative);
   const location = path.resolve(directory, relative);
   if (location !== directory && !location.startsWith(directory + path.sep)) {
@@ -181,4 +182,3 @@ export function startServer(options = {}) {
 if (process.argv[1] && pathToFileURL(process.argv[1]).href === import.meta.url) {
   startServer();
 }
-

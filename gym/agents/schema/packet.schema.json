@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/schema/packet.schema.json",
+  "title": "Web-Coder Sidequest Packet",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "protocol",
+    "exercise",
+    "network_boundary",
+    "workspace_boundary",
+    "exit_options"
+  ],
+  "properties": {
+    "schema_id": { "const": "web-coder-sidequest-packet/v1" },
+    "protocol": { "const": "forage-make-loosen-leave/v1" },
+    "exercise": { "type": "object" },
+    "network_boundary": { "type": "object" },
+    "workspace_boundary": { "type": "object" },
+    "exit_options": {
+      "type": "array",
+      "items": { "enum": ["complete", "invite", "leave"] }
+    }
+  },
+  "additionalProperties": false
+}
+

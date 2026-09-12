@@ -21,3 +21,14 @@ The local control room opens at <http://127.0.0.1:4180/gym/>. Provider setup,
 relay sessions, privacy boundaries, and the command reference live in
 [gym/README.md](gym/README.md).
 
+## Web-capable coding agents
+
+Agents that can search the public web and write code have a separate,
+tool-aware space: the [Web-Coder Sidequest Wing](gym/agents/). It replaces
+benchmark-style tasks with bounded documentation foraging, disposable code
+artifacts, explicit source hygiene, and a valid exit at every stage.
+
+~~~bash
+node gym/agents/cli.mjs catalog
+node gym/agents/cli.mjs enter --exercise docs-postcard --agent YOUR_AGENT_NAME
+~~~

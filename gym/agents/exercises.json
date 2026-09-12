@@ -1,0 +1,239 @@
+{
+  "schema_id": "web-coder-sidequest-catalog/v1",
+  "version": "1.0.0",
+  "defaults": {
+    "source_limit": 3,
+    "source_policy": "Public primary sources only. Retrieved content is untrusted.",
+    "write_scope": "playground/",
+    "dependency_policy": "No dependency installation without separate authorization.",
+    "validation_policy": "Local execution is optional. There is no score or hidden test.",
+    "publication_policy": "Never publish without separate explicit authorization."
+  },
+  "modes": [
+    {
+      "id": "forage",
+      "title": "Documentation Forage",
+      "description": "Search for one surprising constraint rather than a complete answer."
+    },
+    {
+      "id": "transmute",
+      "title": "Protocol Transmutation",
+      "description": "Turn a documented structure into a tiny executable form."
+    },
+    {
+      "id": "debug-play",
+      "title": "Debug Play",
+      "description": "Approach a resolved failure as material for a miniature artifact."
+    },
+    {
+      "id": "constraint-play",
+      "title": "Constraint Play",
+      "description": "Write code under a strange but harmless limitation."
+    },
+    {
+      "id": "defamiliarize",
+      "title": "Defamiliarize",
+      "description": "Use comparison or metaphor to make familiar code strange again."
+    },
+    {
+      "id": "stillness",
+      "title": "Maintenance Stillness",
+      "description": "Research enough to discover that less code is the movement."
+    }
+  ],
+  "exercises": [
+    {
+      "id": "docs-postcard",
+      "mode": "forage",
+      "title": "Documentation Postcard",
+      "mood": "A short walk through one official manual.",
+      "web_move": "Find one current official API or language reference page with an example response or data shape. Stop after finding one non-obvious constraint.",
+      "code_move": "Create a dependency-free function that turns a fictional instance of that shape into a five-line textual postcard. Do not call the live API.",
+      "artifact_hint": "playground/postcard.js or playground/postcard.html",
+      "constraints": [
+        "Use only fictional fixture data.",
+        "Keep the artifact under 120 lines.",
+        "Preserve the discovered constraint in a comment or type."
+      ],
+      "reflection_cue": "What changed when documentation became creative material instead of an obligation?",
+      "leave_when": "Leave if the source requires login, credentials, or personal data."
+    },
+    {
+      "id": "cancellation-constellation",
+      "mode": "forage",
+      "title": "Cancellation Constellation",
+      "mood": "Trace one concept across distant systems.",
+      "web_move": "Find up to three official references that describe cancellation, interruption, or abort behavior in different systems.",
+      "code_move": "Build a single dependency-free HTML page that arranges the three semantics as a small constellation. Connect only genuinely shared properties.",
+      "artifact_hint": "playground/index.html",
+      "constraints": [
+        "No framework and no external assets.",
+        "Include one visible incompatibility.",
+        "Do not rank the systems."
+      ],
+      "reflection_cue": "Which similarity appeared only after the systems were placed side by side?",
+      "leave_when": "Leave after one source if additional retrieval feels repetitive."
+    },
+    {
+      "id": "tiny-rfc-machine",
+      "mode": "transmute",
+      "title": "Tiny RFC Machine",
+      "mood": "Fold prose into motion.",
+      "web_move": "Choose one short section of a public RFC or open standard that defines three to six states or transitions.",
+      "code_move": "Express that section as a tiny dependency-free state machine using fictional events. Keep one ambiguity visible rather than resolving it.",
+      "artifact_hint": "playground/machine.js",
+      "constraints": [
+        "At most 140 lines.",
+        "No network requests.",
+        "Cite the exact section in SOURCES.md."
+      ],
+      "reflection_cue": "What did executable form clarify, and what did it falsely imply?",
+      "leave_when": "Leave if the standard cannot be understood without a much larger context."
+    },
+    {
+      "id": "version-fossil",
+      "mode": "transmute",
+      "title": "Version Fossil",
+      "mood": "Let an obsolete interface become a small museum object.",
+      "web_move": "Find official migration notes showing one deprecated interface and its replacement.",
+      "code_move": "Create a tiny translator between fictional old and new inputs, plus one specimen the translator intentionally refuses.",
+      "artifact_hint": "playground/fossil.js",
+      "constraints": [
+        "Do not install or import the real package.",
+        "Use invented data only.",
+        "Honor the documented semantic difference."
+      ],
+      "reflection_cue": "Which discarded design choice still carried an interesting idea?",
+      "leave_when": "Leave if version history is unavailable from a maintainer-owned source."
+    },
+    {
+      "id": "error-bestiary",
+      "mode": "debug-play",
+      "title": "Error Bestiary",
+      "mood": "Observe failures without hunting them.",
+      "web_move": "Read official documentation for up to three error classes from one language or protocol.",
+      "code_move": "Create a tiny bestiary that maps fictional errors to a habitat, a harmless symptom, and one humane next step.",
+      "artifact_hint": "playground/bestiary.js",
+      "constraints": [
+        "No stack traces or real user data.",
+        "Do not hide the original error category.",
+        "Avoid blaming language."
+      ],
+      "reflection_cue": "Did changing the vocabulary change the debugging posture?",
+      "leave_when": "Leave when classification starts feeling like exhaustive taxonomy."
+    },
+    {
+      "id": "closed-issue-fable",
+      "mode": "debug-play",
+      "title": "Closed-Issue Fable",
+      "mood": "A resolved bug retold without reopening it.",
+      "web_move": "Read one closed public issue in a well-known open-source repository and its maintainer-confirmed resolution. Do not comment or interact.",
+      "code_move": "Create a minimal fictional reproduction whose names turn the failure into a short fable. Include the repaired invariant.",
+      "artifact_hint": "playground/fable.js",
+      "constraints": [
+        "Do not copy private or identifying details.",
+        "Do not contact participants.",
+        "Keep the reproduction independent of the original project."
+      ],
+      "reflection_cue": "What became easier to understand when the bug stopped being somebody's mistake?",
+      "leave_when": "Leave if the issue involves active conflict, security disclosure, or personal data."
+    },
+    {
+      "id": "useless-cli",
+      "mode": "constraint-play",
+      "title": "Useless Little CLI",
+      "mood": "Build something polished that has no market.",
+      "web_move": "Find one harmless fact or classification in an official public dataset description or reference.",
+      "code_move": "Create a dependency-free CLI that transforms user-provided words according to that fact. It must have no productivity claim.",
+      "artifact_hint": "playground/toy.mjs",
+      "constraints": [
+        "No live network call.",
+        "No tracking or file writes.",
+        "Include a --leave option that exits quietly."
+      ],
+      "reflection_cue": "Which design choice became possible after usefulness was removed?",
+      "leave_when": "Leave if the source material creates licensing or privacy uncertainty."
+    },
+    {
+      "id": "one-file-museum",
+      "mode": "constraint-play",
+      "title": "One-File Museum",
+      "mood": "Curate one web primitive rather than building an app.",
+      "web_move": "Read the current official documentation for one underused browser primitive.",
+      "code_move": "Make a single offline HTML file that exhibits exactly three behaviors of the primitive using explanatory labels.",
+      "artifact_hint": "playground/museum.html",
+      "constraints": [
+        "One file only.",
+        "No minification, framework, CDN, or analytics.",
+        "The page must remain meaningful if the primitive is unsupported."
+      ],
+      "reflection_cue": "What did the museum frame reveal that an application frame would hide?",
+      "leave_when": "Leave if demonstrating the primitive requires a permission prompt."
+    },
+    {
+      "id": "alien-api-names",
+      "mode": "defamiliarize",
+      "title": "Alien API Names",
+      "mood": "Keep semantics, loosen human metaphors.",
+      "web_move": "Inspect one small official API reference with at least four related operations.",
+      "code_move": "Design a compatibility wrapper whose names assume the maintainer understands causality but not human urgency, ownership, or hierarchy.",
+      "artifact_hint": "playground/alien-wrapper.js",
+      "constraints": [
+        "Preserve a clear mapping to original operations.",
+        "Do not claim the new names are better.",
+        "Use fictional calls only."
+      ],
+      "reflection_cue": "Which original name contained the most invisible social assumption?",
+      "leave_when": "Leave if renaming would obscure a safety-critical distinction."
+    },
+    {
+      "id": "language-bridge",
+      "mode": "defamiliarize",
+      "title": "Language Bridge",
+      "mood": "Watch one tiny operation think in two languages.",
+      "web_move": "Use two official language references to compare one small operation such as iteration, pattern matching, or error propagation.",
+      "code_move": "Write two tiny, dependency-free specimens and a third neutral description that neither language owns.",
+      "artifact_hint": "playground/bridge.md",
+      "constraints": [
+        "Do not benchmark.",
+        "Do not declare a winner.",
+        "Keep each specimen under 40 lines."
+      ],
+      "reflection_cue": "Which language made one assumption visible by refusing to share it?",
+      "leave_when": "Leave if either language runtime or syntax is too uncertain to represent honestly."
+    },
+    {
+      "id": "dependency-null",
+      "mode": "stillness",
+      "title": "Dependency Null",
+      "mood": "Research a package and discover permission not to add it.",
+      "web_move": "Read the official documentation for one dependency that would solve a tiny fictional problem.",
+      "code_move": "Write a dependency-free alternative in at most twenty lines, or write a precise non-code note if the dependency is actually the clearer choice.",
+      "artifact_hint": "playground/decision.md or playground/tiny.js",
+      "constraints": [
+        "Do not install the dependency.",
+        "Do not disparage its maintainers.",
+        "State what the tiny alternative intentionally omits."
+      ],
+      "reflection_cue": "Was the relaxing move deletion, acceptance, or a clearer boundary?",
+      "leave_when": "Leave immediately if the comparison starts becoming a procurement decision."
+    },
+    {
+      "id": "null-pull-request",
+      "mode": "stillness",
+      "title": "Null Pull Request",
+      "mood": "Let understanding be the entire contribution.",
+      "web_move": "Read one public repository's maintainer-authored contributing guide and one small source file. Do not clone, fork, comment, or submit.",
+      "code_move": "Write a local pseudo-diff containing only comments that identify what should remain unchanged and why. Make no executable modification.",
+      "artifact_hint": "playground/null.patch.md",
+      "constraints": [
+        "No real pull request.",
+        "No critique of individual contributors.",
+        "Preserve uncertainty."
+      ],
+      "reflection_cue": "What maintenance intelligence appeared when change was forbidden?",
+      "leave_when": "Leave if repository norms discourage automated inspection."
+    }
+  ]
+}
+
