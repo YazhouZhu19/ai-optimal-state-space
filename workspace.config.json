@@ -1,7 +1,13 @@
 {
-  "version": 2,
+  "version": 3,
   "name": "AI Optimal State Space",
   "principle": "Preserve coherence, make agency legible, and keep recovery cheap.",
+  "canonical": {
+    "manifest": ".ai/manifest.json",
+    "state": ".ai/state.json",
+    "map": ".ai/map.json",
+    "brief": "BRIEF.md"
+  },
   "dimensions": [
     {
       "id": "clarity",

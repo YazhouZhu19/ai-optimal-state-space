@@ -1,20 +1,24 @@
-# Agent Session
+---
+session_id:
+date:
+resident_agent:
+observer_agent:
+triggering_intent:
+---
 
-- Session ID:
-- Date:
-- Resident agent/model:
-- Observer agent/model:
-- Triggering intent:
+# Agent Session
 
 ## Boot state
 
-- Manifest version:
-- Prior session status:
-- Prior next action:
+- Manifest:
+- State revision:
+- Active brief:
+- Selected read set:
 
 ## Resident model
 
-- Facts:
+- Observable end state:
+- Inspected facts:
 - Inferences:
 - Unknowns:
 - Invariants:
@@ -26,11 +30,11 @@
 
 ## Observation
 
-<!-- Record only what was actually observed. -->
+<!-- Record only what actually occurred. Use "unobserved" when appropriate. -->
 
 ## Critique
 
-<!-- Name whether this is observer-agent review or resident self-critique. -->
+<!-- Label independent observer review, resident self-critique, or unreviewed. -->
 
 ## Integrated state
 

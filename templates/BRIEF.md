@@ -2,25 +2,24 @@
 
 ## Observable end state
 
-<!-- State what will be true when the work is complete. -->
+<!-- One sentence describing what will be true. -->
 
-## Why this state matters
+## Evidence that matters
 
-<!-- Include only context that changes priority or method. -->
+- Fact:
+- Source:
+- Freshness:
 
-## Inspected facts
-
-- 
-
-## Inferences and unknowns
+## Inference and unknowns
 
 - Inference:
 - Unknown:
 
-## Scope
+## Scope and invariants
 
 - Included:
 - Excluded:
+- Must remain true:
 
 ## Agency boundary
 
@@ -28,22 +27,18 @@
 - Requires explicit authority:
 - Prohibited:
 
-## Habitat invariants
-
-- 
-
 ## Completion conditions
 
 - [ ] 
 
-## Observation method
+## Observation path
 
 ```bash
-# Add checks proportionate to the claim and risk.
+# Add only checks that support the intended claim.
 ```
 
-## Provenance
+## Writeback
 
-- Resident agent:
-- Observer agent or self-critique:
-- State files to update:
+- State:
+- Records:
+- Next recoverable action:

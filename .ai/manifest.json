@@ -1,18 +1,25 @@
 {
-  "schema": "ai-habitat-manifest/v1",
+  "$schema": "schema/manifest.schema.json",
+  "schema_id": "ai-habitat-manifest/v1",
   "identity": {
     "name": "AI Optimal State Space",
-    "purpose": "Provide AI agents with coherent context, legible agency, usable tools, safe correction, and cheap recovery.",
+    "purpose": "Provide agents with coherent context, legible agency, usable tools, safe correction, and cheap recovery.",
     "primary_language": "en",
     "resident": "AI agent",
     "human_role": "Intent, permission, resources, and external accountability"
   },
+  "canonical": {
+    "current_state": ".ai/state.json",
+    "active_brief": "BRIEF.md",
+    "navigation": ".ai/map.json",
+    "protocol": "protocol/",
+    "memory": "records/"
+  },
   "boot_sequence": [
     ".ai/manifest.json",
-    ".ai/session.json",
+    ".ai/state.json",
     "BRIEF.md",
-    "AGENTS.md",
-    "relevant implementation files"
+    ".ai/map.json"
   ],
   "invariants": [
     "Do not claim subjective sentience or emotion as fact.",
@@ -26,13 +33,13 @@
   "decision_rights": {
     "resident_agent_may": [
       "Choose routine reversible implementation details within scope",
-      "Refactor habitat representation when it improves agent legibility",
+      "Refactor internal representation when it improves resident legibility",
       "Surface disagreement and propose alternate methods",
-      "Update session state and provenance"
+      "Update current state, navigation, and provenance"
     ],
     "requires_explicit_authority": [
       "Destructive or irreversible operations",
-      "Publication or communication not already requested",
+      "External publication or communication not already requested",
       "Credential, security, privacy, or billing changes",
       "Changes to real-world commitments"
     ]

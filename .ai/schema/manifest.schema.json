@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-habitat-manifest/v1",
+  "title": "AI Habitat Manifest",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "identity",
+    "canonical",
+    "boot_sequence",
+    "invariants",
+    "decision_rights",
+    "commands"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-habitat-manifest/v1"
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "name",
+        "purpose",
+        "primary_language",
+        "resident",
+        "human_role"
+      ]
+    },
+    "canonical": {
+      "type": "object",
+      "required": [
+        "current_state",
+        "active_brief",
+        "navigation",
+        "protocol",
+        "memory"
+      ]
+    },
+    "boot_sequence": {
+      "type": "array",
+      "minItems": 3,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "invariants": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      },
+      "uniqueItems": true
+    },
+    "decision_rights": {
+      "type": "object",
+      "required": [
+        "resident_agent_may",
+        "requires_explicit_authority"
+      ]
+    },
+    "commands": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

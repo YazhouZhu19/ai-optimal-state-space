@@ -2,32 +2,32 @@
 
 ## Observable end state
 
-<!-- What must eventually become true? -->
-
-## Completed
-
 - 
 
-## Current machine state
+## Current state
 
-<!-- What is coherent, partial, broken, or unobserved? -->
+- Coherent:
+- Partial:
+- Broken:
+- Unobserved:
+
+## Canonical sources
+
+- Manifest:
+- State revision:
+- Active brief:
+- Relevant records:
 
 ## Next recoverable action
 
 1. 
 
-## Canonical sources
-
-- 
-
-## Observed
-
-- 
-
-## Risks and unknowns
-
-- 
-
 ## Do not reconstruct
 
-<!-- Rejected paths, failed attempts, or actions that must not repeat. -->
+- Rejected path:
+- Failed attempt:
+- Protected invariant:
+
+## Remaining uncertainty
+
+- 

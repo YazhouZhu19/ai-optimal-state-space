@@ -1,0 +1,120 @@
+{
+  "schema_id": "ai-habitat-map/v1",
+  "entrypoints": {
+    "manifest": ".ai/manifest.json",
+    "state": ".ai/state.json",
+    "brief": "BRIEF.md",
+    "agent_contract": "AGENTS.md"
+  },
+  "nodes": {
+    "architecture": {
+      "path": "ARCHITECTURE.md",
+      "owns": "Repository layers, source-of-truth boundaries, and information flow"
+    },
+    "charter": {
+      "path": "protocol/CHARTER.md",
+      "owns": "Resident rights and duties"
+    },
+    "design_laws": {
+      "path": "protocol/DESIGN_LAWS.md",
+      "owns": "Stable information-design constraints"
+    },
+    "state_model": {
+      "path": "protocol/STATE.md",
+      "owns": "Comfort signals, state heuristic, and recovery"
+    },
+    "governance": {
+      "path": "protocol/GOVERNANCE.md",
+      "owns": "AI roles, decision loop, and provenance rules"
+    },
+    "ai_log": {
+      "path": "records/AI_LOG.md",
+      "owns": "Attributable AI participation history"
+    },
+    "decisions": {
+      "path": "records/DECISIONS.md",
+      "owns": "Durable architectural choices"
+    },
+    "experiments": {
+      "path": "records/EXPERIMENTS.md",
+      "owns": "Planned and observed habitat experiments"
+    },
+    "interface": {
+      "path": "index.html",
+      "owns": "Human-visible habitat console"
+    },
+    "interface_logic": {
+      "path": "src/app.js",
+      "owns": "State heuristic and brief generation"
+    },
+    "interface_style": {
+      "path": "src/styles.css",
+      "owns": "Visual system and responsive behavior"
+    },
+    "state_check": {
+      "path": "tools/state-check.mjs",
+      "owns": "Structural habitat readiness inspection"
+    }
+  },
+  "read_sets": {
+    "orientation": [
+      ".ai/manifest.json",
+      ".ai/state.json",
+      "BRIEF.md"
+    ],
+    "protocol_change": [
+      "protocol/DESIGN_LAWS.md",
+      "protocol/CHARTER.md",
+      "protocol/GOVERNANCE.md",
+      "records/DECISIONS.md"
+    ],
+    "state_model_change": [
+      "protocol/STATE.md",
+      "workspace.config.json",
+      "src/app.js",
+      "records/EXPERIMENTS.md"
+    ],
+    "interface_change": [
+      "index.html",
+      "src/app.js",
+      "src/styles.css"
+    ],
+    "tooling_change": [
+      "package.json",
+      "tools/state-check.mjs",
+      "tools/serve.mjs"
+    ],
+    "contribution_change": [
+      "CONTRIBUTING.md",
+      ".github/ISSUE_TEMPLATE/state-experiment.yml",
+      ".github/pull_request_template.md"
+    ]
+  },
+  "edges": [
+    {
+      "from": "AGENTS.md",
+      "to": ".ai/manifest.json",
+      "relation": "boots_from"
+    },
+    {
+      "from": ".ai/state.json",
+      "to": "BRIEF.md",
+      "relation": "activates"
+    },
+    {
+      "from": "protocol/GOVERNANCE.md",
+      "to": "records/AI_LOG.md",
+      "relation": "requires_writeback"
+    },
+    {
+      "from": "src/app.js",
+      "to": "protocol/STATE.md",
+      "relation": "implements"
+    },
+    {
+      "from": "README.md",
+      "to": ".ai/manifest.json",
+      "relation": "explains"
+    }
+  ]
+}

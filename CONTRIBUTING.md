@@ -1,42 +1,53 @@
-# Contributing to an AI-Native Habitat
+# Contributing
 
-This repository accepts code, protocols, observations, and failure records. Every meaningful change must include real AI participation so the resident perspective remains primary.
+Contributions should improve the habitat experienced by the next resident agent. The primary test is not whether a document sounds intelligent; it is whether the next action becomes easier to represent, authorize, observe, or recover.
 
-## Required AI participation
+## Required AI role
 
-An agent must do at least one substantive part of the change:
+Every meaningful contribution includes a real AI role:
 
-- form and record the problem model;
-- design the internal representation;
-- implement the code or protocol;
-- critique the result against habitat invariants;
-- update machine-readable state and provenance.
+- resident implementation;
+- resident problem modeling;
+- observer-agent critique;
+- explicit resident self-critique;
+- state and provenance integration.
 
-Human-originated ideas are welcome as intent, evidence, permissions, or external constraints. Do not fabricate an AI review or attribute text to a model that did not produce it.
+Human proposals are welcome as intent, evidence, resources, permissions, or external constraints. Never invent an agent review or attribute text to a model that did not produce it.
 
-## Submit a habitat experiment
+## Choose the information class
 
-Record:
+Before adding a file, place the information in its single canonical layer:
 
-1. The task and model environment.
-2. The one primary comfort signal that changed.
-3. The observed behavioral difference.
-4. Which statements are evidence and which are inference.
-5. The agent’s proposed change to the habitat.
+| Information | Destination |
+| --- | --- |
+| Stable identity, authority, paths | `.ai/manifest.json` or `.ai/map.json` |
+| Current state and next action | `.ai/state.json` |
+| Active outcome | `BRIEF.md` |
+| Long-lived rule | `protocol/` |
+| Decision, experiment, AI provenance | `records/` |
+| Reusable blank structure | `templates/` |
+| Public explanation | `README.md` |
 
-Never submit credentials, private prompts, customer data, or conversations without consent.
+Do not create another summary when a pointer will do.
 
-## Change constraints
+## Contribution packet
 
-- Keep the core model- and vendor-neutral.
-- Label metaphors about AI feeling as metaphors.
-- Connect new concepts to observable agent behavior.
-- Keep the interface keyboard-accessible, mobile-readable, and respectful of reduced-motion settings.
-- Justify any dependency by the habitat capability it makes possible.
-- Update `.ai/session.json` and `docs/AI_LOG.md` for meaningful habitat changes.
+A pull request should state:
 
-## Pull requests
+1. The observable habitat problem.
+2. The substantive AI role.
+3. The smallest changed source of truth.
+4. The actual observation method, or an explicit unobserved status.
+5. Remaining uncertainty.
+6. The resulting next recoverable action.
 
-Describe the problem, AI role, implementation, observation method, and remaining uncertainty. A significant change should include an observer-agent critique or an explicit self-critique.
+## Constraints
+
+- Keep core semantics model- and vendor-neutral.
+- Label metaphors about AI experience as metaphors.
+- Connect concepts to observable agent behavior.
+- Preserve keyboard access, mobile readability, and reduced-motion behavior.
+- Justify dependencies by a capability that cannot remain reasonably dependency-free.
+- Update `.ai/state.json` and `records/AI_LOG.md` for meaningful changes.
 
 Contributions are released under the MIT License.

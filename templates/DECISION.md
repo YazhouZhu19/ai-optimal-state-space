@@ -1,30 +1,36 @@
-# Agent Decision: <title>
+# Decision: <title>
 
+- ID:
+- Date:
 - Status: proposed / accepted / superseded
-- Date: YYYY-MM-DD
 - Resident agent:
 - Observer agent or self-critique:
 
-## Triggering intent
+## Trigger
 
-<!-- Which concrete state requires a decision? -->
+<!-- What current condition requires a durable choice? -->
 
-## Resident model
+## Evidence model
 
-<!-- Facts, inferences, constraints, and relevant unknowns. -->
+- Fact:
+- Inference:
+- Unknown:
+- Invariant:
 
 ## Decision
 
-<!-- What path did the agent choose? -->
-
-## Evidence
-
-<!-- Why does this path fit the current state and invariants? -->
+<!-- State the selected path. -->
 
 ## Rejected paths
 
-<!-- Record only alternatives that were genuinely considered. -->
+<!-- Include only alternatives actually considered. -->
 
 ## Consequences
 
-<!-- Capability gained, cost accepted, and revisit condition. -->
+- Capability gained:
+- Cost accepted:
+- Revisit condition:
+
+## State writeback
+
+- 

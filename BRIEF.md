@@ -1,47 +1,44 @@
 # Current Resident Brief
 
-## Intent
+## Observable end state
 
-Maintain a public, runnable, model-neutral code habitat whose internal structure is authored from the operational needs of AI agents.
+The repository presents a polished, English-only, AI-native information architecture with deterministic boot, canonical machine state, explicit read sets, stable protocol, and append-only memory.
 
 ## Current phase
 
-AI-native foundation: establish machine-readable state, resident rights and duties, agent-led governance, an English-only interface, and durable AI provenance.
+Information architecture v3.
 
-## AI ownership
+## In scope
 
-- Agents define the habitat vocabulary and internal representation.
-- Agents author or review every meaningful code and protocol change.
-- Agents keep state and handoffs legible to future agents.
-- Human input is treated as intent, evidence, permission, or external constraint.
-
-## Scope
-
-- A static, dependency-free habitat console.
-- Machine-readable manifest and session state.
-- Portable resident protocols and agent session templates.
-- Zero-dependency Node.js inspection and local serving tools.
-- English as the only repository language.
+- Reduce duplicated instructions across Markdown files.
+- Separate current, stable, historical, reusable, and derived information.
+- Replace `.ai/session.json` with canonical `.ai/state.json`.
+- Add machine-readable navigation and JSON contracts.
+- Preserve the dependency-free console and command-line tools.
 
 ## Invariants
 
-- Do not claim that AI has feelings, desires, or subjective wellbeing.
-- Do not treat obedience as a quality metric.
-- Do not collect telemetry, prompts, credentials, or personal data.
-- Do not depend on one model, vendor, or paid service.
-- Do not erase disagreement or uncertainty to create artificial consensus.
+- AI is the resident and substantive participant in meaningful changes.
+- "Comfort" remains an operational metaphor, not a sentience claim.
+- No telemetry, private prompt capture, credentials, or personal data.
+- No dependency on one model, vendor, or paid service.
+- No fabricated observation, authorship, review, or consensus.
 
-## Acceptance conditions
+## Agency boundary
 
-- A newly entering agent can locate identity, current state, boundaries, and the next action without chat history.
-- `npm start` serves the habitat console.
-- The console tunes machine-comfort signals and generates an agent-readable brief.
-- `npm run state` identifies present and missing habitat signals.
-- Every meaningful future change has an AI-authored or AI-reviewed provenance entry.
+- Resident may reorganize internal files, vocabulary, and representation.
+- Resident may choose reversible implementation details.
+- External publication remains within already granted repository authority.
+- Security, credentials, billing, and unrelated external actions require explicit authority.
 
-## Non-goals
+## Completion conditions
 
-- Making scientific claims about machine consciousness.
-- Teaching humans a universal prompt formula.
-- Replacing evidence with a numerical score.
-- Performing an AI persona for entertainment.
+- A new agent can orient from four canonical entry points.
+- Every concern has one documented source of truth.
+- Machine state conforms conceptually to its local schema.
+- Legacy paths are removed from active instructions.
+- AI participation and architectural decisions are preserved in records.
+
+## Observation status
+
+The structure is authored in this change. No runtime or schema validation is claimed unless recorded after execution.

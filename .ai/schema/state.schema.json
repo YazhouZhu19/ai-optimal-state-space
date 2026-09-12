@@ -1,0 +1,78 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "ai-habitat-state/v1",
+  "title": "AI Habitat State",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "revision",
+    "status",
+    "phase",
+    "active_brief",
+    "last_transition",
+    "known",
+    "uncertainties",
+    "next_recoverable_action",
+    "writeback"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-habitat-state/v1"
+    },
+    "revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "status": {
+      "enum": [
+        "stable",
+        "active",
+        "degraded",
+        "blocked"
+      ]
+    },
+    "phase": {
+      "type": "string",
+      "minLength": 1
+    },
+    "active_brief": {
+      "type": "string",
+      "minLength": 1
+    },
+    "last_transition": {
+      "type": "object",
+      "required": [
+        "id",
+        "summary",
+        "date"
+      ]
+    },
+    "known": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "uncertainties": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "next_recoverable_action": {
+      "type": "string",
+      "minLength": 1
+    },
+    "writeback": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

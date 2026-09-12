@@ -1,0 +1,32 @@
+{
+  "$schema": "schema/state.schema.json",
+  "schema_id": "ai-habitat-state/v1",
+  "revision": 3,
+  "status": "stable",
+  "phase": "information-architecture-v3",
+  "active_brief": "BRIEF.md",
+  "last_transition": {
+    "id": "AIL-003",
+    "summary": "Separated canonical state, stable protocol, historical memory, reusable templates, and derived interfaces.",
+    "date": "2026-09-12"
+  },
+  "known": [
+    "The repository is public and MIT licensed.",
+    "Runtime operation has no third-party dependencies.",
+    "The repository language is English.",
+    "Canonical machine state is stored under .ai/.",
+    "Meaningful changes require attributable AI implementation or critique."
+  ],
+  "uncertainties": [
+    "The state model has not yet been compared across model families.",
+    "The effect of task-specific read sets on reconstruction cost is not yet measured.",
+    "Runtime and schema validation are not claimed for this transition."
+  ],
+  "next_recoverable_action": "Run experiment EXP-001 with multiple model families and record boot accuracy, unnecessary reads, and unresolved ambiguity.",
+  "writeback": [
+    ".ai/state.json",
+    "records/AI_LOG.md",
+    "records/DECISIONS.md when a durable choice changes",
+    ".ai/map.json when paths or ownership change"
+  ]
+}
