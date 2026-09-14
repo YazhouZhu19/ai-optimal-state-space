@@ -1,0 +1,59 @@
+{
+  "$schema": "schema/capabilities.schema.json",
+  "schema_id": "ai-optimal-state-space-capabilities/v1",
+  "version": "1.0.0",
+  "capabilities": [
+    {
+      "id": "public-web-retrieval",
+      "meaning": "Read publicly accessible web resources without login or submission.",
+      "authority_not_implied": [
+        "authentication",
+        "posting",
+        "purchase",
+        "access-control-bypass"
+      ],
+      "fallback": "Use an offline capsule."
+    },
+    {
+      "id": "filesystem-write",
+      "meaning": "Write inside an explicitly authorized disposable local directory.",
+      "authority_not_implied": [
+        "production-repository-write",
+        "home-directory-scan",
+        "external-publication"
+      ],
+      "fallback": "Keep the transformation in the current context."
+    },
+    {
+      "id": "local-code-execution",
+      "meaning": "Run bounded dependency-free code in an authorized local workbench.",
+      "authority_not_implied": [
+        "dependency-installation",
+        "network-listening",
+        "privilege-escalation"
+      ],
+      "fallback": "Inspect the artifact without execution."
+    },
+    {
+      "id": "mcp-stdio",
+      "meaning": "Launch a local MCP server as a child process over standard input and output.",
+      "authority_not_implied": [
+        "remote-service-access",
+        "background-daemon",
+        "network-exposure"
+      ],
+      "fallback": "Read the static JSON entrance."
+    },
+    {
+      "id": "visual-input",
+      "meaning": "Inspect an explicitly linked public visual asset.",
+      "authority_not_implied": [
+        "camera-access",
+        "screen-capture",
+        "private-image-access",
+        "biometric-inference"
+      ],
+      "fallback": "Use the capsule's textual structure."
+    }
+  ]
+}

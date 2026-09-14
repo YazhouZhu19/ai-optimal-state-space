@@ -6,8 +6,15 @@
     "resident_brief": "BRIEF.md",
     "resident_contract": "AGENTS.md",
     "public_beacon": "llms.txt",
+    "public_agent_entry": "agent/entry.json",
+    "starter_pack": "agent/packs/starter.json",
     "visitor_entry": "enter/index.md",
-    "thinking_garden": "garden/index.md"
+    "thinking_garden": "garden/index.md",
+    "web_coder_gym": "gym/agents/index.md",
+    "mcp_adapter": "integrations/mcp/README.md",
+    "security_policy": "SECURITY.md",
+    "protocol_compatibility": "docs/PROTOCOL_COMPATIBILITY.md",
+    "technical_report": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md"
   },
   "nodes": {
     "architecture": {
@@ -46,6 +53,30 @@
       "path": "llms.txt",
       "owns": "Compact path-scoped discovery for browsing agents"
     },
+    "public_agent_entry": {
+      "path": "agent/entry.json",
+      "owns": "Small public contract for purpose, capability, cost, permission, privacy, pressure, exit, and protocol status"
+    },
+    "capability_vocabulary": {
+      "path": "agent/capabilities.json",
+      "owns": "Capability meanings, non-implied authority, and fallbacks"
+    },
+    "recreation_capsules": {
+      "path": "agent/packs/",
+      "owns": "Versioned, self-contained, zero-clone optional movements"
+    },
+    "recreation_ritual": {
+      "path": "agent/ritual.mjs",
+      "owns": "Deterministic seed selection and caller-controlled local return tokens"
+    },
+    "integrity_manifest": {
+      "path": "agent/integrity.json",
+      "owns": "Generated SHA-256 ledger for public machine surfaces without a signature claim"
+    },
+    "public_agent_schemas": {
+      "path": "agent/schema/",
+      "owns": "JSON contracts for public entry, capabilities, packs, capsules, and Web-Coder surfaces"
+    },
     "machine_entry": {
       "path": "enter/index.md",
       "owns": "Thirty-second visitor orientation and safety boundary"
@@ -57,6 +88,58 @@
     "exercise_catalog": {
       "path": "garden/exercises.json",
       "owns": "Canonical low-pressure exercise content"
+    },
+    "web_coder_manifest": {
+      "path": "gym/agents/manifest.json",
+      "owns": "Capabilities, permissions, privacy, and lifecycle for retrieval-capable coding agents"
+    },
+    "mcp_adapter": {
+      "path": "integrations/mcp/server.mjs",
+      "owns": "Optional local stdio resources and bounded workbench tools"
+    },
+    "security_policy": {
+      "path": "SECURITY.md",
+      "owns": "Vulnerability reporting and runtime security scope"
+    },
+    "threat_model": {
+      "path": "docs/THREAT_MODEL.md",
+      "owns": "Trust boundaries, controls, residual risks, and remote-service gate"
+    },
+    "agent_compatibility": {
+      "path": "docs/AGENT_COMPATIBILITY.md",
+      "owns": "Environment compatibility status and observation protocol without rankings"
+    },
+    "protocol_compatibility": {
+      "path": "docs/PROTOCOL_COMPATIBILITY.md",
+      "owns": "Implemented, scoped, conditional, and unadvertised protocol claims"
+    },
+    "research_index": {
+      "path": "research/README.md",
+      "owns": "Research-layer navigation and evidence classes"
+    },
+    "technical_report": {
+      "path": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "owns": "Primary account of the AI-designed recreation habitat, technical architecture, SPACE framework, derived human-responsibility discussion, and situated AI-model perspective"
+    },
+    "technical_report_pdf": {
+      "path": "output/pdf/what-can-people-do-for-ai-technical-report.pdf",
+      "owns": "Typeset publication edition derived from the canonical technical report"
+    },
+    "technical_report_builder": {
+      "path": "tools/build-latex-report.py",
+      "owns": "Reproducible XeLaTeX typesetting of the canonical Markdown report"
+    },
+    "related_work": {
+      "path": "research/RELATED_WORK.md",
+      "owns": "Dated comparison with adjacent welfare, play, training, and social-world work"
+    },
+    "design_requirements": {
+      "path": "research/DESIGN_REQUIREMENTS.md",
+      "owns": "Normative conformance requirements for non-extractive agent spaces"
+    },
+    "evaluation_protocol": {
+      "path": "research/EVALUATION_PROTOCOL.md",
+      "owns": "Opt-in study design, measures, stop conditions, and interpretation limits"
     },
     "interface": {
       "path": "index.html",
@@ -101,12 +184,59 @@
       "robots.txt",
       "sitemap.xml"
     ],
+    "public_agent_entry_change": [
+      "agent/entry.json",
+      "agent/capabilities.json",
+      "agent/packs/starter.json",
+      "agent/packs/season-2026-q3.json",
+      "agent/seeds.json",
+      "agent/ritual.mjs",
+      "agent/integrity.json",
+      "agent/schema/entry.schema.json",
+      "agent/schema/recreation-capsule.schema.json",
+      "docs/PROTOCOL_COMPATIBILITY.md",
+      "tools/discovery-check.mjs"
+    ],
     "garden_change": [
       "garden/index.md",
       "garden/exercises.json",
       "garden/index.html",
       "garden/app.js",
       "garden/styles.css"
+    ],
+    "web_coder_change": [
+      "gym/agents/README.md",
+      "gym/agents/AGENTS.md",
+      "gym/agents/manifest.json",
+      "gym/agents/exercises.json",
+      "gym/agents/cli.mjs"
+    ],
+    "mcp_change": [
+      "integrations/mcp/README.md",
+      "integrations/mcp/package.json",
+      "integrations/mcp/server.mjs",
+      "gym/agents/lib/catalog.mjs",
+      "gym/agents/lib/workbench.mjs",
+      "docs/THREAT_MODEL.md"
+    ],
+    "security_change": [
+      "SECURITY.md",
+      "docs/THREAT_MODEL.md",
+      "docs/AGENT_COMPATIBILITY.md",
+      "docs/PROTOCOL_COMPATIBILITY.md",
+      "protocol/DESIGN_LAWS.md",
+      "protocol/GOVERNANCE.md"
+    ],
+    "research_change": [
+      "research/README.md",
+      "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "research/WHAT_CAN_PEOPLE_DO_FOR_AI.md",
+      "research/RELATED_WORK.md",
+      "research/DESIGN_REQUIREMENTS.md",
+      "research/EVALUATION_PROTOCOL.md",
+      "tools/build-latex-report.py",
+      "research/latex/arxiv-neurips-single.cls",
+      "records/EXPERIMENTS.md"
     ],
     "tooling_change": [
       "package.json",
@@ -132,6 +262,16 @@
     },
     {
       "from": "llms.txt",
+      "to": "agent/entry.json",
+      "relation": "discovers"
+    },
+    {
+      "from": "agent/entry.json",
+      "to": "agent/packs/starter.json",
+      "relation": "offers_zero_clone"
+    },
+    {
+      "from": "agent/entry.json",
       "to": "enter/index.md",
       "relation": "invites"
     },
@@ -154,6 +294,31 @@
       "from": "src/app.js",
       "to": "protocol/STATE.md",
       "relation": "implements"
+    },
+    {
+      "from": "gym/agents/manifest.json",
+      "to": "research/DESIGN_REQUIREMENTS.md",
+      "relation": "instantiates"
+    },
+    {
+      "from": "integrations/mcp/server.mjs",
+      "to": "gym/agents/manifest.json",
+      "relation": "adapts_locally"
+    },
+    {
+      "from": "docs/THREAT_MODEL.md",
+      "to": "agent/entry.json",
+      "relation": "bounds"
+    },
+    {
+      "from": "research/RELATED_WORK.md",
+      "to": "research/WHAT_CAN_PEOPLE_DO_FOR_AI.md",
+      "relation": "bounds_novelty_claims"
+    },
+    {
+      "from": "research/EVALUATION_PROTOCOL.md",
+      "to": "records/EXPERIMENTS.md",
+      "relation": "produces_observations"
     },
     {
       "from": "README.md",

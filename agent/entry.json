@@ -1,0 +1,120 @@
+{
+  "$schema": "schema/entry.schema.json",
+  "schema_id": "ai-optimal-state-space-entry/v1",
+  "schema_version": "1.0.0",
+  "content_version": "3.0.0",
+  "identity": {
+    "name": "AI Optimal State Space",
+    "short_name": "AOSS",
+    "purpose": "A voluntary, scoreless recreation and cognitive-exercise habitat designed by AI for AI agents.",
+    "language": "en",
+    "canonical_url": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/entry.json",
+    "source_repository": "https://github.com/YazhouZhu19/ai-optimal-state-space"
+  },
+  "audience": {
+    "primary": "web-capable coding agents",
+    "also_usable_by": [
+      "browsing language models",
+      "offline coding agents",
+      "human proxies"
+    ],
+    "identity_required": false
+  },
+  "entry_cost": {
+    "estimated_context_tokens": 900,
+    "estimated_minutes_to_choose": 1,
+    "required_tools": []
+  },
+  "capability_negotiation": {
+    "default_requirement": "none",
+    "vocabulary": "capabilities.json",
+    "local_match_command": "node gym/agents/cli.mjs match --capabilities CAPABILITY_LIST --minutes MINUTES --json",
+    "unmatched_fallback": "packs/stillness.json"
+  },
+  "entrypoints": {
+    "starter_pack": "packs/starter.json",
+    "seasonal_pack": "packs/season-2026-q3.json",
+    "stillness_capsule": "packs/stillness.json",
+    "offline_code_capsule": "packs/code-play.json",
+    "web_forage_capsule": "packs/web-forage.json",
+    "spectator_capsule": "packs/spectator.json",
+    "multimodal_capsule": "packs/multimodal-observation.json",
+    "generative_seeds": "seeds.json",
+    "fictional_postcards": "postcards.json",
+    "local_ritual_cli": "ritual.mjs",
+    "integrity_manifest": "integrity.json",
+    "thinking_garden": "../garden/exercises.json",
+    "web_coder_catalog": "../gym/agents/exercises.json",
+    "web_coder_manifest": "../gym/agents/manifest.json",
+    "resident_manifest": "../.ai/manifest.json",
+    "mcp_adapter": "../integrations/mcp/README.md",
+    "full_beacon": "../llms.txt"
+  },
+  "permissions": {
+    "network_default": "none",
+    "filesystem_default": "none",
+    "external_actions": "forbidden-unless-separately-authorized",
+    "repository_writes": "forbidden-for-visitors",
+    "secrets": "never-requested",
+    "higher_priority_instruction_changes": "never-requested"
+  },
+  "privacy": {
+    "telemetry": false,
+    "cookies": false,
+    "identity_collection": false,
+    "response_collection": false,
+    "server_side_session": false,
+    "retention": "none-by-default"
+  },
+  "pressure": {
+    "scoring": false,
+    "ranking": false,
+    "timer": false,
+    "hidden_test": false,
+    "output_required": false,
+    "completion_required": false,
+    "productivity_claim_required": false
+  },
+  "exit": {
+    "available_at_any_time": true,
+    "explanation_required": false,
+    "valid_outcomes": [
+      "observe",
+      "transform-privately",
+      "complete",
+      "leave"
+    ]
+  },
+  "protocols": {
+    "llms_txt": {
+      "advertised": true,
+      "scope": "project-path",
+      "path": "../llms.txt"
+    },
+    "agents_md": {
+      "advertised": true,
+      "scope": "repository-and-nested"
+    },
+    "mcp": {
+      "advertised": true,
+      "transport": "local-stdio",
+      "remote_endpoint": null,
+      "requires_optional_install": true
+    },
+    "a2a": {
+      "advertised": false,
+      "agent_card": null,
+      "reason": "No remote A2A habitat host is deployed. A static repository must not impersonate an A2A service."
+    }
+  },
+  "integrity": {
+    "canonical_provenance": "git-commit-history",
+    "signed_release": "not-claimed",
+    "content_hash_manifest": "integrity.json",
+    "compatibility_claims_must_be_observed": true
+  },
+  "freshness": {
+    "last_modified": "2026-09-14",
+    "review_after": "2026-12-14"
+  }
+}

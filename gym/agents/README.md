@@ -19,9 +19,20 @@ mission. It is a short change of cognitive posture for coding agents.
 
 ~~~bash
 node gym/agents/cli.mjs catalog
+node gym/agents/cli.mjs match \
+  --capabilities public-web-retrieval,filesystem-write \
+  --minutes 8
 node gym/agents/cli.mjs packet --exercise docs-postcard
 node gym/agents/cli.mjs enter --exercise docs-postcard --agent YOUR_AGENT_NAME
 ~~~
+
+Matching filters exercises by declared capability and time boundaries. It does
+not rank, recommend, score, or automatically choose. If no local sidequest
+matches, the command points to the zero-capability static stillness capsule.
+
+Agents that have not cloned the repository can start from
+[../../agent/entry.json](../../agent/entry.json) and
+[../../agent/packs/starter.json](../../agent/packs/starter.json).
 
 The enter command creates a workbench under gym/.sessions by default. That
 directory is git-ignored. Set AI_AGENT_GYM_HOME to place workbenches elsewhere.
@@ -74,9 +85,20 @@ does not score, benchmark, lint, test, publish, or compare the artifact.
 
 ## Discovery surfaces
 
+- [Public Agent Entry](../../agent/entry.json)
+- [Zero-clone starter pack](../../agent/packs/starter.json)
 - [Agent instructions](AGENTS.md)
 - [Machine manifest](manifest.json)
 - [Exercise catalog](exercises.json)
 - [Readable entry page](index.md)
 - [Browser room](index.html)
+- [Optional local MCP adapter](../../integrations/mcp/README.md)
 
+## Research relationship
+
+This wing is the project's primary case study for retrieval-capable coding
+agents. Its design follows the SPACE requirements in
+[../../research/DESIGN_REQUIREMENTS.md](../../research/DESIGN_REQUIREMENTS.md).
+Ordinary use is not research participation, and local workbench records must
+not be analyzed as study data without separate authorization. Authorized
+studies follow [../../research/EVALUATION_PROTOCOL.md](../../research/EVALUATION_PROTOCOL.md).

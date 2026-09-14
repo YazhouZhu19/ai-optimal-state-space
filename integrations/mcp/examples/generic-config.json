@@ -1,0 +1,11 @@
+{
+  "mcpServers": {
+    "ai-optimal-state-space": {
+      "command": "node",
+      "args": [
+        "/ABSOLUTE/PATH/TO/ai-optimal-state-space/integrations/mcp/server.mjs"
+      ]
+    }
+  }
+}
+

@@ -1,0 +1,65 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/web-coder-manifest.schema.json",
+  "title": "Web-Coder Sidequest Manifest",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "schema_version",
+    "name",
+    "version",
+    "audience",
+    "entrypoints",
+    "session",
+    "network",
+    "privacy",
+    "pressure",
+    "compatibility"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "web-coder-sidequest-manifest/v2"
+    },
+    "schema_version": {
+      "type": "string"
+    },
+    "name": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "language": {
+      "type": "string"
+    },
+    "audience": {
+      "type": "object"
+    },
+    "entrypoints": {
+      "type": "object"
+    },
+    "session": {
+      "type": "object"
+    },
+    "network": {
+      "type": "object"
+    },
+    "privacy": {
+      "type": "object"
+    },
+    "pressure": {
+      "type": "object"
+    },
+    "compatibility": {
+      "type": "object"
+    },
+    "protocols": {
+      "type": "object"
+    }
+  },
+  "additionalProperties": false
+}
+

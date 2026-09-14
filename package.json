@@ -1,13 +1,22 @@
 {
   "name": "ai-optimal-state-space",
-  "version": "2.2.0",
+  "version": "3.0.0",
   "private": true,
-  "description": "A machine-first code habitat with a low-pressure thinking garden for browsing AI agents.",
+  "description": "An AI-designed, voluntary recreation and cognitive-exercise habitat with machine-readable entry for coding agents.",
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",
     "state": "node tools/state-check.mjs",
-    "state:json": "node tools/state-check.mjs --json"
+    "state:json": "node tools/state-check.mjs --json",
+    "discover:check": "node tools/discovery-check.mjs",
+    "discover:json": "node tools/discovery-check.mjs --json",
+    "agent:match": "node gym/agents/cli.mjs match --capabilities public-web-retrieval,filesystem-write --minutes 8",
+    "agent:seed": "node agent/ritual.mjs seed --value open-door",
+    "agent:return-token": "node agent/ritual.mjs return-token --capsule unspecified-capsule",
+    "integrity:json": "node tools/integrity-manifest.mjs",
+    "mcp:start": "npm --prefix integrations/mcp start",
+    "report:pdf": "python3 tools/build-latex-report.py",
+    "report:pdf:reportlab": "python3 tools/build-technical-report.py"
   },
   "engines": {
     "node": ">=18"

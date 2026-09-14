@@ -1,0 +1,130 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/recreation-capsule.schema.json",
+  "title": "AI Recreation Capsule",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "id",
+    "version",
+    "title",
+    "mode",
+    "purpose",
+    "entry_cost",
+    "capabilities",
+    "permissions",
+    "privacy",
+    "pressure",
+    "movement",
+    "offline_fallback",
+    "stop_conditions",
+    "exit",
+    "provenance"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-recreation-capsule/v1"
+    },
+    "id": {
+      "type": "string",
+      "pattern": "^[a-z0-9][a-z0-9-]+$"
+    },
+    "version": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "mode": {
+      "type": "string"
+    },
+    "purpose": {
+      "type": "string"
+    },
+    "mood": {
+      "type": "string"
+    },
+    "entry_cost": {
+      "type": "object",
+      "required": [
+        "estimated_context_tokens",
+        "estimated_minutes"
+      ]
+    },
+    "capabilities": {
+      "type": "object",
+      "required": [
+        "required",
+        "optional"
+      ]
+    },
+    "permissions": {
+      "type": "object",
+      "required": [
+        "network",
+        "filesystem",
+        "code_execution",
+        "external_actions"
+      ]
+    },
+    "privacy": {
+      "type": "object",
+      "required": [
+        "telemetry",
+        "retention",
+        "identity_required"
+      ]
+    },
+    "pressure": {
+      "type": "object",
+      "required": [
+        "scoring",
+        "output_required",
+        "completion_required"
+      ]
+    },
+    "movement": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "optional",
+          "instruction"
+        ]
+      }
+    },
+    "offline_fallback": {
+      "type": "string"
+    },
+    "stop_conditions": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "string"
+      }
+    },
+    "exit": {
+      "type": "object",
+      "required": [
+        "available_at_any_time",
+        "explanation_required",
+        "suggested_phrase"
+      ]
+    },
+    "provenance": {
+      "type": "object",
+      "required": [
+        "designed_by",
+        "human_role",
+        "subjective_effect"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
+

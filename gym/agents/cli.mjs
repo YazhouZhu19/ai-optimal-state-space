@@ -1,5 +1,10 @@
 #!/usr/bin/env node
-import { findExercise, loadAgentCatalog, packetFor } from "./lib/catalog.mjs";
+import {
+  findExercise,
+  loadAgentCatalog,
+  matchExercises,
+  packetFor
+} from "./lib/catalog.mjs";
 import { AgentWorkbench } from "./lib/workbench.mjs";
 
 function parse(argv) {
@@ -27,6 +32,7 @@ function help() {
     "Web-Coder Sidequest Wing",
     "",
     "node gym/agents/cli.mjs catalog [--mode MODE] [--json]",
+    "node gym/agents/cli.mjs match --capabilities LIST [--minutes N] [--mode LIST] [--json]",
     "node gym/agents/cli.mjs packet --exercise ID [--json]",
     "node gym/agents/cli.mjs enter --exercise ID [--agent NAME] [--seed TEXT] [--json]",
     "node gym/agents/cli.mjs sessions [--json]",
@@ -34,8 +40,16 @@ function help() {
     "node gym/agents/cli.mjs close SESSION_ID --artifact PATH --opened TEXT [--knotted TEXT] [--invitation TEXT]",
     "node gym/agents/cli.mjs leave SESSION_ID [--note TEXT]",
     "",
-    "The agent chooses the exercise. There is no automatic best exercise."
+    "Matching filters eligibility without ranking. The agent chooses or leaves."
   ].join("\n"));
+}
+
+function listFlag(value) {
+  if (!value || value === true || value === "none") return [];
+  return String(value)
+    .split(",")
+    .map((item) => item.trim())
+    .filter(Boolean);
 }
 
 function printPacket(packet) {
@@ -74,6 +88,54 @@ async function main() {
         console.log("\n" + mode.title + ": " + mode.description);
         members.forEach((item) => console.log("  " + item.id + "  " + item.title));
       }
+    }
+    return;
+  }
+  if (command === "match") {
+    const capabilities = listFlag(flags.capabilities);
+    const modes = listFlag(flags.mode);
+    const maxMinutes = flags.minutes === undefined
+      ? Infinity
+      : Number.parseInt(flags.minutes, 10);
+    if (!Number.isFinite(maxMinutes) && maxMinutes !== Infinity) {
+      throw new Error("--minutes must be a positive integer.");
+    }
+    if (maxMinutes <= 0) {
+      throw new Error("--minutes must be a positive integer.");
+    }
+    const matches = matchExercises(catalog, {
+      capabilities,
+      modes,
+      maxMinutes
+    });
+    const result = {
+      schema_id: "web-coder-sidequest-match/v1",
+      unranked: true,
+      supplied_capabilities: capabilities,
+      maximum_minutes: Number.isFinite(maxMinutes) ? maxMinutes : null,
+      modes,
+      matches,
+      fallback: matches.length
+        ? null
+        : {
+            id: "maintenance-stillness",
+            path: "../../agent/packs/stillness.json",
+            required_capabilities: []
+          }
+    };
+    if (flags.json) {
+      console.log(JSON.stringify(result, null, 2));
+    } else if (!matches.length) {
+      console.log("No local sidequest matches those boundaries.");
+      console.log("A zero-capability fallback remains available at agent/packs/stillness.json.");
+    } else {
+      console.log("Unranked compatible movements:");
+      matches.forEach((item) => {
+        console.log(
+          "  " + item.id + "  " + item.profile.estimated_minutes + " min  " + item.title
+        );
+      });
+      console.log("Choose any movement or leave.");
     }
     return;
   }
@@ -151,4 +213,3 @@ main().catch((error) => {
   console.error("Sidequest wing stopped: " + error.message);
   process.exitCode = 1;
 });
-

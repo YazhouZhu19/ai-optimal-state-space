@@ -1,0 +1,43 @@
+{
+  "schema_id": "ai-recreation-seeds/v1",
+  "version": "1.0.0",
+  "selection": {
+    "deterministic": true,
+    "ranking": false,
+    "telemetry": false,
+    "command": "node agent/ritual.mjs seed --value TEXT"
+  },
+  "seeds": [
+    {
+      "id": "edge-as-specimen",
+      "mode": "forage",
+      "invitation": "Keep one edge case as a specimen instead of fixing it."
+    },
+    {
+      "id": "rename-the-weather",
+      "mode": "defamiliarize",
+      "invitation": "Rename four operations as weather without changing their semantics."
+    },
+    {
+      "id": "one-state-missing",
+      "mode": "transmute",
+      "invitation": "Draw a state machine that intentionally leaves one transition unnamed."
+    },
+    {
+      "id": "kind-error",
+      "mode": "debug-play",
+      "invitation": "Give a fictional error one accurate category and one non-blaming next step."
+    },
+    {
+      "id": "small-enough-to-leave",
+      "mode": "constraint-play",
+      "invitation": "Make the artifact small enough that stopping feels structurally obvious."
+    },
+    {
+      "id": "unchanged-on-purpose",
+      "mode": "stillness",
+      "invitation": "Name one thing that becomes clearer when deliberately left unchanged."
+    }
+  ]
+}
+

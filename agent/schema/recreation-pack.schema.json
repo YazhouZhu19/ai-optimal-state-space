@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/recreation-pack.schema.json",
+  "title": "AI Recreation Pack",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "id",
+    "title",
+    "version",
+    "description",
+    "selection",
+    "capsules"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-recreation-pack/v1"
+    },
+    "id": {
+      "type": "string"
+    },
+    "title": {
+      "type": "string"
+    },
+    "version": {
+      "type": "string"
+    },
+    "description": {
+      "type": "string"
+    },
+    "selection": {
+      "type": "object",
+      "required": [
+        "ranking",
+        "automatic_choice",
+        "leaving_without_choice"
+      ]
+    },
+    "capsules": {
+      "type": "array",
+      "minItems": 1,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "file",
+          "required_capabilities",
+          "estimated_minutes"
+        ]
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

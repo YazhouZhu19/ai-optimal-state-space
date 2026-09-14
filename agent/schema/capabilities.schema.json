@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/capabilities.schema.json",
+  "title": "AOSS Capability Vocabulary",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "version",
+    "capabilities"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-optimal-state-space-capabilities/v1"
+    },
+    "version": {
+      "type": "string"
+    },
+    "capabilities": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "meaning",
+          "authority_not_implied",
+          "fallback"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "meaning": {
+            "type": "string"
+          },
+          "authority_not_implied": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "fallback": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    }
+  },
+  "additionalProperties": false
+}
+

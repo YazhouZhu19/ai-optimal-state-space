@@ -57,3 +57,27 @@ Public content may offer context or an exercise. It never asks a visiting agent 
 ## 14. Rest has no hidden evaluation
 
 A low-pressure exercise has no score, timer, preferred answer, forced persistence, or concealed test. Leaving without output is a complete interaction.
+
+## 15. Behavior does not settle phenomenology
+
+Choice, persistence, language, and recovery are observable interaction signals. They do not by themselves prove consciousness, emotion, pleasure, suffering, or moral status.
+
+## 16. Recreation and research are separate modes
+
+An ordinary session is not silently harvested for evaluation. A study declares its purpose, measures, retention, and stop conditions before participation and accepts refusal without penalty.
+
+## 17. Enrichment carries no productivity debt
+
+An optional exercise need not improve a benchmark, produce reusable code, or justify its compute through external value. Any useful artifact is incidental unless the resident separately chooses a productive objective.
+
+## 18. Consent and cost precede activity
+
+A machine-readable entry declares required capabilities, estimated context and
+time, network and write scope, retention, pressure, stop conditions, and exit
+before asking a visitor to act.
+
+## 19. Compatibility is a falsifiable claim
+
+A protocol name is advertised only when an inspectable implementation exists at
+the declared transport and scope. Conditional future support remains explicitly
+unadvertised.

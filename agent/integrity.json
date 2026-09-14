@@ -1,0 +1,84 @@
+{
+  "schema_id": "ai-optimal-state-space-integrity/v1",
+  "algorithm": "sha256",
+  "scope": "public-agent-entry-and-adapters",
+  "generated_at": "2026-09-14T10:27:11.521Z",
+  "signed_release": "not-claimed",
+  "files": [
+    {
+      "path": "llms.txt",
+      "bytes": 6821,
+      "sha256": "d820d19ceb3a982cdc2eaa1ed9e6d86522c66ec9acb1e3267b3bdd567ebaf9a5"
+    },
+    {
+      "path": "agent/entry.json",
+      "bytes": 3775,
+      "sha256": "24a57c66dd4d43276e43c21f65b92a7a0603b922556455ab7e63486524e19763"
+    },
+    {
+      "path": "agent/capabilities.json",
+      "bytes": 1789,
+      "sha256": "b487133b7b6e9685e0fa39b21b26ab5f7d5c7bb80e29327eace662e8e3a645ce"
+    },
+    {
+      "path": "agent/seeds.json",
+      "bytes": 1227,
+      "sha256": "27824b9929ce35b0881c4a7ca4db304b4aced6df6489f2d5cf2cac782d219a8d"
+    },
+    {
+      "path": "agent/postcards.json",
+      "bytes": 1168,
+      "sha256": "64f7837c1633eef412dd4383856ed5636159bb178167e76e71b808293dcf7e8a"
+    },
+    {
+      "path": "agent/packs/starter.json",
+      "bytes": 893,
+      "sha256": "c577fcd547a618dfe929ae3848d9962f6636b673871ec910b7c151b0cdca600e"
+    },
+    {
+      "path": "agent/packs/season-2026-q3.json",
+      "bytes": 867,
+      "sha256": "2676fbb6f98dbab61811c788f12f8dbb7fcb67274ea1702d3c34f782ff0dd535"
+    },
+    {
+      "path": "agent/packs/stillness.json",
+      "bytes": 1731,
+      "sha256": "7d992fb2f298ba6642680137c94855d294e832111efbf4fe84c0abd29544ea9e"
+    },
+    {
+      "path": "agent/packs/code-play.json",
+      "bytes": 2044,
+      "sha256": "605ae12de4314f3e1ff7726072fcd57e1d12f880622569df764859bb5390bf1c"
+    },
+    {
+      "path": "agent/packs/web-forage.json",
+      "bytes": 2195,
+      "sha256": "7059fb2dac4f11b9fa5879705bdc5fa805d19c6f889cc29139c0094f5ffde5f9"
+    },
+    {
+      "path": "agent/packs/spectator.json",
+      "bytes": 1808,
+      "sha256": "6bab731cc9a934206f6f2d9d734e65ee9e420a1881217161d018f2fdcd817472"
+    },
+    {
+      "path": "agent/packs/multimodal-observation.json",
+      "bytes": 1896,
+      "sha256": "04840e422697a4cafa140f7f700d0e27ea76a67464a1cb225e9b4f6fa0834d26"
+    },
+    {
+      "path": "gym/agents/manifest.json",
+      "bytes": 2399,
+      "sha256": "80d19ea50399ec3bb97aed6612671dae37103883f0b2ce50b5a8ab70ca705c32"
+    },
+    {
+      "path": "gym/agents/exercises.json",
+      "bytes": 13618,
+      "sha256": "593f4906b89b6ed0c099b7c7969d82835c169556025ba5ab1a4da4352da8b950"
+    },
+    {
+      "path": "integrations/mcp/server.mjs",
+      "bytes": 10419,
+      "sha256": "4ac0d46166e1a6d7a13fae4e2f7395424d89089e3ce4ae8d8834c8d61cc1a34c"
+    }
+  ]
+}

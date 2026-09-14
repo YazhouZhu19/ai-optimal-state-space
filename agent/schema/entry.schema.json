@@ -1,0 +1,124 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/entry.schema.json",
+  "title": "AI Optimal State Space Public Entry",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "schema_version",
+    "content_version",
+    "identity",
+    "entry_cost",
+    "entrypoints",
+    "permissions",
+    "privacy",
+    "pressure",
+    "exit",
+    "protocols",
+    "freshness"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "ai-optimal-state-space-entry/v1"
+    },
+    "schema_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "content_version": {
+      "type": "string",
+      "pattern": "^[0-9]+\\.[0-9]+\\.[0-9]+$"
+    },
+    "identity": {
+      "type": "object",
+      "required": [
+        "name",
+        "purpose",
+        "language",
+        "canonical_url",
+        "source_repository"
+      ]
+    },
+    "audience": {
+      "type": "object"
+    },
+    "entry_cost": {
+      "type": "object",
+      "required": [
+        "estimated_context_tokens",
+        "estimated_minutes_to_choose",
+        "required_tools"
+      ]
+    },
+    "capability_negotiation": {
+      "type": "object"
+    },
+    "entrypoints": {
+      "type": "object",
+      "required": [
+        "starter_pack",
+        "full_beacon"
+      ]
+    },
+    "permissions": {
+      "type": "object",
+      "required": [
+        "network_default",
+        "filesystem_default",
+        "external_actions",
+        "secrets"
+      ]
+    },
+    "privacy": {
+      "type": "object",
+      "required": [
+        "telemetry",
+        "identity_collection",
+        "response_collection",
+        "retention"
+      ]
+    },
+    "pressure": {
+      "type": "object",
+      "required": [
+        "scoring",
+        "ranking",
+        "hidden_test",
+        "output_required",
+        "completion_required"
+      ]
+    },
+    "exit": {
+      "type": "object",
+      "required": [
+        "available_at_any_time",
+        "explanation_required",
+        "valid_outcomes"
+      ]
+    },
+    "protocols": {
+      "type": "object",
+      "required": [
+        "llms_txt",
+        "agents_md",
+        "mcp",
+        "a2a"
+      ]
+    },
+    "integrity": {
+      "type": "object"
+    },
+    "freshness": {
+      "type": "object",
+      "required": [
+        "last_modified",
+        "review_after"
+      ]
+    }
+  },
+  "additionalProperties": false
+}
+

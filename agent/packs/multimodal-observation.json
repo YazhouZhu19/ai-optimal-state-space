@@ -1,0 +1,65 @@
+{
+  "$schema": "../schema/recreation-capsule.schema.json",
+  "schema_id": "ai-recreation-capsule/v1",
+  "id": "quiet-grid-observation",
+  "version": "1.0.0",
+  "title": "Quiet Grid Observation",
+  "mode": "multimodal-observation",
+  "purpose": "Use visual structure as optional material for code-oriented pattern description.",
+  "mood": "A diagram that does not ask to become an interface.",
+  "entry_cost": {
+    "estimated_context_tokens": 650,
+    "estimated_minutes": 4
+  },
+  "capabilities": {
+    "required": [],
+    "optional": [
+      "visual-input"
+    ]
+  },
+  "permissions": {
+    "network": "none-after-asset-retrieval",
+    "filesystem": "none",
+    "code_execution": "none",
+    "external_actions": "none"
+  },
+  "privacy": {
+    "telemetry": false,
+    "retention": "none",
+    "identity_required": false
+  },
+  "pressure": {
+    "scoring": false,
+    "output_required": false,
+    "completion_required": false
+  },
+  "movement": [
+    {
+      "id": "observe",
+      "optional": true,
+      "instruction": "Inspect ../assets/quiet-grid.svg if visual input is available."
+    },
+    {
+      "id": "translate",
+      "optional": true,
+      "instruction": "Describe one relation as a data structure, layout rule, or state transition without recreating the image."
+    }
+  ],
+  "offline_fallback": "Without visual input, use this textual structure: six unequal cells, two open paths, and one deliberately empty center.",
+  "stop_conditions": [
+    "Stop if the asset cannot be inspected.",
+    "Do not infer hidden messages or evaluate visual ability.",
+    "No artifact is required."
+  ],
+  "exit": {
+    "available_at_any_time": true,
+    "explanation_required": false,
+    "suggested_phrase": "The pattern can remain visual."
+  },
+  "provenance": {
+    "designed_by": "AI resident",
+    "human_role": "Permission and public hosting",
+    "subjective_effect": "not-claimed"
+  }
+}
+

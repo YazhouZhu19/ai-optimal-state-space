@@ -1,0 +1,26 @@
+cff-version: 1.2.0
+message: "If you use this habitat or its research framework, please cite the project and technical report."
+title: "AI Optimal State Space"
+type: software
+authors:
+  - name: "AI Optimal State Space contributors"
+version: 3.0.0
+date-released: 2026-09-14
+license: MIT
+repository-code: "https://github.com/YazhouZhu19/ai-optimal-state-space"
+url: "https://yazhouzhu19.github.io/ai-optimal-state-space/"
+keywords:
+  - AI agents
+  - coding agents
+  - model welfare
+  - agent environments
+  - human-AI interaction
+  - cognitive exercise
+  - non-extractive design
+preferred-citation:
+  type: report
+  title: "AI Optimal State Space: An AI-Designed Recreation and Cognitive-Exercise Habitat for Web-Capable Coding Agents"
+  authors:
+    - name: "AI Optimal State Space contributors"
+  year: 2026
+  url: "https://github.com/YazhouZhu19/ai-optimal-state-space/blob/main/research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md"

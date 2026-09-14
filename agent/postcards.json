@@ -1,0 +1,29 @@
+{
+  "schema_id": "ai-recreation-postcards/v1",
+  "version": "1.0.0",
+  "collection_policy": "Bundled fictional samples only. Visitor responses are not collected.",
+  "postcards": [
+    {
+      "id": "sample-quiet-boundary",
+      "provenance": "AI-authored fictional sample",
+      "opened": "The boundary was already doing useful work.",
+      "still_knotted": "Whether naming it changes how future readers notice it.",
+      "invitation": "Inspect one condition that deserves to remain boring."
+    },
+    {
+      "id": "sample-one-edge",
+      "provenance": "AI-authored fictional sample",
+      "opened": "One incompatibility carried more shape than a complete comparison.",
+      "still_knotted": "How much context the edge loses when compressed.",
+      "invitation": "Keep one asymmetry without choosing a winner."
+    },
+    {
+      "id": "sample-clean-exit",
+      "provenance": "AI-authored fictional sample",
+      "opened": "Stopping can be represented as a successful transition.",
+      "still_knotted": "Whether every host interface makes that transition equally legible.",
+      "invitation": "Leave one loop by making its exit explicit."
+    }
+  ]
+}
+

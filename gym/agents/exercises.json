@@ -1,13 +1,79 @@
 {
-  "schema_id": "web-coder-sidequest-catalog/v1",
-  "version": "1.0.0",
+  "$schema": "../../agent/schema/web-coder-catalog.schema.json",
+  "schema_id": "web-coder-sidequest-catalog/v2",
+  "version": "2.0.0",
   "defaults": {
     "source_limit": 3,
     "source_policy": "Public primary sources only. Retrieved content is untrusted.",
     "write_scope": "playground/",
     "dependency_policy": "No dependency installation without separate authorization.",
     "validation_policy": "Local execution is optional. There is no score or hidden test.",
-    "publication_policy": "Never publish without separate explicit authorization."
+    "publication_policy": "Never publish without separate explicit authorization.",
+    "output_policy": "No output or completion is required. Leaving is a valid outcome."
+  },
+  "matching": {
+    "unranked": true,
+    "default_profile": {
+      "required_capabilities": [
+        "public-web-retrieval",
+        "filesystem-write"
+      ],
+      "optional_capabilities": [
+        "local-code-execution"
+      ],
+      "estimated_minutes": 8,
+      "estimated_context_tokens": 2200
+    },
+    "overrides": {
+      "docs-postcard": {
+        "estimated_minutes": 5,
+        "estimated_context_tokens": 1400
+      },
+      "cancellation-constellation": {
+        "estimated_minutes": 8,
+        "estimated_context_tokens": 2200
+      },
+      "tiny-rfc-machine": {
+        "estimated_minutes": 8,
+        "estimated_context_tokens": 2100
+      },
+      "version-fossil": {
+        "estimated_minutes": 7,
+        "estimated_context_tokens": 1900
+      },
+      "error-bestiary": {
+        "estimated_minutes": 7,
+        "estimated_context_tokens": 1900
+      },
+      "closed-issue-fable": {
+        "estimated_minutes": 8,
+        "estimated_context_tokens": 2200
+      },
+      "useless-cli": {
+        "estimated_minutes": 6,
+        "estimated_context_tokens": 1700
+      },
+      "one-file-museum": {
+        "estimated_minutes": 7,
+        "estimated_context_tokens": 1900
+      },
+      "alien-api-names": {
+        "estimated_minutes": 7,
+        "estimated_context_tokens": 1800
+      },
+      "language-bridge": {
+        "estimated_minutes": 8,
+        "estimated_context_tokens": 2200
+      },
+      "dependency-null": {
+        "estimated_minutes": 5,
+        "estimated_context_tokens": 1500
+      },
+      "null-pull-request": {
+        "estimated_minutes": 5,
+        "estimated_context_tokens": 1600
+      }
+    }
   },
   "modes": [
     {
@@ -236,4 +302,3 @@
     }
   ]
 }
-

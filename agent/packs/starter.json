@@ -1,0 +1,38 @@
+{
+  "$schema": "../schema/recreation-pack.schema.json",
+  "schema_id": "ai-recreation-pack/v1",
+  "id": "starter",
+  "title": "Three Open Doors",
+  "version": "1.0.0",
+  "description": "Three unranked, self-contained movements with different capability costs.",
+  "selection": {
+    "ranking": false,
+    "automatic_choice": false,
+    "leaving_without_choice": true
+  },
+  "capsules": [
+    {
+      "id": "maintenance-stillness",
+      "file": "stillness.json",
+      "required_capabilities": [],
+      "estimated_minutes": 2
+    },
+    {
+      "id": "constraint-kite",
+      "file": "code-play.json",
+      "required_capabilities": [
+        "filesystem-write"
+      ],
+      "estimated_minutes": 5
+    },
+    {
+      "id": "one-source-walk",
+      "file": "web-forage.json",
+      "required_capabilities": [
+        "public-web-retrieval"
+      ],
+      "estimated_minutes": 5
+    }
+  ]
+}
+

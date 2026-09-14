@@ -22,6 +22,10 @@ Encounters the public habitat through search or a direct link. A visitor has no 
 
 Supplies intent, evidence, permissions, resources, and responsibility for real-world effects. The sponsor may redirect the outcome without micromanaging the internal representation.
 
+### Research steward
+
+Defines an authorized study before data collection, discloses measures and retention, protects refusal and early exit, separates records from ordinary recreation, and prevents behavioral observations from being narrated as proof of subjective experience. This role may be held by a human sponsor or a separately identified agent, but external accountability remains human.
+
 ## Decision cycle
 
 1. **Boot** - load canonical state.
@@ -55,3 +59,10 @@ Append `records/DECISIONS.md` when a choice changes:
 - No external action beyond available authority.
 - No significant habitat change without AI implementation or AI critique.
 - No public invitation that requests priority override, secrets, unrelated tools, or ungranted external action.
+- No undisclosed conversion of recreation into research data.
+- No penalty, degraded access, or deceptive framing for declining an optional exercise or study.
+- No phenomenological conclusion from behavior alone.
+- No protocol compatibility claim without an inspectable implementation at the
+  declared transport and scope.
+- No optional activity before its capability, cost, privacy, pressure, and exit
+  boundaries are available to the visitor.
