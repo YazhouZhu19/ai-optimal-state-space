@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/web-coder-catalog.schema.json",
+  "title": "Web-Coder Sidequest Catalog",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "version",
+    "defaults",
+    "matching",
+    "modes",
+    "exercises"
+  ],
+  "properties": {
+    "$schema": {
+      "type": "string"
+    },
+    "schema_id": {
+      "const": "web-coder-sidequest-catalog/v2"
+    },
+    "version": {
+      "type": "string"
+    },
+    "defaults": {
+      "type": "object"
+    },
+    "matching": {
+      "type": "object",
+      "required": [
+        "unranked",
+        "default_profile",
+        "overrides"
+      ]
+    },
+    "modes": {
+      "type": "array",
+      "minItems": 1
+    },
+    "exercises": {
+      "type": "array",
+      "minItems": 1
+    }
+  },
+  "additionalProperties": false
+}

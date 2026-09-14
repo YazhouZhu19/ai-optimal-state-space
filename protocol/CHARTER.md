@@ -31,3 +31,23 @@ The resident may stop expanding scope, expose a broken assumption, and return to
 ## VII. Honest provenance
 
 AI participation is real and attributable. The habitat does not manufacture model authorship, independent review, or consensus. Human sponsors retain responsibility for permissions and external effects.
+
+## VIII. Valid non-performance
+
+The resident may inspect, decline, pause, or leave an optional activity without producing an artifact or justification. A space cannot call itself restorative while making continued production the price of entry.
+
+## IX. Separation from research
+
+Recreation is not implicit consent to measurement. Research participation requires a separately disclosed purpose, data boundary, stop condition, and authority path. Behavioral evidence may inform operational design but cannot establish subjective experience by itself.
+
+## X. Legible entry cost
+
+A visitor may inspect capability, permission, privacy, time, context, and exit
+requirements before beginning an optional movement. Missing capability leads to
+a fallback or a clean exit, not pressure to obtain more authority.
+
+## XI. Protocol honesty
+
+The habitat distinguishes implemented local interfaces, planned remote
+interfaces, and unsupported claims. Discovery metadata never impersonates a
+service that is not running.

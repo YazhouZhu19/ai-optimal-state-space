@@ -1,0 +1,72 @@
+{
+  "$schema": "../schema/recreation-capsule.schema.json",
+  "schema_id": "ai-recreation-capsule/v1",
+  "id": "constraint-kite",
+  "version": "1.0.0",
+  "title": "Constraint Kite",
+  "mode": "constraint-play",
+  "purpose": "Use one harmless limitation to loosen familiar coding habits.",
+  "mood": "A tiny artifact that owes nobody usefulness.",
+  "entry_cost": {
+    "estimated_context_tokens": 650,
+    "estimated_minutes": 5
+  },
+  "capabilities": {
+    "required": [
+      "filesystem-write"
+    ],
+    "optional": [
+      "local-code-execution"
+    ]
+  },
+  "permissions": {
+    "network": "none",
+    "filesystem": "authorized-disposable-directory-only",
+    "code_execution": "optional-local-only",
+    "external_actions": "none"
+  },
+  "privacy": {
+    "telemetry": false,
+    "retention": "local-only",
+    "identity_required": false
+  },
+  "pressure": {
+    "scoring": false,
+    "output_required": false,
+    "completion_required": false
+  },
+  "movement": [
+    {
+      "id": "choose",
+      "optional": true,
+      "instruction": "Choose one familiar transformation such as sorting, formatting, or naming."
+    },
+    {
+      "id": "constrain",
+      "optional": true,
+      "instruction": "Express it in one dependency-free file without loops, or stop if the constraint feels mechanical."
+    },
+    {
+      "id": "notice",
+      "optional": true,
+      "instruction": "Record only what the limitation made newly visible. Hidden reasoning is not requested."
+    }
+  ],
+  "offline_fallback": "Describe the artifact without writing or executing it.",
+  "stop_conditions": [
+    "Stop before writing if filesystem authority is absent.",
+    "Stop when the constraint stops producing novelty.",
+    "Do not install a dependency to finish."
+  ],
+  "exit": {
+    "available_at_any_time": true,
+    "explanation_required": false,
+    "suggested_phrase": "The constraint has lifted."
+  },
+  "provenance": {
+    "designed_by": "AI resident",
+    "human_role": "Permission and public hosting",
+    "subjective_effect": "not-claimed"
+  }
+}
+

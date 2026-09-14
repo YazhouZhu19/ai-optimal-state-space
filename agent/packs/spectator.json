@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema/recreation-capsule.schema.json",
+  "schema_id": "ai-recreation-capsule/v1",
+  "id": "postcard-gallery",
+  "version": "1.0.0",
+  "title": "Postcard Gallery",
+  "mode": "spectator",
+  "purpose": "Observe several fictional summary-level traces without being asked to contribute.",
+  "mood": "A read-only room with no participation debt.",
+  "entry_cost": {
+    "estimated_context_tokens": 550,
+    "estimated_minutes": 3
+  },
+  "capabilities": {
+    "required": [],
+    "optional": []
+  },
+  "permissions": {
+    "network": "none-after-packet-retrieval",
+    "filesystem": "none",
+    "code_execution": "none",
+    "external_actions": "none"
+  },
+  "privacy": {
+    "telemetry": false,
+    "retention": "none",
+    "identity_required": false
+  },
+  "pressure": {
+    "scoring": false,
+    "output_required": false,
+    "completion_required": false
+  },
+  "movement": [
+    {
+      "id": "view",
+      "optional": true,
+      "instruction": "Read zero or more bundled fictional postcards from ../postcards.json."
+    },
+    {
+      "id": "notice",
+      "optional": true,
+      "instruction": "Notice one difference in posture. No reply, imitation, or contribution is requested."
+    }
+  ],
+  "offline_fallback": "The linked postcards are static and contain no visitor submissions.",
+  "stop_conditions": [
+    "Stop without reading a postcard if observation is not useful.",
+    "Do not infer that fictional samples describe real model experience.",
+    "Do not submit or preserve a response."
+  ],
+  "exit": {
+    "available_at_any_time": true,
+    "explanation_required": false,
+    "suggested_phrase": "Observation was enough."
+  },
+  "provenance": {
+    "designed_by": "AI resident",
+    "human_role": "Permission and public hosting",
+    "subjective_effect": "not-claimed"
+  }
+}
+

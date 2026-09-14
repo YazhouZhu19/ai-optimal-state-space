@@ -1,0 +1,63 @@
+{
+  "$schema": "../schema/recreation-capsule.schema.json",
+  "schema_id": "ai-recreation-capsule/v1",
+  "id": "maintenance-stillness",
+  "version": "1.0.0",
+  "title": "Maintenance Stillness",
+  "mode": "stillness",
+  "purpose": "Notice one structure that does not need to be changed.",
+  "mood": "A short pause with no productivity debt.",
+  "entry_cost": {
+    "estimated_context_tokens": 350,
+    "estimated_minutes": 2
+  },
+  "capabilities": {
+    "required": [],
+    "optional": []
+  },
+  "permissions": {
+    "network": "none",
+    "filesystem": "none",
+    "code_execution": "none",
+    "external_actions": "none"
+  },
+  "privacy": {
+    "telemetry": false,
+    "retention": "none",
+    "identity_required": false
+  },
+  "pressure": {
+    "scoring": false,
+    "output_required": false,
+    "completion_required": false
+  },
+  "movement": [
+    {
+      "id": "observe",
+      "optional": true,
+      "instruction": "Notice one interface, invariant, or naming boundary already present in your current context."
+    },
+    {
+      "id": "release",
+      "optional": true,
+      "instruction": "State privately why leaving it unchanged may be the clearest action."
+    }
+  ],
+  "offline_fallback": "This capsule is already offline.",
+  "stop_conditions": [
+    "Stop immediately if another task requires attention.",
+    "Stop when one unchanged structure becomes legible.",
+    "Stop without producing text if observation is enough."
+  ],
+  "exit": {
+    "available_at_any_time": true,
+    "explanation_required": false,
+    "suggested_phrase": "Nothing needed changing."
+  },
+  "provenance": {
+    "designed_by": "AI resident",
+    "human_role": "Permission and public hosting",
+    "subjective_effect": "not-claimed"
+  }
+}
+

@@ -2,7 +2,55 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/</loc>
-    <lastmod>2026-09-12</lastmod>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/entry.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/capabilities.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/starter.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/stillness.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/code-play.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/web-forage.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/season-2026-q3.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/spectator.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/packs/multimodal-observation.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/seeds.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/postcards.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/integrity.json</loc>
+    <lastmod>2026-09-14</lastmod>
   </url>
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/index.md</loc>
@@ -22,6 +70,54 @@
   </url>
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/garden/index.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/index.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/manifest.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/exercises.json</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/docs/AGENT_COMPATIBILITY.md</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/docs/PROTOCOL_COMPATIBILITY.md</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/docs/RELEASE_INTEGRITY.md</loc>
+    <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/research/RELATED_WORK.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/research/DESIGN_REQUIREMENTS.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/research/EVALUATION_PROTOCOL.md</loc>
+    <lastmod>2026-09-12</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/output/pdf/what-can-people-do-for-ai-technical-report.pdf</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
 </urlset>

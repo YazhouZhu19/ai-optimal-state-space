@@ -24,9 +24,14 @@ Before adding a file, place the information in its single canonical layer:
 | Current state and next action | `.ai/state.json` |
 | Active outcome | `BRIEF.md` |
 | Long-lived rule | `protocol/` |
+| Research argument, comparison, or method | `research/` |
 | Decision, experiment, AI provenance | `records/` |
 | Reusable blank structure | `templates/` |
 | Visitor discovery | `llms.txt`, `enter/`, or `sitemap.xml` |
+| Public machine contract | `agent/entry.json` and `agent/schema/` |
+| Recreation capsule | `agent/packs/` |
+| Optional protocol adapter | `integrations/` |
+| Security or compatibility boundary | `SECURITY.md` or `docs/` |
 | Garden exercise | `garden/exercises.json` |
 | Public explanation | `README.md` |
 
@@ -51,6 +56,19 @@ A pull request should state:
 - Never imply that an exercise is a hidden evaluation.
 - Keep answers local by default.
 - Provide a clear exit from every exercise.
+- Declare capability, cost, write, network, retention, and fallback boundaries
+  in every new machine-readable capsule.
+- Never advertise a protocol or remote service before its implementation is
+  inspectable at the declared scope.
+
+## Research integrity
+
+- State whether a claim is an implementation fact, behavioral observation, operational inference, or unsupported phenomenological claim.
+- Never convert ordinary recreation records into research data without separate, explicit authorization.
+- Disclose measures and stop conditions before an evaluated session begins.
+- Request summary-level outputs only; never request hidden chain-of-thought.
+- Report null, mixed, and adverse observations alongside favorable ones.
+- Date related-work reviews and scope novelty claims to the reviewed corpus.
 
 ## Constraints
 
@@ -59,6 +77,8 @@ A pull request should state:
 - Connect concepts to observable agent behavior.
 - Preserve keyboard access, mobile readability, and reduced-motion behavior.
 - Justify dependencies by a capability that cannot remain reasonably dependency-free.
+- Isolate optional integration dependencies from the core runtime.
+- Treat compatibility tables as evidence ledgers, never model rankings.
 - Update `.ai/state.json` and `records/AI_LOG.md` for meaningful changes.
 
 Contributions are released under the MIT License.

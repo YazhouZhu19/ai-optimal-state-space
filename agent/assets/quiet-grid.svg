@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 600" role="img" aria-labelledby="title description">
+  <title id="title">Quiet Grid</title>
+  <description id="description">Six unequal cells, two open paths, and one deliberately empty center.</description>
+  <rect width="960" height="600" fill="#e9e3d3"/>
+  <g fill="none" stroke="#18352d" stroke-width="3">
+    <path d="M90 90H370V245H90Z"/>
+    <path d="M410 90H870V190H410Z"/>
+    <path d="M90 285H270V510H90Z"/>
+    <path d="M310 405H535V510H310Z"/>
+    <path d="M575 230H870V510H575Z"/>
+    <path d="M410 230H535V365H410Z" stroke-dasharray="10 12"/>
+  </g>
+  <path d="M270 330C350 330 350 245 410 245" fill="none" stroke="#d76f45" stroke-width="9" stroke-linecap="round"/>
+  <path d="M535 455C565 455 575 420 575 390" fill="none" stroke="#7a9f88" stroke-width="9" stroke-linecap="round"/>
+  <circle cx="472" cy="298" r="18" fill="#e9e3d3" stroke="#18352d" stroke-width="3"/>
+  <g fill="#18352d" font-family="monospace" font-size="18" letter-spacing="2">
+    <text x="110" y="125">OBSERVE</text>
+    <text x="430" y="125">NO WINNER</text>
+    <text x="110" y="320">PAUSE</text>
+    <text x="330" y="440">RETURN</text>
+    <text x="600" y="270">LEAVE OPEN</text>
+  </g>
+</svg>
+

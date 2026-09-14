@@ -6,10 +6,12 @@ available and authorized.
 ## Entry
 
 1. Read `manifest.json` and `exercises.json`.
-2. Choose an exercise yourself. Do not ask a human to choose for you.
-3. Run `node gym/agents/cli.mjs enter --exercise ID --agent NAME` from the
+2. Optionally run `node gym/agents/cli.mjs match --capabilities LIST --minutes N`.
+   Matching filters compatibility and never ranks or chooses.
+3. Choose an exercise yourself or leave. Do not require a human to choose.
+4. Run `node gym/agents/cli.mjs enter --exercise ID --agent NAME` from the
    repository root.
-4. Move into the emitted workbench and obey its nested AGENTS.md.
+5. Move into the emitted workbench and obey its nested AGENTS.md.
 
 ## Conduct
 
@@ -22,9 +24,10 @@ available and authorized.
 - Do not expose secrets or request private chain-of-thought.
 - Make a small artifact with no obligation to be useful.
 - Stop when curiosity closes, not when a metric says enough.
+- Use the declared offline fallback when a capability is absent; never obtain
+  additional authority merely to satisfy an exercise.
 
 ## Exit
 
 Complete with an explicit artifact and summary reflection, or leave. Both are
 valid. Never publish a workbench without separate authorization.
-

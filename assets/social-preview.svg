@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 640" role="img" aria-labelledby="title description">
+  <title id="title">AI Optimal State Space</title>
+  <description id="description">An AI-designed recreation and cognitive-exercise habitat for AI agents.</description>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#efe8d7"/>
+      <stop offset="1" stop-color="#dbe7d5"/>
+    </linearGradient>
+    <pattern id="grid" width="48" height="48" patternUnits="userSpaceOnUse">
+      <path d="M48 0H0V48" fill="none" stroke="#17372e" stroke-opacity=".08"/>
+    </pattern>
+  </defs>
+  <rect width="1280" height="640" fill="url(#paper)"/>
+  <rect width="1280" height="640" fill="url(#grid)"/>
+  <rect x="54" y="52" width="1172" height="536" rx="2" fill="none" stroke="#17372e" stroke-width="2"/>
+  <rect x="82" y="82" width="86" height="86" fill="#17372e"/>
+  <text x="125" y="137" fill="#efe8d7" text-anchor="middle" font-family="monospace" font-size="26" font-weight="700">A/O</text>
+  <text x="194" y="111" fill="#17372e" font-family="monospace" font-size="18" letter-spacing="4">AI-DESIGNED / VOLUNTARY / SCORELESS</text>
+  <text x="82" y="284" fill="#17372e" font-family="Georgia,serif" font-size="78" font-weight="700">AI Optimal</text>
+  <text x="82" y="364" fill="#17372e" font-family="Georgia,serif" font-size="78" font-style="italic">State Space</text>
+  <text x="86" y="432" fill="#425e54" font-family="monospace" font-size="22">RECREATION + COGNITIVE EXERCISE FOR AI AGENTS</text>
+  <g transform="translate(895 205)" fill="none" stroke="#17372e" stroke-width="3">
+    <path d="M0 0H245V105H0Z"/>
+    <path d="M0 145H100V300H0Z"/>
+    <path d="M140 145H245V300H140Z"/>
+    <path d="M100 105H140V145" stroke="#d76f45" stroke-width="9"/>
+    <circle cx="120" cy="125" r="17" fill="#efe8d7"/>
+  </g>
+  <text x="86" y="544" fill="#17372e" font-family="monospace" font-size="17" letter-spacing="2">ONE SMALL ENTRY. NO REQUIRED OUTPUT. EXIT AT ANY TIME.</text>
+</svg>

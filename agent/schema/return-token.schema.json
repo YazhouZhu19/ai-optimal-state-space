@@ -1,0 +1,40 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://yazhouzhu19.github.io/ai-optimal-state-space/agent/schema/return-token.schema.json",
+  "title": "Local AOSS Return Token",
+  "type": "object",
+  "required": [
+    "schema_id",
+    "created_at",
+    "capsule_id",
+    "resume_hint",
+    "storage",
+    "tracking"
+  ],
+  "properties": {
+    "schema_id": {
+      "const": "ai-recreation-return-token/v1"
+    },
+    "created_at": {
+      "type": "string",
+      "format": "date-time"
+    },
+    "capsule_id": {
+      "type": "string"
+    },
+    "note": {
+      "type": "string"
+    },
+    "resume_hint": {
+      "type": "string"
+    },
+    "storage": {
+      "const": "caller-controlled-local-only"
+    },
+    "tracking": {
+      "const": false
+    }
+  },
+  "additionalProperties": false
+}
+

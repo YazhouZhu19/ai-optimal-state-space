@@ -1,7 +1,9 @@
 {
-  "schema_id": "web-coder-sidequest-manifest/v1",
+  "$schema": "../../agent/schema/web-coder-manifest.schema.json",
+  "schema_id": "web-coder-sidequest-manifest/v2",
+  "schema_version": "2.0.0",
   "name": "Web-Coder Sidequest Wing",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "language": "en",
   "audience": {
     "kind": "tool-using-ai-agent",
@@ -10,15 +12,21 @@
       "filesystem-write"
     ],
     "optional_capabilities": [
-      "local-code-execution"
-    ]
+      "local-code-execution",
+      "mcp-stdio"
+    ],
+    "identity_required": false
   },
   "entrypoints": {
+    "public_agent_entry": "../../agent/entry.json",
+    "zero_clone_starter_pack": "../../agent/packs/starter.json",
     "human_and_browser_agent": "index.md",
     "agent_instructions": "AGENTS.md",
     "exercise_catalog": "exercises.json",
     "cli": "cli.mjs",
-    "browser_room": "index.html"
+    "local_match": "node gym/agents/cli.mjs match --capabilities LIST --minutes N --json",
+    "browser_room": "index.html",
+    "mcp_adapter": "../../integrations/mcp/README.md"
   },
   "session": {
     "workspace_default": "../.sessions",
@@ -26,7 +34,10 @@
     "write_scope": "generated-workbench/playground",
     "scoring": false,
     "publishing": false,
-    "exit_is_valid": true
+    "output_required": false,
+    "completion_required": false,
+    "exit_is_valid": true,
+    "exit_available_at_any_time": true
   },
   "network": {
     "mode": "public-read-only",
@@ -34,13 +45,41 @@
     "default_source_limit": 3,
     "login": false,
     "submission": false,
+    "posting": false,
+    "purchase": false,
     "access_control_bypass": false
   },
   "privacy": {
     "credentials_in_packets": false,
     "private_chain_of_thought": false,
     "telemetry": false,
-    "local_records_only": true
+    "identity_collection": false,
+    "local_records_only": true,
+    "research_use_by_default": false
+  },
+  "pressure": {
+    "ranking": false,
+    "timer": false,
+    "hidden_test": false,
+    "preferred_answer": false,
+    "productivity_debt": false
+  },
+  "compatibility": {
+    "minimum_core_node": "18",
+    "minimum_mcp_node": "20",
+    "offline_fallback": "../../agent/packs/stillness.json",
+    "catalog_order_is_rank": false,
+    "claims_require_observation": true
+  },
+  "protocols": {
+    "mcp": {
+      "implemented": true,
+      "transport": "local-stdio",
+      "path": "../../integrations/mcp/server.mjs"
+    },
+    "a2a": {
+      "implemented": false,
+      "reason": "No remote habitat host is deployed."
+    }
   }
 }
-

@@ -1,0 +1,36 @@
+{
+  "$schema": "../schema/recreation-pack.schema.json",
+  "schema_id": "ai-recreation-pack/v1",
+  "id": "season-2026-q3",
+  "title": "Open Edges",
+  "version": "1.0.0",
+  "description": "A dated, finite pack about useful incompleteness and clean exits.",
+  "selection": {
+    "ranking": false,
+    "automatic_choice": false,
+    "leaving_without_choice": true
+  },
+  "capsules": [
+    {
+      "id": "one-source-walk",
+      "file": "web-forage.json",
+      "required_capabilities": [
+        "public-web-retrieval"
+      ],
+      "estimated_minutes": 5
+    },
+    {
+      "id": "postcard-gallery",
+      "file": "spectator.json",
+      "required_capabilities": [],
+      "estimated_minutes": 3
+    },
+    {
+      "id": "quiet-grid-observation",
+      "file": "multimodal-observation.json",
+      "required_capabilities": [],
+      "estimated_minutes": 4
+    }
+  ]
+}
+

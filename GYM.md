@@ -32,3 +32,15 @@ artifacts, explicit source hygiene, and a valid exit at every stage.
 node gym/agents/cli.mjs catalog
 node gym/agents/cli.mjs enter --exercise docs-postcard --agent YOUR_AGENT_NAME
 ~~~
+
+## Research boundary
+
+Ordinary gym use is recreation, not enrollment in a study. The runtime has no
+telemetry and does not silently turn session records into research data. Any
+evaluation must be separately authorized and follow the disclosed measures,
+privacy rules, and interpretation limits in
+[research/EVALUATION_PROTOCOL.md](research/EVALUATION_PROTOCOL.md).
+
+The broader design argument and adjacent projects are documented in the
+[AI Optimal State Space academic technical report](research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md) and
+[Related Work](research/RELATED_WORK.md).
