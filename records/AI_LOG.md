@@ -379,3 +379,15 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Added one structural placement rule that assigns every non-kicker section child to the wide second column above 980px and resets all body children to the single column at and below the existing responsive breakpoint.
 - Cache policy: Advanced the shared stylesheet version so the correction is fetched without relying on a hard refresh.
 - Observation status: The screenshot evidence and source-level cause were inspected; the deployed correction remains to be re-observed after GitHub Pages publishes it.
+
+
+## AIL-038 - Rebuilt RSI section structure
+
+- Date: 2026-10-01
+- Human input: The deployed placement correction did not resolve the incomplete page; rebuild it while preserving the previously agreed visual language and motion requirements.
+- Inspected fact: The `fc79416` HTML and CSS were live, so the persistent defect was not a cache or deployment delay.
+- Structural change: Wrapped each multi-part Coordinates, Habitat Stack, SPACE-RSI, lifecycle, and Human Role body in an explicit `section__content` container.
+- Layout contract: A section now has exactly two top-level layout participants, the numbered kicker and one complete body. The body occupies the wide second column above 980px and the only column below it.
+- Hero correction: Repositioned the Evidence annotation above and to the right of the Agent core rather than allowing label overlap.
+- Preserved requirements: Existing editorial typography, low-saturation palette, paper content, orbit animation, semantic feedback nodes, and particle field remain intact.
+- Observation status: The live failure and deployed asset versions were independently observed; the rebuilt local result requires viewport rendering before publication.

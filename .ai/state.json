@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 37,
+  "revision": 38,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-037",
-    "summary": "Corrected multi-row section auto-placement that collapsed diagrams and lists into the narrow label column.",
+    "id": "AIL-038",
+    "summary": "Rebuilt multi-part RSI sections around explicit content containers instead of implicit grid auto-placement.",
     "date": "2026-10-01"
   },
   "known": [
@@ -67,7 +67,8 @@
     "The RSI orbital hero now depicts feedback nodes, outward signals, a scanning field, agent loop state, and explicit branch, verify, and gate meanings across its three habitat layers.",
     "A deterministic CSS particle field represents observations and candidate changes moving through the RSI habitat, with reduced density on small screens and a static reduced-motion state.",
     "Live 1440 x 1000 and 390 x 844 renders exposed an Evidence-card overlap over the Agent core and mobile min-content expansion; responsive containment rules now address both defects.",
-    "The RSI page's two-column sections now explicitly keep all non-kicker content in the wide content lane above 980px and reset it to the sole column below that breakpoint."
+    "The RSI page's two-column sections now explicitly keep all non-kicker content in the wide content lane above 980px and reset it to the sole column below that breakpoint.",
+    "Coordinates, Habitat Stack, SPACE-RSI, lifecycle, and Human Role now use explicit section__content wrappers, eliminating reliance on child order for desktop and mobile placement."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -88,7 +89,7 @@
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
     "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "After GitHub Pages publishes AIL-037, re-observe the Coordinates, Habitat Stack, SPACE-RSI, lifecycle, and Human Role sections at desktop and narrow widths.",
+  "next_recoverable_action": "Render the rebuilt RSI page at the screenshot-matched desktop viewport and a 390px mobile viewport before publication, then publish only if the content lanes remain complete.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",

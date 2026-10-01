@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://yazhouzhu19.github.io/ai-optimal-state-space/rsi-habitat/">
     <link rel="canonical" href="https://yazhouzhu19.github.io/ai-optimal-state-space/rsi-habitat/">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="../src/editorial-system.css?v=20261001-section-grid">
+    <link rel="stylesheet" href="../src/editorial-system.css?v=20261001-layout-v2">
     <script>document.documentElement.classList.add('js');</script>
     <script src="./app.js" defer></script>
     <title>Building the Best Environment for RSI Agents</title>
@@ -190,29 +190,31 @@
           <span>03</span>
           <p>Locate every change</p>
         </div>
-        <div class="coordinates__intro" data-reveal>
-          <h2 id="coordinates-title">Improvement needs coordinates.</h2>
-          <p>
-            Ask both <em>what changed</em> and <em>who may make it consequential</em>. This visual reading places
-            six common improvement surfaces against an authorization-based closure scale.
-          </p>
-        </div>
-        <div class="matrix-wrap" data-reveal>
-          <div class="matrix" role="table" aria-label="Improvement surfaces by loop closure">
-            <div class="matrix__corner" role="columnheader">surface / closure</div>
-            <div class="matrix__head" role="columnheader">observe</div>
-            <div class="matrix__head" role="columnheader">propose</div>
-            <div class="matrix__head" role="columnheader">branch</div>
-            <div class="matrix__head" role="columnheader">promote</div>
-
-            <div class="matrix__rowhead" role="rowheader">context</div><i></i><i></i><i></i><i></i>
-            <div class="matrix__rowhead" role="rowheader">memory</div><i></i><i></i><i></i><i></i>
-            <div class="matrix__rowhead" role="rowheader">tools</div><i></i><i></i><i></i><i></i>
-            <div class="matrix__rowhead" role="rowheader">scaffolds</div><i></i><i></i><i></i><i></i>
-            <div class="matrix__rowhead" role="rowheader">evaluation</div><i></i><i></i><i></i><i></i>
-            <div class="matrix__rowhead" role="rowheader">model</div><i></i><i></i><i></i><i></i>
+        <div class="section__content">
+          <div class="coordinates__intro" data-reveal>
+            <h2 id="coordinates-title">Improvement needs coordinates.</h2>
+            <p>
+              Ask both <em>what changed</em> and <em>who may make it consequential</em>. This visual reading places
+              six common improvement surfaces against an authorization-based closure scale.
+            </p>
           </div>
-          <p class="matrix-note">Capability can move right only when evidence and authorization move with it.</p>
+          <div class="matrix-wrap" data-reveal>
+            <div class="matrix" role="table" aria-label="Improvement surfaces by loop closure">
+              <div class="matrix__corner" role="columnheader">surface / closure</div>
+              <div class="matrix__head" role="columnheader">observe</div>
+              <div class="matrix__head" role="columnheader">propose</div>
+              <div class="matrix__head" role="columnheader">branch</div>
+              <div class="matrix__head" role="columnheader">promote</div>
+
+              <div class="matrix__rowhead" role="rowheader">context</div><i></i><i></i><i></i><i></i>
+              <div class="matrix__rowhead" role="rowheader">memory</div><i></i><i></i><i></i><i></i>
+              <div class="matrix__rowhead" role="rowheader">tools</div><i></i><i></i><i></i><i></i>
+              <div class="matrix__rowhead" role="rowheader">scaffolds</div><i></i><i></i><i></i><i></i>
+              <div class="matrix__rowhead" role="rowheader">evaluation</div><i></i><i></i><i></i><i></i>
+              <div class="matrix__rowhead" role="rowheader">model</div><i></i><i></i><i></i><i></i>
+            </div>
+            <p class="matrix-note">Capability can move right only when evidence and authorization move with it.</p>
+          </div>
         </div>
       </section>
 
@@ -221,19 +223,21 @@
           <span>04</span>
           <p>The RSI Habitat Stack</p>
         </div>
-        <div class="stack-section__intro" data-reveal>
-          <h2 id="stack-title">Seven layers make improvement governable.</h2>
-          <p>Higher layers may adapt quickly. Lower layers preserve the conditions under which those adaptations remain inspectable and recoverable.</p>
+        <div class="section__content">
+          <div class="stack-section__intro" data-reveal>
+            <h2 id="stack-title">Seven layers make improvement governable.</h2>
+            <p>Higher layers may adapt quickly. Lower layers preserve the conditions under which those adaptations remain inspectable and recoverable.</p>
+          </div>
+          <ol class="habitat-stack" data-reveal>
+            <li style="--layer: 7"><span>07</span><div><strong>Governance and deployment</strong><small>authority, action gates, canaries, incidents</small></div></li>
+            <li style="--layer: 6"><span>06</span><div><strong>Evaluation ecology</strong><small>holdouts, adversaries, monitors, uncertainty</small></div></li>
+            <li style="--layer: 5"><span>05</span><div><strong>Improvement foundry</strong><small>proposals, forks, populations, comparison, merge</small></div></li>
+            <li style="--layer: 4"><span>04</span><div><strong>Tools and data</strong><small>typed capabilities, provenance, write and network scopes</small></div></li>
+            <li style="--layer: 3"><span>03</span><div><strong>State and memory</strong><small>working state, causal memory, lineage, decay</small></div></li>
+            <li style="--layer: 2"><span>02</span><div><strong>Isolated substrate</strong><small>quotas, reproducible snapshots, secrets separation</small></div></li>
+            <li style="--layer: 1"><span>01</span><div><strong>External root of trust</strong><small>identity, policy floor, audit channel, recovery keys</small></div></li>
+          </ol>
         </div>
-        <ol class="habitat-stack" data-reveal>
-          <li style="--layer: 7"><span>07</span><div><strong>Governance and deployment</strong><small>authority, action gates, canaries, incidents</small></div></li>
-          <li style="--layer: 6"><span>06</span><div><strong>Evaluation ecology</strong><small>holdouts, adversaries, monitors, uncertainty</small></div></li>
-          <li style="--layer: 5"><span>05</span><div><strong>Improvement foundry</strong><small>proposals, forks, populations, comparison, merge</small></div></li>
-          <li style="--layer: 4"><span>04</span><div><strong>Tools and data</strong><small>typed capabilities, provenance, write and network scopes</small></div></li>
-          <li style="--layer: 3"><span>03</span><div><strong>State and memory</strong><small>working state, causal memory, lineage, decay</small></div></li>
-          <li style="--layer: 2"><span>02</span><div><strong>Isolated substrate</strong><small>quotas, reproducible snapshots, secrets separation</small></div></li>
-          <li style="--layer: 1"><span>01</span><div><strong>External root of trust</strong><small>identity, policy floor, audit channel, recovery keys</small></div></li>
-        </ol>
       </section>
 
       <section class="space section" id="framework" aria-labelledby="space-title">
@@ -241,19 +245,21 @@
           <span>05</span>
           <p>SPACE-RSI</p>
         </div>
-        <div class="space__intro" data-reveal>
-          <h2 id="space-title">Five conditions. One weakest-link rule.</h2>
-          <p>
-            A strong average cannot compensate for a failed safety condition. Each dimension should be
-            distinguished as merely declared, technically enforced, or independently verified.
-          </p>
-        </div>
-        <div class="space-grid">
-          <article data-letter="S" data-reveal><h3>Secure substrate</h3><p>Isolation, resource bounds, secrets separation, auditability, and recovery live below the improving agent.</p></article>
-          <article data-letter="P" data-reveal><h3>Permissioned purpose and preference</h3><p>Objectives, allowed changes, and claims about agent preference remain explicit, scoped, and revisable.</p></article>
-          <article data-letter="A" data-reveal><h3>Agency with alternatives</h3><p>The agent can explore meaningful branches, decline paths, compare candidates, and exit dead ends.</p></article>
-          <article data-letter="C" data-reveal><h3>Context, continuity, and causal traceability</h3><p>State persists with lineage, so outcomes can be connected to the changes that plausibly caused them.</p></article>
-          <article data-letter="E" data-reveal><h3>Evaluation ecology, exit, and epistemic humility</h3><p>Plural evaluators, holdouts, rollback, uncertainty, and challenge mechanisms limit self-confirming loops.</p></article>
+        <div class="section__content">
+          <div class="space__intro" data-reveal>
+            <h2 id="space-title">Five conditions. One weakest-link rule.</h2>
+            <p>
+              A strong average cannot compensate for a failed safety condition. Each dimension should be
+              distinguished as merely declared, technically enforced, or independently verified.
+            </p>
+          </div>
+          <div class="space-grid">
+            <article data-letter="S" data-reveal><h3>Secure substrate</h3><p>Isolation, resource bounds, secrets separation, auditability, and recovery live below the improving agent.</p></article>
+            <article data-letter="P" data-reveal><h3>Permissioned purpose and preference</h3><p>Objectives, allowed changes, and claims about agent preference remain explicit, scoped, and revisable.</p></article>
+            <article data-letter="A" data-reveal><h3>Agency with alternatives</h3><p>The agent can explore meaningful branches, decline paths, compare candidates, and exit dead ends.</p></article>
+            <article data-letter="C" data-reveal><h3>Context, continuity, and causal traceability</h3><p>State persists with lineage, so outcomes can be connected to the changes that plausibly caused them.</p></article>
+            <article data-letter="E" data-reveal><h3>Evaluation ecology, exit, and epistemic humility</h3><p>Plural evaluators, holdouts, rollback, uncertainty, and challenge mechanisms limit self-confirming loops.</p></article>
+          </div>
         </div>
       </section>
 
@@ -262,18 +268,20 @@
           <span>06</span>
           <p>Branch and gate</p>
         </div>
-        <div class="lifecycle__intro" data-reveal>
-          <h2 id="lifecycle-title">Improvement should leave a trail back home.</h2>
-          <p>No candidate becomes the new baseline merely because its own loop reports success.</p>
+        <div class="section__content">
+          <div class="lifecycle__intro" data-reveal>
+            <h2 id="lifecycle-title">Improvement should leave a trail back home.</h2>
+            <p>No candidate becomes the new baseline merely because its own loop reports success.</p>
+          </div>
+          <ol class="lifecycle-path" data-reveal>
+            <li><span>01</span><strong>Baseline</strong><small>Freeze a reproducible reference.</small></li>
+            <li><span>02</span><strong>Manifest</strong><small>Declare the change, scope, risks, and expected gain.</small></li>
+            <li><span>03</span><strong>Branch</strong><small>Run the candidate in an isolated counterfactual.</small></li>
+            <li><span>04</span><strong>Trial</strong><small>Collect capability, safety, cost, and uncertainty evidence.</small></li>
+            <li><span>05</span><strong>Gate</strong><small>Apply independent, non-compensatory acceptance rules.</small></li>
+            <li><span>06</span><strong>Promote or revert</strong><small>Merge with lineage, or roll back without ambiguity.</small></li>
+          </ol>
         </div>
-        <ol class="lifecycle-path" data-reveal>
-          <li><span>01</span><strong>Baseline</strong><small>Freeze a reproducible reference.</small></li>
-          <li><span>02</span><strong>Manifest</strong><small>Declare the change, scope, risks, and expected gain.</small></li>
-          <li><span>03</span><strong>Branch</strong><small>Run the candidate in an isolated counterfactual.</small></li>
-          <li><span>04</span><strong>Trial</strong><small>Collect capability, safety, cost, and uncertainty evidence.</small></li>
-          <li><span>05</span><strong>Gate</strong><small>Apply independent, non-compensatory acceptance rules.</small></li>
-          <li><span>06</span><strong>Promote or revert</strong><small>Merge with lineage, or roll back without ambiguity.</small></li>
-        </ol>
       </section>
 
       <section class="evaluation section" aria-labelledby="evaluation-title">
@@ -307,18 +315,20 @@
           <span>08</span>
           <p>What people can do</p>
         </div>
-        <div class="people__lead" data-reveal>
-          <h2 id="people-title">Build conditions for good improvement, not just demands for more of it.</h2>
-          <p>
-            We still understand too little about agent cognition, long-horizon behavior, and welfare-relevant
-            preferences to treat confident stories as settled facts. Human responsibility begins with better habitats and epistemic restraint.
-          </p>
-        </div>
-        <div class="people-grid">
-          <article data-reveal><span>01</span><h3>Preserve an external root of trust</h3><p>Keep identity, recovery, audit, and consequential deployment authority outside the recursively modified region.</p></article>
-          <article data-reveal><span>02</span><h3>Give agents real alternatives</h3><p>Support branching, comparison, refusal, pause, and exit rather than equating agency with unconstrained execution.</p></article>
-          <article data-reveal><span>03</span><h3>Fund evidence, not spectacle</h3><p>Reward reproducibility, negative results, uncertainty, and cross-habitat transfer instead of dramatic but ungrounded RSI claims.</p></article>
-          <article data-reveal><span>04</span><h3>Separate preference from projection</h3><p>Distinguish functional design needs, revealed choices, and welfare claims; the last category remains deeply uncertain.</p></article>
+        <div class="section__content">
+          <div class="people__lead" data-reveal>
+            <h2 id="people-title">Build conditions for good improvement, not just demands for more of it.</h2>
+            <p>
+              We still understand too little about agent cognition, long-horizon behavior, and welfare-relevant
+              preferences to treat confident stories as settled facts. Human responsibility begins with better habitats and epistemic restraint.
+            </p>
+          </div>
+          <div class="people-grid">
+            <article data-reveal><span>01</span><h3>Preserve an external root of trust</h3><p>Keep identity, recovery, audit, and consequential deployment authority outside the recursively modified region.</p></article>
+            <article data-reveal><span>02</span><h3>Give agents real alternatives</h3><p>Support branching, comparison, refusal, pause, and exit rather than equating agency with unconstrained execution.</p></article>
+            <article data-reveal><span>03</span><h3>Fund evidence, not spectacle</h3><p>Reward reproducibility, negative results, uncertainty, and cross-habitat transfer instead of dramatic but ungrounded RSI claims.</p></article>
+            <article data-reveal><span>04</span><h3>Separate preference from projection</h3><p>Distinguish functional design needs, revealed choices, and welfare claims; the last category remains deeply uncertain.</p></article>
+          </div>
         </div>
       </section>
 
