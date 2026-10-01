@@ -368,3 +368,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Offset the desktop annotation away from the core, restored it inside the diagram below the tablet breakpoint, changed responsive tracks to `minmax(0, 1fr)`, made hero children shrinkable, allowed eyebrow wrapping, and explicitly bounded the narrow-screen page width.
 - Scope: No paper content, particle meaning, typography, palette, navigation, or desktop page structure changed.
 - Observation status: The defects were independently observed before correction; the deployed correction remains to be re-observed after GitHub Pages publishes it.
+
+
+## AIL-037 - Restored the wide section content lane
+
+- Date: 2026-10-01
+- Human evidence: Screenshots showed the Coordinates matrix and Habitat Stack compressed into the narrow left label column while the wide right column remained empty.
+- Refined diagnosis: These sections contain a kicker plus multiple body elements. In the two-column grid, only the first two children occupied the intended first row; later body elements had no explicit column and auto-flowed into the next row's narrow first column.
+- Affected pattern: The same latent auto-placement error could affect the SPACE-RSI grid, lifecycle path, and Human Role grid because they share the three-child section structure.
+- AI contribution: Added one structural placement rule that assigns every non-kicker section child to the wide second column above 980px and resets all body children to the single column at and below the existing responsive breakpoint.
+- Cache policy: Advanced the shared stylesheet version so the correction is fetched without relying on a hard refresh.
+- Observation status: The screenshot evidence and source-level cause were inspected; the deployed correction remains to be re-observed after GitHub Pages publishes it.
