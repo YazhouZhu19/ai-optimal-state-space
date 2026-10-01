@@ -334,3 +334,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Live diagnosis: The public CSS already contained `editorial-orbit-one`; computed styles showed three visible animated orbits, and a fresh Chrome render displayed the restored planetary diagram.
 - Action: Added a version query to the RSI page's shared stylesheet reference so browsers fetch the updated orbital rules instead of reusing a cached response.
 - Scope: Asset addressing only; no visual rule or content changed.
+
+
+## AIL-034 - Enriched the RSI feedback orbit
+
+- Date: 2026-10-01
+- Human input: Add more detail to the animated RSI hero diagram.
+- AI contribution: Added a subtle coordinate field and scan, outward signal paths, differentiated feedback nodes, a rotating core ring, an active-loop state, and compact process telemetry.
+- Semantic change: The three visible layers now state their operational roles as branch and explore, test and trace, and review and gate, making the moving bodies legible as feedback nodes rather than decorative satellites.
+- Accessibility: The diagram has an expanded text alternative, decorative motion is hidden from assistive technology, and every new animation follows the existing reduced-motion policy.
+- Scope: The current typography, editorial palette, page structure, paper content, and navigation remain unchanged.
+- Observation status: Source implementation is complete; post-deployment rendering has not yet been independently observed.

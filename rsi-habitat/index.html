@@ -11,7 +11,7 @@
     <meta property="og:url" content="https://yazhouzhu19.github.io/ai-optimal-state-space/rsi-habitat/">
     <link rel="canonical" href="https://yazhouzhu19.github.io/ai-optimal-state-space/rsi-habitat/">
     <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="../src/editorial-system.css?v=20261001-orbit">
+    <link rel="stylesheet" href="../src/editorial-system.css?v=20261001-orbit-detail">
     <script>document.documentElement.classList.add('js');</script>
     <script src="./app.js" defer></script>
     <title>Building the Best Environment for RSI Agents</title>
@@ -70,18 +70,39 @@
           </dl>
         </div>
 
-        <div class="hero__object" aria-label="A conceptual animated diagram of an agent within rotating habitat orbits" data-reveal>
-          <div class="orbit orbit--one"></div>
-          <div class="orbit orbit--two"></div>
-          <div class="orbit orbit--three"></div>
+        <div class="hero__object" role="img" aria-label="An animated systems diagram: an RSI agent exchanges signals across rotating local-agency, evidence, and external-trust feedback layers" data-reveal>
+          <div class="orbit-grid" aria-hidden="true"></div>
+          <span class="signal-line signal-line--one" aria-hidden="true"><i></i></span>
+          <span class="signal-line signal-line--two" aria-hidden="true"><i></i></span>
+          <span class="signal-line signal-line--three" aria-hidden="true"><i></i></span>
+          <div class="orbit orbit--one" aria-hidden="true">
+            <span class="orbit__node orbit__node--a"></span>
+            <span class="orbit__node orbit__node--b"></span>
+          </div>
+          <div class="orbit orbit--two" aria-hidden="true">
+            <span class="orbit__node orbit__node--a"></span>
+            <span class="orbit__node orbit__node--c"></span>
+          </div>
+          <div class="orbit orbit--three" aria-hidden="true">
+            <span class="orbit__node orbit__node--b"></span>
+            <span class="orbit__node orbit__node--c"></span>
+          </div>
           <div class="agent-core">
-            <span class="agent-core__pulse"></span>
+            <span class="agent-core__ring" aria-hidden="true"></span>
+            <span class="agent-core__pulse" aria-hidden="true"></span>
             <strong>AGENT</strong>
             <small>recursive depth</small>
+            <span class="agent-core__status"><i aria-hidden="true"></i>loop active</span>
           </div>
-          <span class="object-note object-note--top">local agency</span>
-          <span class="object-note object-note--right">evidence</span>
-          <span class="object-note object-note--bottom">external trust</span>
+          <span class="object-note object-note--top"><b>01</b><span>local agency<small>branch + explore</small></span></span>
+          <span class="object-note object-note--right"><b>02</b><span>evidence<small>test + trace</small></span></span>
+          <span class="object-note object-note--bottom"><b>03</b><span>external trust<small>review + gate</small></span></span>
+          <div class="orbit-telemetry" aria-hidden="true">
+            <span><i></i>observe</span>
+            <span><i></i>propose</span>
+            <span><i></i>verify</span>
+            <span><i></i>gate</span>
+          </div>
         </div>
       </section>
 
