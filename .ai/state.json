@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 34,
+  "revision": 35,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-034",
-    "summary": "Expanded the RSI orbital hero into a semantic feedback-system animation with signals, state, and layer-specific detail.",
+    "id": "AIL-035",
+    "summary": "Added a restrained information-particle field to the RSI orbital feedback animation.",
     "date": "2026-10-01"
   },
   "known": [
@@ -64,7 +64,8 @@
     "Full-page screenshots showed continuous desktop and mobile layouts for both the homepage and RSI habitat companion.",
     "The RSI habitat hero retains its signature three-orbit animation, recolored and reshaped within the shared warm-paper, navy, and teal editorial system, with reduced-motion fallback.",
     "Live inspection confirmed the restored orbit animation was deployed and active; the RSI page now version-addresses the shared stylesheet so previously cached flat-hero CSS is not reused.",
-    "The RSI orbital hero now depicts feedback nodes, outward signals, a scanning field, agent loop state, and explicit branch, verify, and gate meanings across its three habitat layers."
+    "The RSI orbital hero now depicts feedback nodes, outward signals, a scanning field, agent loop state, and explicit branch, verify, and gate meanings across its three habitat layers.",
+    "A deterministic CSS particle field represents observations and candidate changes moving through the RSI habitat, with reduced density on small screens and a static reduced-motion state."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -85,7 +86,7 @@
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
     "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "After GitHub Pages publishes AIL-034, observe the enriched RSI orbit at desktop and mobile widths; source implementation is complete but visual rendering remains unreviewed.",
+  "next_recoverable_action": "After GitHub Pages publishes AIL-035, observe particle density and legibility around the RSI orbit at desktop and mobile widths; source implementation is complete but visual rendering remains unreviewed.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",

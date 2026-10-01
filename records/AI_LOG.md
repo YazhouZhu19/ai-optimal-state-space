@@ -345,3 +345,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Accessibility: The diagram has an expanded text alternative, decorative motion is hidden from assistive technology, and every new animation follows the existing reduced-motion policy.
 - Scope: The current typography, editorial palette, page structure, paper content, and navigation remain unchanged.
 - Observation status: Source implementation is complete; post-deployment rendering has not yet been independently observed.
+
+
+## AIL-035 - Added ambient information particles
+
+- Date: 2026-10-01
+- Human input: Add a particle effect to the RSI hero animation.
+- AI contribution: Added twenty-two deterministic CSS particles with varied size, opacity, duration, delay, direction, and visual form inside the orbital habitat.
+- Meaning: The particles represent transient observations and candidate changes circulating through the improvement environment, rather than decorative space dust.
+- Restraint: Particles remain behind the orbit and core, mobile density is halved, and no JavaScript or runtime dependency was introduced.
+- Accessibility: Particles are hidden from assistive technology and become static when reduced motion is requested.
+- Observation status: Source implementation is complete; post-deployment rendering has not yet been independently observed.
