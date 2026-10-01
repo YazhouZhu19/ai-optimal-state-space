@@ -234,6 +234,18 @@
       "kind": "shared_interface_style",
       "owner": "website",
       "description": "Shared clinician-in-the-loop-aligned visual system for the homepage and RSI paper companion."
+    },
+    "archived_aoss_report_v2": {
+      "path": "research/archive/aoss-tr-002-v2.0/",
+      "kind": "historical_research_archive",
+      "owner": "research",
+      "description": "Version 2.0 report variants preserved during Agent Entry and publication-line integration."
+    },
+    "archived_aoss_report_v2_pdf": {
+      "path": "output/pdf/archive/what-can-people-do-for-ai-technical-report-v2.0.pdf",
+      "kind": "historical_publication_asset",
+      "owner": "research",
+      "description": "Version 2.0 PDF conflict side preserved without replacing the later canonical report."
     }
   },
   "read_sets": {
@@ -323,7 +335,9 @@
       "research/EVALUATION_PROTOCOL.md",
       "tools/build-latex-report.py",
       "research/latex/arxiv-neurips-single.cls",
-      "records/EXPERIMENTS.md"
+      "records/EXPERIMENTS.md",
+      "archived_aoss_report_v2",
+      "archived_aoss_report_v2_pdf"
     ],
     "tooling_change": [
       "package.json",

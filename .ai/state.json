@@ -1,11 +1,15 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 29,
+  "revision": 30,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
-  "last_transition": "AIL-029",
+  "last_transition": {
+    "id": "AIL-030",
+    "summary": "Integrated the remote protocol-native Agent Entry with the RSI habitat publication line and prepared the rebased main branch for verified republication.",
+    "date": "2026-10-01"
+  },
   "known": [
     "The repository is public and MIT licensed.",
     "Runtime operation has no third-party dependencies.",
@@ -52,7 +56,9 @@
     "Version 1.2 and Version 1.0 remain available as historical artifacts under their existing filenames.",
     "A web-native RSI habitat companion now lives at rsi-habitat/, with the user-supplied paper attached as a stable PDF asset and an entry on the main homepage.",
     "The homepage and RSI habitat companion use Manrope as their shared display and body typeface, with IBM Plex Mono reserved for technical labels.",
-    "The homepage and RSI habitat companion now share src/editorial-system.css, aligned with the clinician-in-the-loop site visual language."
+    "The homepage and RSI habitat companion now share src/editorial-system.css, aligned with the clinician-in-the-loop site visual language.",
+    "The protocol-native Agent Entry merge and the RSI habitat publication line were integrated without force-pushing; the later report sources remain canonical and the Version 2.0 conflict side is preserved under explicit archive paths.",
+    "A pre-push live review on 2026-10-01 observed the old homepage at HTTP 200 and the not-yet-published RSI page, shared stylesheet, and paper PDF at HTTP 404, correctly identifying that three commits had remained local."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -72,13 +78,12 @@
     "The proposed RSI habitat architecture has not yet been implemented or empirically evaluated as an integrated system.",
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task."
   ],
-  "next_recoverable_action": "Complete the integration rebase, publish main, and observe the homepage, RSI habitat companion, shared stylesheet, and attached PDF on GitHub Pages.",
+  "next_recoverable_action": "Push rebased main, wait for GitHub Pages to publish commit AIL-030, then verify the homepage, RSI habitat companion, shared stylesheet, and attached PDF at desktop and mobile widths.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",
     "records/DECISIONS.md when a durable choice changes",
     "records/EXPERIMENTS.md when evidence is collected",
     ".ai/map.json when paths or ownership change"
-  ],
-  "updated_at": "2026-10-01"
+  ]
 }

@@ -293,3 +293,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Action: Added `src/editorial-system.css` as a shared override for the homepage and RSI habitat companion, removed the remote Manrope import, and mapped existing components onto the reference design language.
 - Scope: Content, information architecture, repository links, and PDF access remain unchanged.
 - Observation: Source integration was completed; live browser rendering was not independently observed in this change.
+
+
+## AIL-030 - Integrated remote Agent Entry and republished the RSI habitat line
+
+- Date: 2026-10-01
+- Human input: Approve integrating the newer remote main and repushing after the live review found unpublished local commits.
+- Observation: The public homepage returned HTTP 200 with the pre-publication design, while `rsi-habitat/`, `src/editorial-system.css`, and the attached RSI PDF returned HTTP 404.
+- Root cause: Local main contained three unpublished website commits while remote main had independently merged the protocol-native Agent Entry work.
+- AI contribution: Fetched the remote branch, inspected the divergence, rebased the publication commits, merged state and append-only records by identity, retained the later author-revised report sources as canonical, and archived the Version 2.0 conflict side rather than deleting it.
+- Safety choice: No force push, history reset, or silent overwrite was used.
+- Status: Integration is prepared for push; post-deployment rendering remains to be observed.

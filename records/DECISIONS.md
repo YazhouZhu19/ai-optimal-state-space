@@ -234,3 +234,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: Shared tokens and component rules produce stronger cross-page consistency than separately approximating the style in each page stylesheet.
 - Visual contract: Warm white paper, navy text, muted teal accents, serif research headings, Helvetica Neue body text, square borders, generous spacing, and minimal motion.
 - Consequence: The earlier pastel gradients, large rounded cards, orbital illustration treatment, and Manrope dependency are visually superseded without deleting the underlying page-specific styles.
+
+
+## D-032 - Integrate parallel work without discarding either publication line
+
+- Date: 2026-10-01
+- Decision: Rebase the RSI habitat publication commits onto the protocol-native Agent Entry merge, keep the later author-revised report sources canonical, and preserve the Version 2.0 conflict side under explicit archive paths.
+- Rationale: The remote branch adds the current machine-entry architecture, while the local branch contains later publication and website work. Treating either whole side as disposable would lose valid project history.
+- Constraint: Push must remain fast-forward and must not use force.
+- Consequence: Public Agent Entry, RSI habitat web companion, shared clinician-style visual system, current report sources, and historical Version 2.0 artifacts coexist in one main branch.
