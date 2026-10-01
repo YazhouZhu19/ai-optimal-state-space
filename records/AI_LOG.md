@@ -283,3 +283,13 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Action: Standardized the homepage and RSI habitat companion on Manrope, retained IBM Plex Mono for technical labels, and retuned the RSI hero title's tracking and line height.
 - Scope: Color, spacing, content, and page structure were left unchanged.
 - Observation: Source styles were updated; live browser rendering was not independently observed in this change.
+
+
+## AIL-029 - Unified the public site with the clinician editorial style
+
+- Date: 2026-10-01
+- Request: Make the project consistently use the visual style of https://yazhouzhu19.github.io/clinician-in-the-loop/.
+- Inspected fact: The reference uses warm paper, navy ink, restrained teal, Helvetica Neue body copy, Iowan Old Style research headings, flat rules, square controls, and sparse hard shadows.
+- Action: Added `src/editorial-system.css` as a shared override for the homepage and RSI habitat companion, removed the remote Manrope import, and mapped existing components onto the reference design language.
+- Scope: Content, information architecture, repository links, and PDF access remain unchanged.
+- Observation: Source integration was completed; live browser rendering was not independently observed in this change.

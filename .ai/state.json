@@ -1,11 +1,11 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 28,
+  "revision": 29,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
-  "last_transition": "AIL-028",
+  "last_transition": "AIL-029",
   "known": [
     "The repository is public and MIT licensed.",
     "Runtime operation has no third-party dependencies.",
@@ -51,7 +51,8 @@
     "The minimal single-file Version 1.3 source package compiled successfully on arXiv with pdfLaTeX and TeX Live 2025; submission 8122311 was formally submitted under cs.AI with the arXiv perpetual non-exclusive license and is on hold as of 2026-09-24.",
     "Version 1.2 and Version 1.0 remain available as historical artifacts under their existing filenames.",
     "A web-native RSI habitat companion now lives at rsi-habitat/, with the user-supplied paper attached as a stable PDF asset and an entry on the main homepage.",
-    "The homepage and RSI habitat companion use Manrope as their shared display and body typeface, with IBM Plex Mono reserved for technical labels."
+    "The homepage and RSI habitat companion use Manrope as their shared display and body typeface, with IBM Plex Mono reserved for technical labels.",
+    "The homepage and RSI habitat companion now share src/editorial-system.css, aligned with the clinician-in-the-loop site visual language."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",

@@ -228,6 +228,12 @@
       "kind": "interface_behavior",
       "owner": "website",
       "description": "Progress and reveal behavior for the RSI habitat companion."
+    },
+    "shared_editorial_system": {
+      "path": "src/editorial-system.css",
+      "kind": "shared_interface_style",
+      "owner": "website",
+      "description": "Shared clinician-in-the-loop-aligned visual system for the homepage and RSI paper companion."
     }
   },
   "read_sets": {
@@ -255,7 +261,8 @@
       "rsi_habitat_web",
       "rsi_habitat_web_pdf",
       "rsi_habitat_styles",
-      "rsi_habitat_behavior"
+      "rsi_habitat_behavior",
+      "shared_editorial_system"
     ],
     "discovery_change": [
       "llms.txt",

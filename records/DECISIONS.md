@@ -225,3 +225,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Decision: Use Manrope for both display and reading text, with IBM Plex Mono for machine-oriented labels.
 - Rationale: A single restrained sans-serif family gives the public site a cleaner, more contemporary rhythm while preserving hierarchy through weight, scale, and the monospaced annotation layer.
 - Consequence: The previous Bodoni, Copperplate, and classical serif presentation is no longer the primary visual voice.
+
+
+## D-031 - Share one clinician-style editorial system
+
+- Date: 2026-10-01
+- Decision: Treat the clinician-in-the-loop page as the visual reference and implement its design language through one shared stylesheet.
+- Rationale: Shared tokens and component rules produce stronger cross-page consistency than separately approximating the style in each page stylesheet.
+- Visual contract: Warm white paper, navy text, muted teal accents, serif research headings, Helvetica Neue body text, square borders, generous spacing, and minimal motion.
+- Consequence: The earlier pastel gradients, large rounded cards, orbital illustration treatment, and Manrope dependency are visually superseded without deleting the underlying page-specific styles.
