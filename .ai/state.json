@@ -1,15 +1,11 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 27,
+  "revision": 28,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
-  "last_transition": {
-    "id": "AIL-027",
-    "summary": "Created the public RSI habitat paper experience and homepage entry.",
-    "at": "2026-10-01"
-  },
+  "last_transition": "AIL-028",
   "known": [
     "The repository is public and MIT licensed.",
     "Runtime operation has no third-party dependencies.",
@@ -54,7 +50,8 @@
     "The Version 1.3 title page now includes the clickable project repository URL https://github.com/YazhouZhu19/ai-optimal-state-space.",
     "The minimal single-file Version 1.3 source package compiled successfully on arXiv with pdfLaTeX and TeX Live 2025; submission 8122311 was formally submitted under cs.AI with the arXiv perpetual non-exclusive license and is on hold as of 2026-09-24.",
     "Version 1.2 and Version 1.0 remain available as historical artifacts under their existing filenames.",
-    "A web-native RSI habitat companion now lives at rsi-habitat/, with the user-supplied paper attached as a stable PDF asset and an entry on the main homepage."
+    "A web-native RSI habitat companion now lives at rsi-habitat/, with the user-supplied paper attached as a stable PDF asset and an entry on the main homepage.",
+    "The homepage and RSI habitat companion use Manrope as their shared display and body typeface, with IBM Plex Mono reserved for technical labels."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",

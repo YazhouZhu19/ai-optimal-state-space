@@ -274,3 +274,12 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Boundary: The page labels the work as design synthesis with no new RSI experiment and separates functional design preferences from unverified welfare claims.
 - Observation: Implementation and repository wiring were completed; browser rendering and live Pages deployment were not independently observed in this change.
 - Provenance: Source content derived from `/Users/rangerzhou/Downloads/view.pdf`; interface interpretation authored for this repository.
+
+
+## AIL-028 - Simplified the public typography
+
+- Date: 2026-10-01
+- Request: Replace the website typography with a more elegant and minimal typeface.
+- Action: Standardized the homepage and RSI habitat companion on Manrope, retained IBM Plex Mono for technical labels, and retuned the RSI hero title's tracking and line height.
+- Scope: Color, spacing, content, and page structure were left unchanged.
+- Observation: Source styles were updated; live browser rendering was not independently observed in this change.

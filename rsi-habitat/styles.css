@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap");
+
 :root {
   --paper: #f4f0e7;
   --paper-light: #fffdf8;
@@ -12,9 +14,9 @@
   --coral-deep: #ad725e;
   --line: rgba(41, 57, 54, 0.2);
   --shadow: 0 2rem 5rem rgba(41, 57, 54, 0.09);
-  --display: "Bodoni 72 Smallcaps", "Copperplate", "Avenir Next Condensed", sans-serif;
-  --body: "Iowan Old Style", "Baskerville", "Palatino Linotype", serif;
-  --mono: "SFMono-Regular", "IBM Plex Mono", "Menlo", monospace;
+  --display: "Manrope", "Avenir Next", "Helvetica Neue", sans-serif;
+  --body: "Manrope", "Avenir Next", "Helvetica Neue", sans-serif;
+  --mono: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
   --max: 1240px;
 }
 
@@ -177,9 +179,9 @@ footer {
   font-family: var(--display);
   font-size: clamp(4.2rem, 9.6vw, 9.8rem);
   font-weight: 500;
-  letter-spacing: 0.018em;
-  line-height: 0.79;
-  word-spacing: 0.11em;
+  letter-spacing: -0.052em;
+  line-height: 0.86;
+  word-spacing: 0.08em;
 }
 
 .hero h1 em {
@@ -187,10 +189,10 @@ footer {
   margin-top: 0.18em;
   color: var(--moss-deep);
   font-family: var(--body);
-  font-size: 0.64em;
+  font-size: 0.61em;
   font-weight: 400;
-  letter-spacing: -0.025em;
-  line-height: 0.9;
+  letter-spacing: -0.048em;
+  line-height: 0.95;
   word-spacing: 0.08em;
 }
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=Manrope:wght@400;500;600&display=swap");
+
 :root {
   --paper: #f3f0e8;
   --paper-light: #fcfaf5;
@@ -11,9 +13,9 @@
   --mist: #dfe9e5;
   --sky: #dce9ee;
   --blush: #e8ccc2;
-  --display: "Bodoni 72 Smallcaps", "Copperplate", "Avenir Next Condensed", sans-serif;
-  --body: "Iowan Old Style", "Baskerville", "Palatino", serif;
-  --mono: "SFMono-Regular", "IBM Plex Mono", "Menlo", monospace;
+  --display: "Manrope", "Avenir Next", "Helvetica Neue", sans-serif;
+  --body: "Manrope", "Avenir Next", "Helvetica Neue", sans-serif;
+  --mono: "IBM Plex Mono", "SFMono-Regular", "Menlo", monospace;
 }
 
 /* RSI paper feature */

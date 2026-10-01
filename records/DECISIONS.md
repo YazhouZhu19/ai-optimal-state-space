@@ -217,3 +217,11 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: The Habitat Stack, SPACE-RSI dimensions, closure coordinates, and branch-and-gate lifecycle are better understood as navigable visual systems, while the complete argument remains available in the attached PDF.
 - Constraint: Preserve the repository's muted paper, sage, sky, and coral visual language; avoid overstating empirical validation or agent welfare knowledge.
 - Consequence: The homepage now points to `rsi-habitat/`, and the supplied PDF is published beside the companion page.
+
+
+## D-030 - Use a unified modern sans-serif type system
+
+- Date: 2026-10-01
+- Decision: Use Manrope for both display and reading text, with IBM Plex Mono for machine-oriented labels.
+- Rationale: A single restrained sans-serif family gives the public site a cleaner, more contemporary rhythm while preserving hierarchy through weight, scale, and the monospaced annotation layer.
+- Consequence: The previous Bodoni, Copperplate, and classical serif presentation is no longer the primary visual voice.
