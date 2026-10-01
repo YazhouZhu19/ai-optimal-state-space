@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 32,
+  "revision": 33,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-032",
-    "summary": "Restored the rotating RSI orbital hero while retaining the shared clinician-style editorial system.",
+    "id": "AIL-033",
+    "summary": "Added an explicit stylesheet version to invalidate stale browser caches for the restored RSI orbital hero.",
     "date": "2026-10-01"
   },
   "known": [
@@ -62,7 +62,8 @@
     "GitHub Pages published commit 74b547f: the homepage, RSI habitat companion, shared editorial stylesheet, and attached RSI PDF each returned HTTP 200.",
     "Read-only Playwright review at 1440 x 1000 and 390 x 844 observed no horizontal overflow, broken images, or RSI-page console errors; computed typography matched the clinician-style system.",
     "Full-page screenshots showed continuous desktop and mobile layouts for both the homepage and RSI habitat companion.",
-    "The RSI habitat hero retains its signature three-orbit animation, recolored and reshaped within the shared warm-paper, navy, and teal editorial system, with reduced-motion fallback."
+    "The RSI habitat hero retains its signature three-orbit animation, recolored and reshaped within the shared warm-paper, navy, and teal editorial system, with reduced-motion fallback.",
+    "Live inspection confirmed the restored orbit animation was deployed and active; the RSI page now version-addresses the shared stylesheet so previously cached flat-hero CSS is not reused."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -83,7 +84,7 @@
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
     "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "Observe the deployed orbital hero only if requested; no other interface or publication content changed in AIL-032.",
+  "next_recoverable_action": "After GitHub Pages publishes AIL-033, load the RSI page normally; the versioned stylesheet URL should expose the orbit without requiring a manual hard refresh.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",

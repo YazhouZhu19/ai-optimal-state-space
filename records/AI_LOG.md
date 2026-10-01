@@ -325,3 +325,12 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Accessibility: Updated the diagram label and disabled orbital animation under `prefers-reduced-motion`.
 - Scope: Only the RSI hero illustration and its shared-style override changed; content, navigation, PDF, and homepage structure remain unchanged.
 - Observation status: Implemented and authorized for publication; post-deployment rendering was not independently observed in this transition.
+
+
+## AIL-033 - Invalidated stale RSI hero styles
+
+- Date: 2026-10-01
+- Human observation: The opened RSI page still appeared to show the previous hero treatment.
+- Live diagnosis: The public CSS already contained `editorial-orbit-one`; computed styles showed three visible animated orbits, and a fresh Chrome render displayed the restored planetary diagram.
+- Action: Added a version query to the RSI page's shared stylesheet reference so browsers fetch the updated orbital rules instead of reusing a cached response.
+- Scope: Asset addressing only; no visual rule or content changed.
