@@ -1630,3 +1630,61 @@ body.rsi-paper .particle-field i:nth-child(7n) {
     animation: none !important;
   }
 }
+
+/* Keep the enriched orbit legible and fully contained at every viewport. */
+body.rsi-paper .object-note--right {
+  right: -7%;
+}
+
+@media (max-width: 900px) {
+  body.rsi-paper .hero,
+  body.rsi-paper .section,
+  body.rsi-paper .landscape__grid,
+  body.rsi-paper .evaluation__grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body.rsi-paper .hero__copy,
+  body.rsi-paper .hero__object,
+  body.rsi-paper .section > *,
+  body.rsi-paper .landscape__grid > *,
+  body.rsi-paper .evaluation__grid > * {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  body.rsi-paper .object-note--right {
+    right: 0;
+  }
+}
+
+@media (max-width: 620px) {
+  body.rsi-paper .site-header,
+  body.rsi-paper main,
+  body.rsi-paper footer {
+    width: calc(100% - 30px);
+    max-width: var(--measure);
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  body.rsi-paper .hero .eyebrow {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+
+  body.rsi-paper .hero__copy,
+  body.rsi-paper .hero__actions,
+  body.rsi-paper .hero__dek,
+  body.rsi-paper .hero__meta {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  body.rsi-paper .button {
+    min-width: 0;
+    max-width: 100%;
+    white-space: normal;
+  }
+}

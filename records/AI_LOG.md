@@ -356,3 +356,15 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Restraint: Particles remain behind the orbit and core, mobile density is halved, and no JavaScript or runtime dependency was introduced.
 - Accessibility: Particles are hidden from assistive technology and become static when reduced motion is requested.
 - Observation status: Source implementation is complete; post-deployment rendering has not yet been independently observed.
+
+
+## AIL-036 - Corrected RSI hero clipping
+
+- Date: 2026-10-01
+- Human observation: The published RSI page did not display all content correctly.
+- Desktop evidence: A live 1440 x 1000 Chrome render showed the right-side Evidence card covering part of the central Agent label and recursive-depth caption.
+- Mobile evidence: A live 390 x 844 Chrome render showed the hero's single-column grid expanding beyond the viewport, clipping the eyebrow, title, summary, and action controls at the right edge.
+- Root cause: The desktop annotation was positioned too close to the core, while narrow-screen grid tracks retained an oversized min-content contribution from the non-wrapping hero labels.
+- AI contribution: Offset the desktop annotation away from the core, restored it inside the diagram below the tablet breakpoint, changed responsive tracks to `minmax(0, 1fr)`, made hero children shrinkable, allowed eyebrow wrapping, and explicitly bounded the narrow-screen page width.
+- Scope: No paper content, particle meaning, typography, palette, navigation, or desktop page structure changed.
+- Observation status: The defects were independently observed before correction; the deployed correction remains to be re-observed after GitHub Pages publishes it.
