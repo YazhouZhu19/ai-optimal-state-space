@@ -304,3 +304,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Fetched the remote branch, inspected the divergence, rebased the publication commits, merged state and append-only records by identity, retained the later author-revised report sources as canonical, and archived the Version 2.0 conflict side rather than deleting it.
 - Safety choice: No force push, history reset, or silent overwrite was used.
 - Status: Integration is prepared for push; post-deployment rendering remains to be observed.
+
+
+## AIL-031 - Observed the live RSI habitat publication
+
+- Date: 2026-10-01
+- Human input: Perform a post-deployment review.
+- Deployment evidence: GitHub Pages served the homepage, RSI habitat companion, shared editorial stylesheet, and attached RSI PDF with HTTP 200 after main reached commit `74b547f`.
+- Visual evidence: Full-page Chrome renders were inspected at desktop and mobile widths. Both pages used the intended warm-paper, navy, teal, Helvetica Neue, and Iowan Old Style system.
+- Runtime evidence: Playwright measured no horizontal overflow at 1440 x 1000 or 390 x 844, found no broken images, and reported no RSI-page console errors.
+- Residual uncertainty: One anonymous homepage 404 occurred in an initial pass but did not recur under focused response tracing, so no stable missing asset could be identified.
+- Result: Publication review passed with no blocking defect and no interface change required.

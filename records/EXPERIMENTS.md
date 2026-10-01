@@ -57,3 +57,15 @@ Experiments distinguish observed behavior from attractive theory. Planned experi
 - Inference
 - Confounds and unknowns
 - Resulting habitat change or no-change decision
+
+
+## EXP-005: Public deployment conformance
+
+- Status: observed on 2026-10-01
+- Question: Does the published GitHub Pages build expose the intended homepage, RSI companion, shared visual system, and paper asset without responsive or asset failures?
+- Resident model and environment: Codex review using HTTP probes, Google Chrome headless rendering, and Playwright against public commit `74b547f`.
+- Stable conditions: Desktop viewport 1440 x 1000; mobile viewport 390 x 844; public GitHub Pages origin; no authenticated page state.
+- Actual observations: Four required resources returned HTTP 200. Both pages loaded `src/editorial-system.css`. Computed body and heading fonts matched the visual contract. No horizontal overflow or broken images were found. The RSI page emitted no console errors. Full-page desktop and mobile layouts rendered continuously.
+- Confounds and unknowns: A single anonymous homepage 404 appeared once and was not reproducible with response-level tracing. This review does not cover every browser engine, assistive technology, or network condition.
+- Inference: The publication is live and conforms to the requested shared editorial style at the two reviewed widths.
+- Resulting habitat change: No interface repair required; retain this check set for future releases.

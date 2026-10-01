@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 30,
+  "revision": 31,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-030",
-    "summary": "Integrated the remote protocol-native Agent Entry with the RSI habitat publication line and prepared the rebased main branch for verified republication.",
+    "id": "AIL-031",
+    "summary": "Observed the published GitHub Pages deployment across desktop and mobile, including the RSI companion, shared visual system, and PDF asset.",
     "date": "2026-10-01"
   },
   "known": [
@@ -58,7 +58,10 @@
     "The homepage and RSI habitat companion use Manrope as their shared display and body typeface, with IBM Plex Mono reserved for technical labels.",
     "The homepage and RSI habitat companion now share src/editorial-system.css, aligned with the clinician-in-the-loop site visual language.",
     "The protocol-native Agent Entry merge and the RSI habitat publication line were integrated without force-pushing; the later report sources remain canonical and the Version 2.0 conflict side is preserved under explicit archive paths.",
-    "A pre-push live review on 2026-10-01 observed the old homepage at HTTP 200 and the not-yet-published RSI page, shared stylesheet, and paper PDF at HTTP 404, correctly identifying that three commits had remained local."
+    "A pre-push live review on 2026-10-01 observed the old homepage at HTTP 200 and the not-yet-published RSI page, shared stylesheet, and paper PDF at HTTP 404, correctly identifying that three commits had remained local.",
+    "GitHub Pages published commit 74b547f: the homepage, RSI habitat companion, shared editorial stylesheet, and attached RSI PDF each returned HTTP 200.",
+    "Read-only Playwright review at 1440 x 1000 and 390 x 844 observed no horizontal overflow, broken images, or RSI-page console errors; computed typography matched the clinician-style system.",
+    "Full-page screenshots showed continuous desktop and mobile layouts for both the homepage and RSI habitat companion."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -76,9 +79,10 @@
     "No public arXiv identifier has been assigned yet; submission 8092656 is on hold for additional arXiv moderation checks, and no reason or required author action has yet been communicated.",
     "No public arXiv identifier has been assigned to RSI submission 8122311; its account status is on hold, and the dashboard provides no reason or required author action.",
     "The proposed RSI habitat architecture has not yet been implemented or empirically evaluated as an integrated system.",
-    "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task."
+    "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
+    "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "Push rebased main, wait for GitHub Pages to publish commit AIL-030, then verify the homepage, RSI habitat companion, shared stylesheet, and attached PDF at desktop and mobile widths.",
+  "next_recoverable_action": "No blocking publication action remains. Future interface changes should repeat the same HTTP, overflow, broken-asset, console, and desktop/mobile screenshot checks.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",
