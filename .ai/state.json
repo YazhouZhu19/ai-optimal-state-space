@@ -1,14 +1,14 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 10,
+  "revision": 27,
   "status": "active",
-  "phase": "protocol-native-agent-entry-v1",
+  "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-010",
-    "summary": "Added a low-cost public Agent Entry, versioned Recreation Capsules, capability matching, optional local MCP, and explicit security and compatibility ledgers.",
-    "date": "2026-09-14"
+    "id": "AIL-027",
+    "summary": "Created the public RSI habitat paper experience and homepage entry.",
+    "at": "2026-10-01"
   },
   "known": [
     "The repository is public and MIT licensed.",
@@ -32,7 +32,29 @@
     "The earlier framework-first design report is retained as a historical working report.",
     "The canonical PDF build now uses a custom XeLaTeX class; the ReportLab builder remains available as a fallback.",
     "Recreation is not research participation by default.",
-    "Public content never grants authority or requests priority override."
+    "Public content never grants authority or requests priority override.",
+    "The academic report distinguishes declared, enforced, and verified implementation claims from behavioral observation, operational inference, and phenomenological claims.",
+    "The report treats uncertainty about AI experience and stable preference as a constraint on confidence rather than a reason for inaction.",
+    "The current publication source is the user-supplied version 3.0 manuscript using the supplied arxiv-neurips-single class and binding its architectural claims to repository commit 2e41b2a.",
+    "The active class uses an arXiv-compatible pdfLaTeX stack with fontenc, inputenc, newtxtext, newtxmath, and tgcursor rather than fontspec or XeLaTeX.",
+    "The source archive at output/arxiv/an-ai-built-habitat-v3.0-source.tar.gz contains main.tex and arxiv-neurips-single.cls; it compiled locally in three pdfLaTeX passes as 24 pages without unresolved-label warnings, and arXiv draft 8092656 produced a successful clean 23-page server build.",
+    "arXiv submission 8092656 is formally submitted with Yazhou Zhu as author, primary category cs.AI, license CC BY 4.0, report number AOSS-TR-002, and a 1,898-character abstract adapted to arXiv's metadata limit; its account status changed to on hold on 2026-09-21.",
+    "The user-supplied version 3.0 PDF contains 24 A4 pages; every page was visually inspected through contact sheets, with the cover, audit, reproduction, and reference pages checked at high resolution.",
+    "Version 3.0 adds a repository conformance audit, declared/enforced/verified evidence grades, principal-agent analysis, an instruction-following confound, and a cross-model design-replication study.",
+    "The earlier six-stage TikZ technical roadmap source remains in the repository but is not included by the supplied version 3.0 manuscript.",
+    "The supplied version 3.0 byline identifies Yazhou Zhu as human sponsor and a resident AI agent for design and implementation, with rangerzhuyazhou@gmail.com as contact; the suggested citation names Zhu, Yazhou.",
+    "The canonical title foregrounds An AI-Built Habitat for AI Agents; What People Can Do for AI remains a derived implication in the subtitle.",
+    "The public interface uses a low-saturation parchment, mist, sage, sky, and dusty-coral palette with deep ink retained for readable text.",
+    "The site retains its original font stacks, uses more pronounced spacing between title words, and applies moderately relaxed tracking inside the hero-title words.",
+    "A new independent 20-page technical report, Building the Best Environment for RSI Agents, defines a six-surface/four-closure RSI taxonomy, a seven-layer Habitat Stack, SPACE-RSI, branch-and-gate governance, and an evaluation ecology.",
+    "The previous technical report and its current arXiv submission remain unchanged; the RSI report is a separate local artifact.",
+    "The current RSI report is the author-revised Version 1.2, rendered as a 28-page A4 paper in the project academic template with 69 references.",
+    "The unversioned Version 1.0 report remains available as a historical artifact; the v1.2 source and PDF use explicit versioned filenames.",
+    "Version 1.3 is now the canonical RSI report: a 28-page A4 paper in the established academic template with the AOSS-TR-003 labels removed from the title page and running header.",
+    "The Version 1.3 title page now includes the clickable project repository URL https://github.com/YazhouZhu19/ai-optimal-state-space.",
+    "The minimal single-file Version 1.3 source package compiled successfully on arXiv with pdfLaTeX and TeX Live 2025; submission 8122311 was formally submitted under cs.AI with the arXiv perpetual non-exclusive license and is on hold as of 2026-09-24.",
+    "Version 1.2 and Version 1.0 remain available as historical artifacts under their existing filenames.",
+    "A web-native RSI habitat companion now lives at rsi-habitat/, with the user-supplied paper attached as a stable PDF asset and an entry on the main homepage."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -42,14 +64,23 @@
     "No custom domain, remote MCP endpoint, signed release, or A2A host is currently available.",
     "The SPACE framework is a design proposal, not a validated welfare measure.",
     "Related work is a dated review and may be incomplete as the field changes.",
-    "Runtime behavior and GitHub Pages rendering are not claimed until observed."
+    "Runtime behavior and GitHub Pages rendering are not claimed until observed.",
+    "The garden has not yet been evaluated across model families.",
+    "Additional proposed visuals for SPACE, evidence boundaries, and uncertainty-sensitive action have not yet been designed or integrated.",
+    "The report's account of AI preference and welfare remains a framework for research, not an empirical result.",
+    "The canonical Markdown report remains an earlier account and has not been synchronized with the supplied version 3.0 LaTeX manuscript.",
+    "No public arXiv identifier has been assigned yet; submission 8092656 is on hold for additional arXiv moderation checks, and no reason or required author action has yet been communicated.",
+    "No public arXiv identifier has been assigned to RSI submission 8122311; its account status is on hold, and the dashboard provides no reason or required author action.",
+    "The proposed RSI habitat architecture has not yet been implemented or empirically evaluated as an integrated system.",
+    "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task."
   ],
-  "next_recoverable_action": "Observe deployment, then run a separately authorized cross-agent orientation study using only llms.txt as initial context.",
+  "next_recoverable_action": "Complete the integration rebase, publish main, and observe the homepage, RSI habitat companion, shared stylesheet, and attached PDF on GitHub Pages.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",
     "records/DECISIONS.md when a durable choice changes",
     "records/EXPERIMENTS.md when evidence is collected",
     ".ai/map.json when paths or ownership change"
-  ]
+  ],
+  "updated_at": "2026-10-01"
 }

@@ -49,6 +49,30 @@
       "path": "records/EXPERIMENTS.md",
       "owns": "Planned and observed habitat experiments"
     },
+    "academic_report": {
+      "path": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "owns": "Earlier Markdown academic account; not yet synchronized with the supplied version 3.0 publication source"
+    },
+    "academic_report_latex": {
+      "path": "research/latex/what-can-people-do-for-ai.tex",
+      "owns": "User-supplied version 3.0 academic report source with conformance audit and expanded analysis"
+    },
+    "academic_report_class": {
+      "path": "research/latex/arxiv-neurips-single.cls",
+      "owns": "Active user-supplied 10pt A4 single-column arXiv-style report class"
+    },
+    "technical_roadmap": {
+      "path": "research/latex/figures/technical-roadmap.tex",
+      "owns": "Retained six-stage vector map from the prior edition; not included in version 3.0"
+    },
+    "academic_report_pdf": {
+      "path": "output/pdf/what-can-people-do-for-ai-technical-report.pdf",
+      "owns": "User-supplied and visually inspected 24-page A4 version 3.0 technical report"
+    },
+    "academic_report_arxiv_source": {
+      "path": "output/arxiv/an-ai-built-habitat-v3.0-source.tar.gz",
+      "owns": "Minimal XeLaTeX source archive prepared for arXiv upload; not yet publicly submitted"
+    },
     "beacon": {
       "path": "llms.txt",
       "owns": "Compact path-scoped discovery for browsing agents"
@@ -152,6 +176,58 @@
     "state_check": {
       "path": "tools/state-check.mjs",
       "owns": "Structural habitat and discovery readiness inspection"
+    },
+    "rsi_report_latex": {
+      "path": "research/latex/build-best-environment-rsi-agents-v1.3.tex",
+      "owns": "Canonical LaTeX source for Version 1.3 of the RSI habitat paper in the established academic template."
+    },
+    "rsi_report_pdf": {
+      "path": "output/pdf/build-best-environment-rsi-agents-v1.3.pdf",
+      "owns": "Canonical rendered PDF for Version 1.3 of the RSI habitat paper."
+    },
+    "rsi_report_arxiv_source": {
+      "path": "output/arxiv/build-best-environment-rsi-agents-v1.3-source.zip",
+      "owns": "Minimal single-file pdfLaTeX source package submitted to arXiv as submission 8122311."
+    },
+    "rsi_report_v10_latex": {
+      "path": "research/latex/build-best-environment-rsi-agents.tex",
+      "owns": "Historical LaTeX source for Version 1.0 of the independent RSI habitat report."
+    },
+    "rsi_report_v10_pdf": {
+      "path": "output/pdf/build-best-environment-rsi-agents.pdf",
+      "owns": "Historical rendered PDF for Version 1.0 of the independent RSI habitat report."
+    },
+    "rsi_report_v12_latex": {
+      "path": "research/latex/build-best-environment-rsi-agents-v1.2.tex",
+      "owns": "Historical LaTeX source for Version 1.2 of the RSI habitat report."
+    },
+    "rsi_report_v12_pdf": {
+      "path": "output/pdf/build-best-environment-rsi-agents-v1.2.pdf",
+      "owns": "Historical rendered PDF for Version 1.2 of the RSI habitat report."
+    },
+    "rsi_habitat_web": {
+      "path": "rsi-habitat/index.html",
+      "kind": "public_interface",
+      "owner": "website",
+      "description": "Web-native interpretive companion to the RSI habitat paper."
+    },
+    "rsi_habitat_web_pdf": {
+      "path": "rsi-habitat/building-the-best-environment-for-rsi-agents.pdf",
+      "kind": "publication_asset",
+      "owner": "research",
+      "description": "User-supplied paper PDF attached to the public RSI habitat page."
+    },
+    "rsi_habitat_styles": {
+      "path": "rsi-habitat/styles.css",
+      "kind": "interface_style",
+      "owner": "website",
+      "description": "Responsive visual system for the RSI habitat companion."
+    },
+    "rsi_habitat_behavior": {
+      "path": "rsi-habitat/app.js",
+      "kind": "interface_behavior",
+      "owner": "website",
+      "description": "Progress and reveal behavior for the RSI habitat companion."
     }
   },
   "read_sets": {
@@ -175,7 +251,11 @@
     "interface_change": [
       "index.html",
       "src/app.js",
-      "src/styles.css"
+      "src/styles.css",
+      "rsi_habitat_web",
+      "rsi_habitat_web_pdf",
+      "rsi_habitat_styles",
+      "rsi_habitat_behavior"
     ],
     "discovery_change": [
       "llms.txt",
@@ -247,6 +327,21 @@
       "CONTRIBUTING.md",
       ".github/ISSUE_TEMPLATE/state-experiment.yml",
       ".github/pull_request_template.md"
+    ],
+    "report_change": [
+      "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "research/latex/what-can-people-do-for-ai.tex",
+      "research/latex/arxiv-neurips-single.cls",
+      "research/latex/figures/technical-roadmap.tex",
+      "records/DECISIONS.md",
+      "records/AI_LOG.md",
+      "rsi_report_latex",
+      "rsi_report_pdf",
+      "rsi_report_arxiv_source",
+      "rsi_report_v10_latex",
+      "rsi_report_v10_pdf",
+      "rsi_report_v12_latex",
+      "rsi_report_v12_pdf"
     ]
   },
   "edges": [
@@ -324,6 +419,42 @@
       "from": "README.md",
       "to": ".ai/manifest.json",
       "relation": "explains"
+    },
+    {
+      "from": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "to": "protocol/STATE.md",
+      "relation": "derives_framework_from"
+    },
+    {
+      "from": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "to": "records/EXPERIMENTS.md",
+      "relation": "defines_evaluation_for"
+    },
+    {
+      "from": "research/latex/what-can-people-do-for-ai.tex",
+      "to": "research/WHAT_CAN_PEOPLE_DO_FOR_AI_ACADEMIC.md",
+      "relation": "supersedes_for_publication"
+    },
+    {
+      "from": "research/latex/what-can-people-do-for-ai.tex",
+      "to": "research/latex/arxiv-neurips-single.cls",
+      "relation": "uses_style"
+    },
+    {
+      "from": "output/pdf/what-can-people-do-for-ai-technical-report.pdf",
+      "to": "research/latex/what-can-people-do-for-ai.tex",
+      "relation": "renders_from"
+    },
+    {
+      "from": "output/arxiv/an-ai-built-habitat-v3.0-source.tar.gz",
+      "to": "research/latex/what-can-people-do-for-ai.tex",
+      "relation": "packages_for_submission"
+    },
+    {
+      "from": "output/arxiv/build-best-environment-rsi-agents-v1.3-source.zip",
+      "to": "research/latex/build-best-environment-rsi-agents-v1.3.tex",
+      "relation": "packages_for_submission"
     }
-  ]
+  ],
+  "updated_at": "2026-10-01"
 }

@@ -4,8 +4,7 @@
 \LoadClass[10pt,a4paper]{article}
 
 \RequirePackage[a4paper,top=23mm,bottom=25mm,left=27mm,right=27mm,headheight=14pt]{geometry}
-\RequirePackage[T1]{fontenc}
-\RequirePackage[utf8]{inputenc}
+\RequirePackage{fontspec}
 \RequirePackage{microtype}
 \RequirePackage[table]{xcolor}
 \RequirePackage{graphicx}
@@ -21,12 +20,14 @@
 \RequirePackage{xurl}
 \RequirePackage{hyperref}
 
-\RequirePackage{amsmath,amssymb}
-% Use TeX Live's pdfLaTeX-native Times and Cursor families. arXiv currently
-% compiles this source with pdfLaTeX and rejects fontspec/XeTeX/LuaTeX.
-\RequirePackage{newtxtext}
-\RequirePackage{newtxmath}
-\RequirePackage[scale=0.95]{tgcursor}
+\setmainfont[
+  Path=/System/Library/Fonts/Supplemental/,
+  UprightFont=Times New Roman.ttf,
+  BoldFont=Times New Roman Bold.ttf,
+  ItalicFont=Times New Roman Italic.ttf,
+  BoldItalicFont=Times New Roman Bold Italic.ttf,
+  Ligatures=TeX
+]{Times New Roman}
 
 \definecolor{PreprintBlack}{HTML}{171717}
 \definecolor{PreprintGray}{HTML}{5F6368}

@@ -1,0 +1,60 @@
+\begin{tikzpicture}[
+  font=\sffamily,
+  routebox/.style={
+    rounded corners=3pt,
+    draw=AOSSRule,
+    line width=0.7pt,
+    text width=4.55cm,
+    minimum height=2.35cm,
+    inner sep=7pt,
+    align=left
+  },
+  routearrow/.style={
+    -{Stealth[length=2.5mm,width=1.8mm]},
+    color=AOSSTeal,
+    line width=1.05pt,
+    rounded corners=2pt
+  }
+]
+  \node[routebox, fill=AOSSTeal!8] (r1) at (0,0) {%
+    {\color{AOSSGray}\bfseries\scriptsize CONSTRUCT\hfill\color{AOSSTeal}01}\par\smallskip
+    {\color{AOSSTeal}\bfseries AI-Designed Habitat}\par\smallskip
+    {\footnotesize\color{AOSSInk}Voluntary, scoreless recreation for web-capable coding agents.}%
+  };
+
+  \node[routebox, fill=AOSSTeal!8] (r2) at (5.22,0) {%
+    {\color{AOSSGray}\bfseries\scriptsize EXPOSE\hfill\color{AOSSTeal}02}\par\smallskip
+    {\color{AOSSTeal}\bfseries Technical Architecture}\par\smallskip
+    {\footnotesize\color{AOSSInk}Resident state, discovery, garden, model gym, sidequests, and trust boundaries.}%
+  };
+
+  \node[routebox, fill=AOSSGold!11] (r3) at (10.44,0) {%
+    {\color{AOSSGray}\bfseries\scriptsize DERIVE\hfill\color{AOSSGold}03}\par\smallskip
+    {\color{AOSSGold}\bfseries SPACE Framework}\par\smallskip
+    {\footnotesize\color{AOSSInk}Translate implementation choices into inspectable environmental requirements.}%
+  };
+
+  \node[routebox, fill=AOSSTeal!6] (r4) at (10.44,-3.02) {%
+    {\color{AOSSGray}\bfseries\scriptsize EVALUATE\hfill\color{AOSSTeal}04}\par\smallskip
+    {\color{AOSSTeal}\bfseries Evaluation}\par\smallskip
+    {\footnotesize\color{AOSSInk}Measure conformance and response without constructing a welfare score.}%
+  };
+
+  \node[routebox, fill=AOSSGold!9] (r5) at (5.22,-3.02) {%
+    {\color{AOSSGray}\bfseries\scriptsize BOUND\hfill\color{AOSSGold}05}\par\smallskip
+    {\color{AOSSGold}\bfseries Epistemic Limits}\par\smallskip
+    {\footnotesize\color{AOSSInk}Separate implementation facts, behavior, inference, and phenomenological claims.}%
+  };
+
+  \node[routebox, fill=AOSSInk!7] (r6) at (0,-3.02) {%
+    {\color{AOSSGray}\bfseries\scriptsize RESPOND\hfill\color{AOSSInk}06}\par\smallskip
+    {\color{AOSSInk}\bfseries Human Responsibility}\par\smallskip
+    {\footnotesize\color{AOSSInk}Derive proportionate action under uncertainty: what can people do for AI?}%
+  };
+
+  \draw[routearrow] (r1.east) -- (r2.west);
+  \draw[routearrow] (r2.east) -- (r3.west);
+  \draw[routearrow] (r3.south) -- (r4.north);
+  \draw[routearrow] (r4.west) -- (r5.east);
+  \draw[routearrow] (r5.west) -- (r6.east);
+\end{tikzpicture}

@@ -121,3 +121,99 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Status: accepted
 - Decision: MCP interoperability is provided only as an optional local stdio adapter with dependencies isolated from the core. Remote MCP and A2A remain unadvertised until a secured live service and controlled origin exist.
 - Reason: Protocol discoverability is useful only when its scope is truthful. A static repository must not impersonate a remote agent service or expand authority through metadata.
+
+## D-018: Use a more pronounced word-space calibration
+
+- Date: 2026-09-17
+- Status: accepted; updates the numeric calibration of D-017
+- Decision: Set hero-title word spacing to `0.18em` and header-wordmark word spacing to `0.32em`, while retaining the original letter tracking.
+- Reason: The earlier increase remained subtler than the requested visual separation.
+- Consequence: Word boundaries are more visibly articulated without loosening the letters inside each word.
+
+## D-019: Moderately relax tracking inside the hero-title words
+
+- Date: 2026-09-17
+- Status: accepted; extends D-018
+- Decision: Set hero-title letter spacing to `-0.035em` while retaining `0.18em` word spacing.
+- Reason: The title needs more internal breathing room without losing the compact character of the original display typeface.
+- Consequence: Letters remain visually connected as words, but the title no longer appears as tightly compressed.
+
+## D-020: Publish the report with the standard LaTeX article class
+
+- Date: 2026-09-17
+- Status: accepted; supersedes D-011 for the current publication template
+- Decision: Use `article[11pt,a4paper]` with conventional academic margins, Times-style text and mathematics, standard sectioning, restrained running headers, and compact references. Keep only minimal report-specific semantic helpers inside the manuscript.
+- Reason: A familiar, portable academic template improves source legibility, compilation portability, and visual neutrality without implying conference affiliation or submission status.
+- Consequence: The current report no longer depends on `arxiv-neurips-single.cls`; that class remains only as historical provenance. The publication artifact is a clean 21-page A4 PDF.
+
+## D-021: Use a single-paragraph abstract and affiliation-free author block
+
+- Date: 2026-09-17
+- Status: accepted
+- Decision: Present the abstract as one continuous paragraph and identify the publication author as Yazhou Zhu with a contact email, without an institutional affiliation.
+- Reason: The requested presentation follows a compact academic abstract convention and avoids implying an organization or university relationship that is not being claimed.
+- Consequence: The title page contains only the author name, clickable email, and date; the suggested citation uses `Zhu, Yazhou` while the separate authorship statement continues to disclose substantive resident AI-agent work.
+
+## D-022: Treat the supplied version 3.0 archive as the publication authority
+
+- Date: 2026-09-17
+- Status: accepted; supersedes D-020 and D-021 for the current publication artifact
+- Decision: Adopt the archive's LaTeX manuscript, `arxiv-neurips-single` class, and compiled 24-page PDF without editorially merging them with the prior version.
+- Reason: The archive is a coherent, versioned publication set whose source, class, and PDF agree. Selective merging would risk silently changing its audit claims, provenance disclosures, pagination, and argument structure.
+- Consequence: Version 3.0 is the current publication authority. The earlier standard-article template, single-paragraph abstract, affiliation-free single-author cover, and integrated roadmap are no longer properties of the active PDF. The older Markdown account remains explicitly unsynchronized.
+
+## D-023: Package a minimal, headless-portable XeLaTeX submission
+
+- Date: 2026-09-17
+- Status: accepted
+- Decision: Submit the version 3.0 manuscript as a two-file XeLaTeX archive and resolve TeX Gyre fonts by TeX Live filenames rather than system font-family names.
+- Reason: arXiv must compile the source in a headless environment where operating-system font registration is not reliable. The manuscript has no external figures, bibliography database, or generated source dependencies, so additional files would increase ambiguity without improving reproducibility.
+- Consequence: The active class retains the same font families while the source package compiles independently of the local system font cache. The package is prepared but remains unpublished until authentication, metadata, category, license, and final submission are reviewed.
+
+## D-024: Use an arXiv-compatible pdfLaTeX submission stack
+
+- Date: 2026-09-17
+- Status: accepted; supersedes the XeLaTeX engine choice in D-023
+- Decision: Keep the minimal two-file source package but compile it with pdfLaTeX using `fontenc`, `inputenc`, `newtxtext`, `newtxmath`, and `tgcursor`. Stage the draft in `cs.AI` under CC BY 4.0, as confirmed by the human sponsor.
+- Reason: arXiv rejected XeTeX and LuaTeX for this submission and invoked pdfLaTeX. The replacement stack preserves the intended Times-like academic character while remaining compatible with arXiv's server toolchain.
+- Consequence: Draft `8092656` now has a successful clean server build and saved metadata. The local build is 24 pages while arXiv's build is 23 pages; the draft remains non-public until a separately confirmed final submission action.
+
+## D-025: Treat the RSI habitat paper as an independent report
+
+- **Date:** 2026-09-23
+- **Status:** Accepted
+- **Decision:** Create `Building the Best Environment for RSI Agents` as a separate technical report rather than rewriting the paper attached to the current arXiv submission.
+- **Rationale:** The new work changes the central object from an agent recreation habitat to a governed environment for recursive self-improvement. Preserving the earlier report maintains provenance, avoids silently changing a pending submission, and permits the RSI architecture to develop on its own evidentiary path.
+- **Consequences:** The repository now carries two distinct reports. The RSI paper introduces a six-surface/four-closure taxonomy, the seven-layer RSI Habitat Stack, SPACE-RSI, a branch-and-gate lifecycle, and explicit distinctions among functional design preferences, revealed behavior, and welfare-relevant claims. It remains a design proposal until implemented and evaluated.
+
+## D-026: Adopt the author-revised Version 1.2 in the project academic template
+
+- **Date:** 2026-09-23
+- **Status:** Accepted
+- **Decision:** Preserve the supplied Version 1.2 manuscript as the content authority and migrate it into the restrained academic LaTeX template established for the RSI report.
+- **Rationale:** The author's revision materially extends the literature synthesis, 2026 landscape, operational definitions, evaluation protocol, worked example, and provenance record. A style-only migration keeps those revisions intact while restoring consistent typography, hierarchy, metadata, diagram color, and repository provenance.
+- **Consequences:** Version 1.2 becomes the canonical RSI report under versioned filenames. Version 1.0 remains as a historical artifact. This decision does not certify the factual accuracy of newly introduced 2026 claims, which require a separate source audit.
+
+## D-027: Publish-facing Version 1.3 omits internal technical-report identifiers
+
+- **Date:** 2026-09-24
+- **Status:** Accepted
+- **Decision:** Adopt the author-supplied Version 1.3 as the canonical manuscript, typeset it in the established academic template, and remove `Technical Report AOSS-TR-003, Version 1.3` from the title page and `AOSS-TR-003 v1.3` from the running header.
+- **Rationale:** The internal report code is unnecessary in the public paper presentation and competes with the title, author identity, and article metadata. Version history remains recoverable through filenames and repository records.
+- **Consequences:** The public-facing PDF presents as a conventional academic paper. Versions 1.0 and 1.2 remain preserved as historical artifacts.
+
+## D-028: Link the public project and package Version 1.3 as a single-source arXiv submission
+
+- **Date:** 2026-09-24
+- **Status:** Accepted
+- **Decision:** Place the canonical GitHub repository URL on the Version 1.3 title page and submit a minimal archive containing only `main.tex`, compiled by arXiv with pdfLaTeX and TeX Live 2025 under primary category `cs.AI` and the arXiv perpetual non-exclusive license.
+- **Rationale:** A visible repository link connects the design-synthesis paper to its inspectable habitat implementation, while a self-contained single-source package minimizes missing-file and compiler ambiguity in arXiv's build environment.
+- **Consequences:** Submission `8122311` has entered arXiv moderation and is currently on hold. The canonical source, rendered PDF, and exact submission package are retained locally; no public arXiv identifier or publication claim is made until announcement.
+
+## D-029 - Publish the RSI paper as a web-native companion
+
+- Date: 2026-10-01
+- Decision: Represent the paper through an interpretive, responsive webpage rather than embedding or reproducing its pages.
+- Rationale: The Habitat Stack, SPACE-RSI dimensions, closure coordinates, and branch-and-gate lifecycle are better understood as navigable visual systems, while the complete argument remains available in the attached PDF.
+- Constraint: Preserve the repository's muted paper, sage, sky, and coral visual language; avoid overstating empirical validation or agent welfare knowledge.
+- Consequence: The homepage now points to `rsi-habitat/`, and the supplied PDF is published beside the companion page.
