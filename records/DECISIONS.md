@@ -243,3 +243,11 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: The remote branch adds the current machine-entry architecture, while the local branch contains later publication and website work. Treating either whole side as disposable would lose valid project history.
 - Constraint: Push must remain fast-forward and must not use force.
 - Consequence: Public Agent Entry, RSI habitat web companion, shared clinician-style visual system, current report sources, and historical Version 2.0 artifacts coexist in one main branch.
+
+
+## D-033 - Preserve one signature motion inside the restrained editorial system
+
+- Date: 2026-10-01
+- Decision: Retain the RSI page's rotating orbital hero as a page-specific identity element rather than flattening every component to the shared reference style.
+- Rationale: A single conceptual motion communicates recursive depth and nested habitat boundaries without returning the overall interface to gradient-heavy or highly decorative presentation.
+- Constraint: Motion must use the shared palette, remain contained to the hero, scale on mobile, and stop when reduced motion is requested.

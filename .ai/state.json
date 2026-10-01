@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 31,
+  "revision": 32,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-031",
-    "summary": "Observed the published GitHub Pages deployment across desktop and mobile, including the RSI companion, shared visual system, and PDF asset.",
+    "id": "AIL-032",
+    "summary": "Restored the rotating RSI orbital hero while retaining the shared clinician-style editorial system.",
     "date": "2026-10-01"
   },
   "known": [
@@ -61,7 +61,8 @@
     "A pre-push live review on 2026-10-01 observed the old homepage at HTTP 200 and the not-yet-published RSI page, shared stylesheet, and paper PDF at HTTP 404, correctly identifying that three commits had remained local.",
     "GitHub Pages published commit 74b547f: the homepage, RSI habitat companion, shared editorial stylesheet, and attached RSI PDF each returned HTTP 200.",
     "Read-only Playwright review at 1440 x 1000 and 390 x 844 observed no horizontal overflow, broken images, or RSI-page console errors; computed typography matched the clinician-style system.",
-    "Full-page screenshots showed continuous desktop and mobile layouts for both the homepage and RSI habitat companion."
+    "Full-page screenshots showed continuous desktop and mobile layouts for both the homepage and RSI habitat companion.",
+    "The RSI habitat hero retains its signature three-orbit animation, recolored and reshaped within the shared warm-paper, navy, and teal editorial system, with reduced-motion fallback."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -82,7 +83,7 @@
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
     "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "No blocking publication action remains. Future interface changes should repeat the same HTTP, overflow, broken-asset, console, and desktop/mobile screenshot checks.",
+  "next_recoverable_action": "Observe the deployed orbital hero only if requested; no other interface or publication content changed in AIL-032.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",

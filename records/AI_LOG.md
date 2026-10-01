@@ -315,3 +315,13 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Runtime evidence: Playwright measured no horizontal overflow at 1440 x 1000 or 390 x 844, found no broken images, and reported no RSI-page console errors.
 - Residual uncertainty: One anonymous homepage 404 occurred in an initial pass but did not recur under focused response tracing, so no stable missing asset could be identified.
 - Result: Publication review passed with no blocking defect and no interface change required.
+
+
+## AIL-032 - Restored the RSI orbital hero
+
+- Date: 2026-10-01
+- Human input: Keep the original rotating planet effect on the Building the Best Environment for RSI Agents page while retaining the current visual style.
+- AI contribution: Re-enabled the existing three-orbit structure, redesigned its core, markers, labels, and shadows with the shared navy, teal, warm-paper editorial tokens, and added responsive sizing.
+- Accessibility: Updated the diagram label and disabled orbital animation under `prefers-reduced-motion`.
+- Scope: Only the RSI hero illustration and its shared-style override changed; content, navigation, PDF, and homepage structure remain unchanged.
+- Observation status: Implemented and authorized for publication; post-deployment rendering was not independently observed in this transition.
