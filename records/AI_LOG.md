@@ -414,3 +414,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Added a 620px `h1` size of `clamp(3.4rem, 16vw, 4.7rem)` with `overflow-wrap: break-word`, and moved the decorative ring from `right: -3%` to `right: 0`.
 - Verification: A 6-page by 10-width audit reports zero page-level overflow. At 390 and 320 the garden headline fits on four lines without a mid-word break, and the guarantees grid, cards, and footer stay inside the viewport.
 - Scope: Only the narrow-width type size and one decorative offset changed. No copy, palette, layout structure, or interaction changed.
+
+
+## AIL-041 - Restated the calibration console for its own dark surface
+
+- Date: 2026-10-29
+- Inspected fact: The homepage loads both `src/styles.css` and `src/editorial-system.css`. The later sheet turns `.console` into an ink panel, but every part inside it still carried the earlier light-surface palette. The section heading, the Explore and Audit buttons, the slider tracks, the value readouts, the control help text, and the reset link were dark on dark or invisible. Only the active Construct tab stayed legible.
+- Inspected fact: `body.aoss-home main > section:not(.hero) { padding: clamp(5rem, 9vw, 8rem) 0 }` outranks `.console { padding: clamp(30px, 5vw, 72px) }`, so the panel inset collapsed to zero and `01 / CALIBRATION` sat on the panel edge with the right-hand column running past it.
+- Inspected fact: `body.aoss-home .console * { border-radius: 0 }` flattened the circular score gauge into a white square with the conic track showing as an offset edge behind it.
+- AI contribution: Restored the panel inset and the six-pixel top rule with a `main > section.console` selector, restated the inner colours for the ink surface — headings, mode buttons, slider track and thumb, readouts, help text, bottleneck row, and reset link — and re-rounded only the score gauge and its inner disc.
+- Verification: A 6-page by 10-width audit still reports zero page-level overflow and zero broken images. Desktop and 390px captures show the heading, all three mode tabs, six labelled sliders with values, the circular gauge, the state label, the active bottleneck, and the reset link all legible on the dark panel.
+- Scope: Only the console's inner presentation changed. No markup, copy, interaction, or layout structure changed, and no other section was touched.

@@ -303,6 +303,112 @@ body.aoss-home .terminal * {
   border-radius: 0;
 }
 
+/* The console keeps the ink surface set above, but its inner parts still carry
+   the earlier light-surface palette. The section rule that zeroes horizontal
+   padding also strips the panel inset, so this block restores the inset and
+   restates the inner colours for a dark surface. */
+body.aoss-home main > section.console {
+  padding: clamp(30px, 5vw, 72px);
+  border-top: 6px solid var(--accent);
+}
+
+body.aoss-home .console .section-index,
+body.aoss-home .console .state-kicker,
+body.aoss-home .console .control-number,
+body.aoss-home .console .control-copy small,
+body.aoss-home .console .bottleneck span {
+  color: rgba(238, 244, 243, 0.62);
+}
+
+body.aoss-home .console h2,
+body.aoss-home .console .control-copy strong {
+  color: #eef4f3;
+}
+
+body.aoss-home .console .mode-picker {
+  border: 1px solid rgba(238, 244, 243, 0.28);
+}
+
+body.aoss-home .console .mode-button {
+  border-right: 1px solid rgba(238, 244, 243, 0.22);
+  color: rgba(238, 244, 243, 0.74);
+  background: transparent;
+}
+
+body.aoss-home .console .mode-button:last-child {
+  border-right: 0;
+}
+
+body.aoss-home .console .mode-button.active {
+  color: var(--ink);
+  background: var(--acid);
+}
+
+body.aoss-home .console .control {
+  border-bottom: 1px solid rgba(238, 244, 243, 0.16);
+}
+
+body.aoss-home .console input[type="range"] {
+  background: linear-gradient(
+    90deg,
+    #9ecfd3 0 var(--fill, 50%),
+    rgba(238, 244, 243, 0.18) var(--fill, 50%)
+  );
+}
+
+body.aoss-home .console input[type="range"]::-webkit-slider-thumb {
+  border-color: var(--ink);
+  background: #9ecfd3;
+  box-shadow: 0 0 0 1px rgba(238, 244, 243, 0.55);
+}
+
+body.aoss-home .console input[type="range"]::-moz-range-thumb {
+  border-color: var(--ink);
+  background: #9ecfd3;
+  box-shadow: 0 0 0 1px rgba(238, 244, 243, 0.55);
+}
+
+body.aoss-home .console .control output,
+body.aoss-home .console .state-panel h3 {
+  color: #9ecfd3;
+}
+
+body.aoss-home .console .state-panel > p:not(.state-kicker),
+body.aoss-home .console .text-button {
+  color: rgba(238, 244, 243, 0.74);
+}
+
+body.aoss-home .console .bottleneck {
+  border-block-color: rgba(238, 244, 243, 0.2);
+}
+
+body.aoss-home .console .bottleneck strong {
+  color: var(--vermilion);
+}
+
+/* The score gauge is the one console element that is not square. */
+body.aoss-home .console .score-ring,
+body.aoss-home .console .score-ring::before {
+  border-radius: 50%;
+}
+
+body.aoss-home .console .score-ring {
+  background: conic-gradient(#9ecfd3 calc(var(--score) * 1%), rgba(238, 244, 243, 0.14) 0);
+}
+
+body.aoss-home .console .score-ring::before {
+  border-color: rgba(238, 244, 243, 0.18);
+  background: #0c1c2e;
+}
+
+body.aoss-home .console .score-inner strong {
+  color: #eef4f3;
+}
+
+body.aoss-home .console .score-inner span {
+  color: rgba(238, 244, 243, 0.6);
+}
+
 body.aoss-home .brief-section,
 body.aoss-home .principles {
   background: transparent;

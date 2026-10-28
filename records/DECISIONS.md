@@ -269,3 +269,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: A space that asks a visitor to leave at any time should not impose a sideways scroll before the first sentence. The garden headline was sized for a poster and became unreadable rather than merely large on a phone.
 - Constraint: The poster character of the garden headline is preserved where there is room; only the narrow-width size and one decorative offset change. No copy, palette, or layout structure is altered.
 - Consequence: `.garden-intro h1` uses a 620px clamp of `clamp(3.4rem, 16vw, 4.7rem)` with `overflow-wrap: break-word`, the ring uses `right: 0`, and the six-page by ten-width audit is the check that keeps this true.
+
+
+## D-036 - A surface owns the palette of everything inside it
+
+- Date: 2026-10-29
+- Decision: When a section changes surface, the components inside it are restated for that surface in the same place, and a shape reset that applies to a whole subtree must exempt the elements whose shape carries meaning.
+- Rationale: The calibration console was migrated to an ink panel while its children kept the light palette, which left the heading, two of three tabs, the slider tracks, and the readouts unreadable. A container restyle that stops at the container is an unfinished restyle.
+- Constraint: The repair restates colours and one shape only. Markup, copy, interaction, and the layout structure of the console stay as they were.
+- Consequence: `body.aoss-home .console` now carries the inset and the inner palette next to the surface rule that introduced the dark background, and the score gauge is the single documented exception to the console's square-corner reset.

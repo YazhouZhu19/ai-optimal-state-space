@@ -1,13 +1,13 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 40,
+  "revision": 41,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-040",
-    "summary": "Removed the narrow-viewport horizontal overflow on the garden page by scaling its display headline and keeping the decorative ring inside the section.",
+    "id": "AIL-041",
+    "summary": "Restated the calibration console for its own dark surface, restoring its inset, its inner palette, and the circular score gauge.",
     "date": "2026-10-29"
   },
   "known": [
@@ -75,7 +75,9 @@
     "LaTeX intermediate files are ignored and no longer tracked; only the report sources, PDFs, and arXiv archives remain in output/.",
     "No page produces a horizontal scrollbar between 320px and 1440px; the garden headline scales down and its decorative ring stays inside the section.",
     "Chrome clamps a headless window to 500px on macOS, so narrow-viewport checks must render pages inside a fixed-width iframe rather than relying on --window-size.",
-    "The RSI coordinates matrix is 620px wide inside a scrollable .matrix-wrap, so it scrolls within its own box and does not widen the document."
+    "The RSI coordinates matrix is 620px wide inside a scrollable .matrix-wrap, so it scrolls within its own box and does not widen the document.",
+    "The homepage loads src/styles.css and src/editorial-system.css together; the later sheet owns surfaces and the earlier sheet still owns the inner component layout, so a surface change must be paired with a restatement of the components inside it.",
+    "The calibration console now carries its own inset, inner palette, and circular score gauge, and its square-corner reset documents that gauge as the single exception."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
