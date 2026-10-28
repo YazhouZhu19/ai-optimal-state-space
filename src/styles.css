@@ -565,7 +565,7 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .brief-intro {
-  padding-top: 34px;
+  padding-top: 12px;
 }
 
 .brief-intro p:not(.section-index, .copy-status) {
@@ -603,8 +603,8 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .brief-paper {
-  min-height: 620px;
-  padding: clamp(24px, 4vw, 56px);
+  min-height: 460px;
+  padding: clamp(20px, 3vw, 40px);
   border: 1px solid var(--line);
   background:
     linear-gradient(rgba(23, 34, 31, 0.055) 1px, transparent 1px) 0 0 / 100% 28px,
@@ -621,13 +621,13 @@ input[type="range"]::-moz-range-thumb {
 }
 
 .brief-paper pre {
-  margin: 32px 0 0;
+  margin: 20px 0 0;
   white-space: pre-wrap;
   word-break: break-word;
   color: var(--ink);
   font-family: var(--mono);
   font-size: clamp(0.72rem, 1vw, 0.86rem);
-  line-height: 1.8;
+  line-height: 1.55;
 }
 
 .principles {

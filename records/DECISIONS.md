@@ -278,3 +278,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: The calibration console was migrated to an ink panel while its children kept the light palette, which left the heading, two of three tabs, the slider tracks, and the readouts unreadable. A container restyle that stops at the container is an unfinished restyle.
 - Constraint: The repair restates colours and one shape only. Markup, copy, interaction, and the layout structure of the console stay as they were.
 - Consequence: `body.aoss-home .console` now carries the inset and the inner palette next to the surface rule that introduced the dark background, and the score gauge is the single documented exception to the console's square-corner reset.
+
+
+## D-037 - Density is a spacing decision, not a type-size decision
+
+- Date: 2026-10-29
+- Decision: Make the homepage denser by removing reserved empty space — viewport-height minimums, oversized section bands, and fixed panel heights — rather than by shrinking type or reducing the number of visible controls.
+- Rationale: The first screen reserved a full viewport for content that occupied less than half of it, so a visitor met a blank band before the calibration console. The fix belongs in the vertical rhythm; the reading size was never the problem.
+- Constraint: No section band drops below roughly 72px, no body text changes size, and the console keeps all six controls and the score gauge.
+- Consequence: The hero is content-driven with its closing rule in flow, section bands are 86px, the brief paper is 460px minimum, and the page is 4067px instead of 4783px at 1440.

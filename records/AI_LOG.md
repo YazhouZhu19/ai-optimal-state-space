@@ -425,3 +425,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Restored the panel inset and the six-pixel top rule with a `main > section.console` selector, restated the inner colours for the ink surface — headings, mode buttons, slider track and thumb, readouts, help text, bottleneck row, and reset link — and re-rounded only the score gauge and its inner disc.
 - Verification: A 6-page by 10-width audit still reports zero page-level overflow and zero broken images. Desktop and 390px captures show the heading, all three mode tabs, six labelled sliders with values, the circular gauge, the state label, the active bottleneck, and the reset link all legible on the dark panel.
 - Scope: Only the console's inner presentation changed. No markup, copy, interaction, or layout structure changed, and no other section was touched.
+
+
+## AIL-042 - Tightened the homepage vertical rhythm
+
+- Date: 2026-10-29
+- Inspected fact: The homepage measured 4783px at 1440. The hero alone held 922px because `min-height: calc(100vh - 78px)` reserved a full viewport for roughly 420px of content, and the end-of-hero rule was absolutely positioned 58px above the hero's bottom edge, which fixed that empty band in place. Each of the three following sections carried 128px above and below.
+- Inspected fact: `.brief-paper` reserved 620px regardless of its content, and `.paper-feature` carried a 158px top margin inside a section that already had 128px above it.
+- AI contribution: Content now drives the hero height, with the end-of-hero rule in normal flow, right-aligned and capped at 484px so its three labels never overflow a narrow viewport. Section bands went from 128px to 86px, the console inset from 72px to 48px with 64px control rows, the brief paper from 620px to 460px with a 1.55 line height and 20px top margin, and the paper-feature top margin from 158px to 56px.
+- Result: 4783px to 4067px, fifteen percent shorter, with the calibration console and the translation section reachable sooner.
+- Verification: The 6-page by 10-width audit reports zero page-level overflow and zero broken images. Desktop and 390px captures keep every label, slider, readout, and rule legible.
+- Scope: Spacing and height only. No copy, colour, component structure, or interaction changed.

@@ -271,8 +271,51 @@ body.aoss-home .hero-actions {
 }
 
 body.aoss-home main > section:not(.hero) {
-  padding: clamp(5rem, 9vw, 8rem) 0;
+  padding: clamp(3.5rem, 6vw, 5.25rem) 0;
   border-top: 1px solid var(--line);
+}
+
+/* The homepage was tuned for a poster-height first screen and 128px section
+   bands. Content now drives the height instead, and the rule that marks the
+   end of the hero sits in flow so it no longer reserves a full viewport. */
+body.aoss-home .hero {
+  min-height: 0;
+  padding: clamp(3.5rem, 6vw, 5.5rem) 0 clamp(2.5rem, 4vw, 3.5rem);
+}
+
+body.aoss-home .hero-rule {
+  position: static;
+  width: min(100%, 484px);
+  margin: clamp(2.5rem, 5vw, 3.5rem) 0 0 auto;
+}
+
+body.aoss-home .paper-feature {
+  margin-top: clamp(2rem, 4vw, 3.5rem);
+}
+
+body.aoss-home .brief-section,
+body.aoss-home .principles {
+  gap: clamp(2rem, 5vw, 5rem);
+}
+
+/* The wider text column is a desktop proportion only; the single-column
+   layout below 900px stays as the earlier sheet defines it. */
+@media (min-width: 901px) {
+  body.aoss-home .brief-section {
+    grid-template-columns: 0.78fr 1.22fr;
+  }
+}
+
+body.aoss-home .console .control {
+  min-height: 64px;
+}
+
+body.aoss-home .console .console-head {
+  padding-bottom: 26px;
+}
+
+body.aoss-home .console .console-grid {
+  padding-top: 30px;
 }
 
 body.aoss-home main > section:not(.hero)::before,
@@ -308,7 +351,7 @@ body.aoss-home .terminal * {
    padding also strips the panel inset, so this block restores the inset and
    restates the inner colours for a dark surface. */
 body.aoss-home main > section.console {
-  padding: clamp(30px, 5vw, 72px);
+  padding: clamp(24px, 3.4vw, 48px);
   border-top: 6px solid var(--accent);
 }
 
