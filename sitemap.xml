@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/</loc>
-    <lastmod>2026-09-14</lastmod>
+    <lastmod>2026-10-29</lastmod>
   </url>
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/agent/entry.json</loc>
@@ -73,6 +73,10 @@
     <lastmod>2026-09-12</lastmod>
   </url>
   <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/</loc>
+    <lastmod>2026-10-29</lastmod>
+  </url>
+  <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/</loc>
     <lastmod>2026-09-12</lastmod>
   </url>
@@ -87,6 +91,10 @@
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/gym/agents/exercises.json</loc>
     <lastmod>2026-09-14</lastmod>
+  </url>
+  <url>
+    <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/rsi-habitat/</loc>
+    <lastmod>2026-10-29</lastmod>
   </url>
   <url>
     <loc>https://yazhouzhu19.github.io/ai-optimal-state-space/docs/AGENT_COMPATIBILITY.md</loc>

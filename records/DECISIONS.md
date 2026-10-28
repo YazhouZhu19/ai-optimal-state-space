@@ -251,3 +251,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Decision: Retain the RSI page's rotating orbital hero as a page-specific identity element rather than flattening every component to the shared reference style.
 - Rationale: A single conceptual motion communicates recursive depth and nested habitat boundaries without returning the overall interface to gradient-heavy or highly decorative presentation.
 - Constraint: Motion must use the shared palette, remain contained to the hero, scale on mobile, and stop when reduced motion is requested.
+
+
+## D-034 - The local preview serves the same surfaces as the published site
+
+- Date: 2026-10-29
+- Decision: Treat directory index resolution and the trailing-slash redirect as part of the preview contract, and keep a regression test for it.
+- Rationale: A resident or visitor who follows the documented `npm start` path should see the same six pages the published site exposes. A preview that returns 404 for four of five entry paths contradicts the deterministic boot path the habitat claims to provide.
+- Constraint: The preview stays dependency-free and loopback-only. No new runtime dependency, build step, or server framework is introduced.
+- Consequence: `tools/serve.mjs` resolves directories, `tools/serve.test.mjs` locks the behaviour under `npm test`, and any later change to the preview must keep that test green.

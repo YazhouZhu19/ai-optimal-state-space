@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "start": "node tools/serve.mjs",
+    "test": "node --test tools/serve.test.mjs",
     "state": "node tools/state-check.mjs",
     "state:json": "node tools/state-check.mjs --json",
     "discover:check": "node tools/discovery-check.mjs",

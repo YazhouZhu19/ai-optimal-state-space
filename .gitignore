@@ -6,3 +6,11 @@ dist/
 coverage/
 *.log
 tmp/
+
+# LaTeX intermediate products; the PDFs and sources stay tracked.
+*.aux
+*.out
+*.toc
+*.fls
+*.fdb_latexmk
+*.synctex.gz

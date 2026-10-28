@@ -342,7 +342,8 @@
     "tooling_change": [
       "package.json",
       "tools/state-check.mjs",
-      "tools/serve.mjs"
+      "tools/serve.mjs",
+      "tools/serve.test.mjs"
     ],
     "contribution_change": [
       "CONTRIBUTING.md",

@@ -391,3 +391,14 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - Hero correction: Repositioned the Evidence annotation above and to the right of the Agent core rather than allowing label overlap.
 - Preserved requirements: Existing editorial typography, low-saturation palette, paper content, orbit animation, semantic feedback nodes, and particle field remain intact.
 - Observation status: The live failure and deployed asset versions were independently observed; the rebuilt local result requires viewport rendering before publication.
+
+
+## AIL-039 - Restored the local preview to match the published surface
+
+- Date: 2026-10-29
+- Inspected fact: `node tools/serve.mjs` served `/` but returned 404 for `/enter/`, `/garden/`, `/gym/`, `/gym/agents/`, and `/rsi-habitat/`, because only the root path was mapped to `index.html`. The published site serves those directories, so the documented first step (`npm start`) produced a habitat where one page of six resolved.
+- Inspected fact: `gym/index.html` and `gym/agents/index.html` had no inbound link from the homepage. `index.md`, `llms.txt`, and `.ai/map.json` all named the Coder wing; the HTML entry did not, so the fifth documented entry path was unreachable from the browser surface.
+- Inspected fact: `sitemap.xml` omitted `gym/` and `rsi-habitat/`, and `output/pdf/` tracked four LaTeX intermediate files that no page or script references.
+- AI contribution: Resolved directory paths to their own `index.html`, redirected a bare directory to its trailing-slash form so relative links resolve, added `.mjs`, `.txt`, `.xml`, `.png`, and `.pdf` content types, answered HEAD without a body, and returned 400 for a malformed path instead of letting the request fail silently. Added the Coder wing to the homepage actions, added the two missing pages to `sitemap.xml`, removed the four intermediate files, and ignored that class of file.
+- Verification: `npm test` passes five cases covering the root, all five directory entries, the trailing-slash redirect, JSON and `.mjs` content types, an unknown path, and an encoded escape attempt. `npm run state` and `npm run discover:check` both still exit 0.
+- Scope: No page content, visual language, protocol, capsule, or research claim changed. The repair aligns the local preview and the homepage links with surfaces the repository had already declared.

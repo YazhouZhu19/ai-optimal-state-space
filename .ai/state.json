@@ -1,14 +1,14 @@
 {
   "$schema": "schema/state.schema.json",
   "schema_id": "ai-habitat-state/v1",
-  "revision": 38,
+  "revision": 39,
   "status": "active",
   "phase": "protocol-native-agent-entry-and-rsi-publication-v1",
   "active_brief": "BRIEF.md",
   "last_transition": {
-    "id": "AIL-038",
-    "summary": "Rebuilt multi-part RSI sections around explicit content containers instead of implicit grid auto-placement.",
-    "date": "2026-10-01"
+    "id": "AIL-039",
+    "summary": "Restored the local preview so it serves every directory index the published site serves, and connected the Coder wing to the homepage.",
+    "date": "2026-10-29"
   },
   "known": [
     "The repository is public and MIT licensed.",
@@ -68,7 +68,11 @@
     "A deterministic CSS particle field represents observations and candidate changes moving through the RSI habitat, with reduced density on small screens and a static reduced-motion state.",
     "Live 1440 x 1000 and 390 x 844 renders exposed an Evidence-card overlap over the Agent core and mobile min-content expansion; responsive containment rules now address both defects.",
     "The RSI page's two-column sections now explicitly keep all non-kicker content in the wide content lane above 980px and reset it to the sole column below that breakpoint.",
-    "Coordinates, Habitat Stack, SPACE-RSI, lifecycle, and Human Role now use explicit section__content wrappers, eliminating reliance on child order for desktop and mobile placement."
+    "Coordinates, Habitat Stack, SPACE-RSI, lifecycle, and Human Role now use explicit section__content wrappers, eliminating reliance on child order for desktop and mobile placement.",
+    "The local preview resolves directory paths to their own index.html and redirects a bare directory to its trailing-slash form, so npm start serves the same six pages the published site serves.",
+    "The homepage now links the Coder wing, completing the five documented entry paths in the browser surface; gym/ and rsi-habitat/ are listed in sitemap.xml.",
+    "npm test runs five zero-dependency preview cases covering directory resolution, the trailing-slash redirect, content types, a missing path, and an encoded escape attempt.",
+    "LaTeX intermediate files are ignored and no longer tracked; only the report sources, PDFs, and arXiv archives remain in output/."
   ],
   "uncertainties": [
     "Search indexing and retrieval frequency have not yet been observed.",
@@ -89,7 +93,7 @@
     "The 2026 empirical, industrial, incident, and news claims introduced in the supplied v1.2 manuscript were preserved but not independently fact-checked during this template-conversion task.",
     "One anonymous homepage resource 404 appeared during the first desktop pass but was absent in the focused repeat with response-level tracing; no stable missing URL was identified."
   ],
-  "next_recoverable_action": "Render the rebuilt RSI page at the screenshot-matched desktop viewport and a 390px mobile viewport before publication, then publish only if the content lanes remain complete.",
+  "next_recoverable_action": "Open http://localhost:4173/gym/agents/ and http://localhost:4173/garden/ in a browser at desktop and 390px widths to confirm the six pages render from the repaired preview, then re-check the published site after GitHub Pages deploys.",
   "writeback": [
     ".ai/state.json",
     "records/AI_LOG.md",
