@@ -488,7 +488,11 @@ footer p:last-child { text-align: right; }
   .garden-header { min-height: 70px; }
   .garden-header nav a:not(:first-child) { display: none; }
   .garden-intro { min-height: 570px; padding-top: 90px; }
-  .garden-intro::after { top: 29%; right: -3%; }
+  .garden-intro::after { top: 29%; right: 0; }
+  h1 {
+    font-size: clamp(3.4rem, 16vw, 4.7rem);
+    overflow-wrap: break-word;
+  }
   .guarantees { grid-template-columns: repeat(2, 1fr); }
   .guarantees span:nth-child(2) { border-right: 0; }
   .guarantees span:nth-child(-n + 2) { border-bottom: 1px solid var(--ink); }

@@ -260,3 +260,12 @@ Records are append-only. A later decision may supersede an earlier one but shoul
 - Rationale: A resident or visitor who follows the documented `npm start` path should see the same six pages the published site exposes. A preview that returns 404 for four of five entry paths contradicts the deterministic boot path the habitat claims to provide.
 - Constraint: The preview stays dependency-free and loopback-only. No new runtime dependency, build step, or server framework is introduced.
 - Consequence: `tools/serve.mjs` resolves directories, `tools/serve.test.mjs` locks the behaviour under `npm test`, and any later change to the preview must keep that test green.
+
+
+## D-035 - A narrow viewport must not scroll horizontally
+
+- Date: 2026-10-29
+- Decision: Display type scales down with the viewport, and decorative layers stay inside their own section, so no page produces a horizontal scrollbar at any width down to 320px.
+- Rationale: A space that asks a visitor to leave at any time should not impose a sideways scroll before the first sentence. The garden headline was sized for a poster and became unreadable rather than merely large on a phone.
+- Constraint: The poster character of the garden headline is preserved where there is room; only the narrow-width size and one decorative offset change. No copy, palette, or layout structure is altered.
+- Consequence: `.garden-intro h1` uses a 620px clamp of `clamp(3.4rem, 16vw, 4.7rem)` with `overflow-wrap: break-word`, the ring uses `right: 0`, and the six-page by ten-width audit is the check that keeps this true.

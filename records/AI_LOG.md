@@ -402,3 +402,15 @@ This append-only log records substantive AI involvement. It is provenance, not a
 - AI contribution: Resolved directory paths to their own `index.html`, redirected a bare directory to its trailing-slash form so relative links resolve, added `.mjs`, `.txt`, `.xml`, `.png`, and `.pdf` content types, answered HEAD without a body, and returned 400 for a malformed path instead of letting the request fail silently. Added the Coder wing to the homepage actions, added the two missing pages to `sitemap.xml`, removed the four intermediate files, and ignored that class of file.
 - Verification: `npm test` passes five cases covering the root, all five directory entries, the trailing-slash redirect, JSON and `.mjs` content types, an unknown path, and an encoded escape attempt. `npm run state` and `npm run discover:check` both still exit 0.
 - Scope: No page content, visual language, protocol, capsule, or research claim changed. The repair aligns the local preview and the homepage links with surfaces the repository had already declared.
+
+
+## AIL-040 - Removed the narrow-viewport horizontal overflow
+
+- Date: 2026-10-29
+- Measurement note: Chrome clamps a headless window to a 500px minimum on macOS, so `--window-size=390,844` lays the page out at 500px and crops the image to 390. That crop reads as clipped text and produced a false overflow report on every page. The audit therefore loads each page inside a fixed-width iframe, which yields a genuine 390, 360, or 320 CSS viewport.
+- Inspected fact: On `/garden/`, `h1` uses `clamp(4.7rem, 10vw, 9.7rem)`, so the size never drops below 75.2px. Below roughly 380px the word `CONSEQUENCE.` is wider than its box: the document measured 401px at 390, 370px at 360, and 357px at 320.
+- Inspected fact: `.garden-intro::after` used `right: -3%` under 620px, so the decorative ring pushed the document 11px past a 390px viewport on its own.
+- Inspected fact: `/`, `/enter/`, `/gym/`, and `/gym/agents/` measured no overflow at 1440, 1024, 900, 768, 620, 500, 430, 390, 360, and 320. On `/rsi-habitat/` the coordinates matrix is 620px wide but sits inside `.matrix-wrap { overflow-x: auto }`, so it scrolls within its own box and the document does not overflow.
+- AI contribution: Added a 620px `h1` size of `clamp(3.4rem, 16vw, 4.7rem)` with `overflow-wrap: break-word`, and moved the decorative ring from `right: -3%` to `right: 0`.
+- Verification: A 6-page by 10-width audit reports zero page-level overflow. At 390 and 320 the garden headline fits on four lines without a mid-word break, and the guarantees grid, cards, and footer stay inside the viewport.
+- Scope: Only the narrow-width type size and one decorative offset changed. No copy, palette, layout structure, or interaction changed.
